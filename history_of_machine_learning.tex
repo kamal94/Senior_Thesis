@@ -1,0 +1,19 @@
+\section{Machine Learning}
+\subsection{History of Machine Learning}
+The first sight of ML is attributed to Arthur Samuel who, in 1952, wrote the first learning computer checkers game. This game learned by playing against itself and against other human players in a supervised setting \cite{britanica1i2016}. After multiple enhancements throughout the years, this program was able to beat novice checker players, demonstrating the potential power of ML. The same basic principles used by Samuel's program more than 60 years ago are still being used (with more optimized algorithms on greatly more powerful computers) today at Deep Brain, beating humans at more and more board games (See alpha Go).
+
+While Dr. Sameul was working on his checkers game at IBM, a major development was happening at College of Medicine at the University of Illinois. There, Warren McCulloch and Walter Pitts proposed the first mathematical model of what they believed to be the structural unit of the brain: the neuron. In their paper \textit{A Logical Calculus of The Ideas Immanent IN Nervous Activity} published in 1943, they described the brain as a network of neurons in which each neuron had excitetory and inhibitory input and with each of these inputs came a weight to imply its importance \cite{mcculloch1943logical}. Each neruon in the brain had a certain threshold which represented its reluctance to "fire." If the weighted sum of all its excitetory and inhibitory inputs was greater than the threshold, then the neuron would fire. Otherwise, it would not. This was coined as the "all or none" behavior.
+
+Mathematically, the model describes a set of inputs $X = x_0, x_1, \dots, x_n$, a corresponding set of weights $W = w_0, w_1, \dots, w_n$, and a threshold $\theta$ the output of the neuron is described as the function $f(x$
+\[
+f(X,W)=
+\begin{cases}
+1 &\text{if } \sum_{i=0}^n x_iw_i \geq \theta,\\
+0 &\text{Otherwise.}
+\end{cases}
+\]
+
+MUST INCLUDE GRAPH OF STEP FUNCTION
+
+For the neuroscience field, the McCollough-Pitts model was a mathematical breakthrough that many have been waiting for to accurately model neurosn and the brain. However, the importance of the McCollough-Pitts model to the machine learning field was in that it laid the ground work one of the most important building blocks of today's Artificial Neural Networks: The Perceptron. In 1958 and at the Cornell Aeronautical Laboratory in Buffalo, New York, Frank Rosenblatt introduced this mathematical model that was very similary to the McCollough-Pitts neuron, but had one major difference which was that it had a learning rule that allowed it to adjust the weights of the neurons that feed it. This allowed the perceptron to accept new input as a series of node inputs and adjust the weights of each of these nodes in such a way that allowed the output of the neuron to be consistent with the true label of the input \cite{someSpecificANN}. This was the first sight of an algorithm that can find classification solutions for linearly separble problems (See section \ref{sec:label_classification}). TO BE CONTINUED
+

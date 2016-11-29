@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: outline.aux
+A level-1 auxiliary file: introdution.aux
+A level-1 auxiliary file: history_of_machine_learning.aux
+A level-1 auxiliary file: supervised_learning.aux
+A level-1 auxiliary file: unsupervised_learning.aux
+A level-1 auxiliary file: reinforcement_learning.aux
+A level-1 auxiliary file: Epilepsy.aux
+A level-1 auxiliary file: Sugihara.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: IEEEabrv.bib
+Database file #2: main.bib.bib
+Warning--string name "october" is undefined
+--line 11 of file main.bib.bib
+Repeated entry---line 36 of file main.bib.bib
+ : @online{Epilepsy.com.surgery
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--string name "october" is undefined
+--line 62 of file main.bib.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in britanica1i2016
+Warning--missing publisher in Locke1841
+Warning--empty journal in paxinos2009
+
+Done.
+You've used 33 entries,
+            4087 wiz_defined-function locations,
+            1582 strings with 25071 characters,
+and the built_in function-call counts, 26210 in all, are:
+= -- 2118
+> -- 775
+< -- 213
++ -- 417
+- -- 151
+* -- 1277
+:= -- 3915
+add.period$ -- 65
+call.type$ -- 33
+change.case$ -- 31
+chr.to.int$ -- 438
+cite$ -- 36
+duplicate$ -- 1873
+empty$ -- 1918
+format.name$ -- 175
+if$ -- 6087
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 357
+newline$ -- 132
+num.names$ -- 32
+pop$ -- 804
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2033
+stack$ -- 0
+substring$ -- 1088
+swap$ -- 1600
+text.length$ -- 67
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 33
+warning$ -- 3
+while$ -- 103
+width$ -- 35
+write$ -- 360
+(There was 1 error message)

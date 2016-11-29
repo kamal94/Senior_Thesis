@@ -1,0 +1,269 @@
+\documentclass[journal,12pt,onecolumn,draftclsnofoot]{IEEEtran}  % Comment this line out
+                                                          % if you need a4paper
+% \documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+\IEEEcompsocthanksitem
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+% \overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+\usepackage{subcaption}
+% \captionsetup{compatibility=false}
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{balance}
+\usepackage[font=scriptsize,labelfont=bf]{caption} % makes figure captions small, and figure labels bold
+
+\usepackage[autostyle]{csquotes}  %makes block quotes possible
+
+\title{
+Classifying and Localizing Epileptic Brain States Using Structural Features of Neuronal Sugihara Causation Networks}
+
+%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
+%         University of Twente\\
+%         7500 AE Enschede, The Netherlands\\
+%         {\tt\small h.kwakernaak@autsubmit.com}}
+%         \hspace*{ 0.5 in}
+%         \parbox{3 in}{ \centering Pradeep Misra**
+%         \thanks{**The footnote marks may be inserted manually}\\
+%        Department of Electrical Engineering \\
+%         Wright State University\\
+%         Dayton, OH 45435, USA\\
+%         {\tt\small pmisra@cs.wright.edu}}
+%}
+% \author{
+%     \IEEEauthorblockN{Kamal Kamalaldin\IEEEauthorrefmark{1}, Rory Lewis\IEEEauthorrefmark{2}, Chad Mellow\IEEEauthorrefmark{2}, Dorottya R. Cserpán\IEEEauthorrefmark{3}, Somogyvári Zoltán\IEEEauthorrefmark{3}, Peter Erdi\IEEEauthorrefmark{1}{3}}
+%     \IEEEauthorblockA{\IEEEauthorrefmark{1}Kalamazoo College
+%     \\\kamal.aldin.94@gmail.com
+%     \\\perdi@kzoo.edu}
+%     \IEEEauthorblockA{\IEEEauthorrefmark{2}Institution2
+%     \\\{2, 3\}@def.com}
+% }
+
+% \author{Kamal Kamalaldin, Rory Lewis, Chad Mellow, Dorottya R. Cserpán, Somogyvári Zoltán, Peter Erdi \\
+% Kalamazoo College \footnote{Kamalaldin studies Computer Science and Mathematics at Kalamazoo College, 1200 Academy St, Kalamazoo, MI 49006. He is also participating in the REU with the Department of Computer Science, University of Coloardo Colorado Springs.}}
+
+\author{
+    \IEEEauthorblockN{Kamal Kamalaldin\IEEEauthorrefmark{1}, Rory Lewis\IEEEauthorrefmark{2}, Chad Mello\IEEEauthorrefmark{2}, Dorottya R. Cserpán\IEEEauthorrefmark{3}, Somogyvári Zoltán\IEEEauthorrefmark{3}, Peter Erdi\IEEEauthorrefmark{1}\IEEEauthorrefmark{3}, Zsolt Borhegyi\IEEEauthorrefmark{4}}
+    \\~\\
+    \IEEEauthorblockA{\IEEEauthorrefmark{1}Kalamazoo College, MI}
+    \\\IEEEauthorblockA{\IEEEauthorrefmark{2}University of Colorado Colorado Springs}
+    \\\IEEEauthorblockA{\IEEEauthorrefmark{3}Wigner RCP, Budapest}
+    \\\IEEEauthorblockA{\IEEEauthorrefmark{4}MTA-TKI , MTA-ELTE-NAP B-Opto-Neuropharmacology Group}
+}
+
+\usepackage{neuralnetwork}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+ABSTRACT TO BE COMPLETED AT THE END OF THE DOCUMENT
+\end{abstract}
+\begin{abstract}
+\centering
+OLD ABSTRACT \\
+Causality is a topic of philosophical and technical debate in scientific fields relating to multivariate systems. Sugihara Causality is a new model for describing causality. We investigate how this model can be applied to highly dimensional neuronal networks where epilepsy is induced. Different brain states will be classified using a neuroclustering algorithm. The time indecies of the clustered brain states will be used to discretize the original EEG signal into different epileptic seizures stages. A causality network will be created for each stage from the discretized EEG signal, and analysis on the network will be conducted to find predictive structural patterns in epileptic seizures.
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{outline}
+\include{introdution}
+\include{history_of_machine_learning}
+\include{supervised_learning}
+\include{unsupervised_learning}
+\include{reinforcement_learning}
+\include{Epilepsy}
+\include{Sugihara}
+\section{Problem definition}
+
+Given multiple spiking signals from a set of interconnected neuronal regions, can the CCM model identify structural patterns in causal relationships between those regions? Can the patterns and properties of the causality graph resulting from the CCM model be clustered into brain states that represent different stages of epilepsy in the brain? In other words, can a machine learning algorithm be applied to the causal network properties, the model of which could be able to correctly classify epileptic brain states.
+
+\section{Methods}
+\subsection{Data Collection}
+EEG data was collected from an 4x8 endodermal electrode array (31 channels, one channel malfunctioned, Fig. \ref{fig:rat_brain_schematic}, \ref{fig:rat_scull_and_instrument}). During the experiment epileptic seizures were evoked using 4-aminopyridine and EEG data was recorded from the electrode array. The spiking voltage of each recorded electrode is used as a signal and is referred to as a channel. 
+
+\subsection{Data Preprocessing}
+Kernal Current Source Density (kCSD) method was used on the grid of channels to account for possible electrical interference with the direct measurement \cite{Potworowski2012}. The measured potentials produced by kCSD arise as the linear combination of the transmembrane currents, which is a more direct and localized quantity to measure the neural activity. Therefore current source density distribution was calculated by the kCSD method and used for the analysis.
+
+Afterwards, in order to reduce the data size that is operated on, we lumped channels from the same regions together by averaging them (Fig. \ref{fig:brain_region_lumping}). In addition to reducing dimensionality, this process also puts emphasis of causality on functional brain regions instead of a local cluster of neurons. 
+
+  
+% TO BE ADDED ONCE THE SPLINE DATA HAS BEEN ANALYZED
+% To reduce the amount of data being processed by the algorithm, a moving average was calculated for each channel as in Fig. \ref{fig:spline_sample}. The moving average line was also added to reduce the random variability that might erroneously affect the Sugihara calculations. More importantly, the moving average calculation removes the spiking pattern dimension of the neuronal region, and keeps only the magnitude of neuronal excitation. We reckon that this assumption could be beneficial for the CCM algorithm since without it, the algorithm could infer that two noise up spikes in two channels might be causal simply because they happen in temporal proximity caused by measurement error.
+
+
+\section{Research paper Introduction (Old)}
+The concepts of abstract correspondence, correlation and interpreting causation has been discussed in philosophical literature at least as early as Berkley's and Locke's arguments on human perception \cite{Locke1841} \cite{Berkeley1874}. Until now, the debate focused on what constitutes a causative effect and how such an effect might be discerned. From philosophy, the debate has moved to empirical science, where different models of causality have been proposed, none of which has been declared the true standard. A particular causality model, Granger Causality (GC), has been widely used in application in the econometric fields \cite{Granger1969}, and has been the de facto model when causality is concerned. However, while GC behaves best in linear, stochastic systems, it carries its own limitations. Even with extensions to non-linear systems, GC has generally not been seen capable of inferring causality in deterministic systems where feedback loops and nonlinearity are a defining feature. New models of causality have been introduced to attempt to rectify these limitations. Dynamic Bayesian Netowrks and, more recently, the Convergent Cross Mapping (CCM) are some such models. 
+
+The CCM model relies convergence of distance of nearest neighbors in the shadow manifold of pairs of variables \cite{Sugihara2012}. A shadow manifold of variable $\omega$ is an $E$ dimensional reconstruction of $E$ delayed signals of $\omega$. Each of these signals is delayed by a scalar multiple of $E\tau$ such that shadow the manifold of $\omega$, $M_{\omega}$ is described as 
+$$M_{\omega} = f\Big(\omega(t), \omega(t-\tau), \omega(t-2\tau), \dots, \omega(t-(E-1)\tau)\Big)$$.
+Applying Takens' embedding theorem, it can be shown that each shadow manifold of a variable is a projection of the dynamic system's manifold, $M$, that preserves the topology of $M$ \cite{Dixon1999,Deyle2011,Takens1981}. For example, in a dynamic system like the Lorenz Attractor where the dynamics of each variable is affected by the other variables in the system, it can be said that each variable subscribes to the overall dynamic of the system. Therefore, the state of one variable could be used to infer the state of another variable if they are dynamically linked. 
+
+Using this feature of dynamic systems, the CCM model infers causality from the convergence of prediction of one variable's state based on another's as $L$ increases, where $L$ is the length of data points considered in the prediction. This implies that $L$ needs to be sufficiently large to allow an observation of convergence. This convergence is the test used to determine Sugihara Causality, named after its author who describes it as a required but not complete definition of causality \cite{Sugihara2012}. This approach is the first step towards more general and applicable causality models since GC. Since the introduction of CCM, it has been shown to be successfully predictive in biological \cite{Deyle16042013,Wang2014,Sugihara2012,Mcbride2015,Nes2015} and cosmological \cite{Tsonis2015} applications while showing weaknesses in others \cite{Mccracken2014}. 
+
+Extensions to and amalgamations of the CCM model are beginning to surface in literature. Clark \textit{et al.} proposed an extension to CCM that relies on measuring the smoothness of the mapping (also called flow) function $\phi$, thereby reducing the $L$ length requirement\cite{Clark2015}.  Wismüller \textit{et al.} proposed a Mutual Connectivity Analysis framework for the "analysis and visualization of non-linear functionalconnectivity in the human brain from resting state functional MRI" \cite{wismuller2014} which relies heavily on CCM. Tajima \textit{\textit{et al.}} use the fundamental idea of state space reconstruction to find two measures. The first is \textit{Complexity} which is the best embedding dimension for a certain signal (embedding dimension at which the cross mapping is saturated). The second is \textit{directionality}, the difference in cross map skill or embeddedness between two a pair of signals. With those two measures, they show that the brain exhibits different complexities during conscious and unconscious states. Here, we explore the application of CCM in estimating the causality between neuronal regions by constructing a network of pairwise causality. We then analyser features of such networks during normal and epileptic seizure periods. We attempt to localize the origin of seizures as well as predict their occurance by using the properties of causal networks.
+
+
+\subsection{Experiments}
+Using the preprocessed data, a pairwise analysis of the signals will be carried using CCM. For each pair of regions, two directions of causality will be considered. Since there were $12$ regions, $12*11=132$ unique causality relationships were analyzed. The causality measures were recorded on sliding windows of time segments. The time segment lengths were chosen through a heuristic that focused on attaining multiple causality measures within a second. Once the causality measures were attained for each time segment, a combination of heuristic and and statistical measures were used to analyze the significance of the causality measures (see section \ref{subsec:significant_causality}). 
+
+From the causality measures, a graph was constructed for each time segment (Fig. \ref{fig:sample_graph}). 
+
+% From the graph, the following experiments were conducted
+
+% \subsubsection{Activity Clustering}
+% Using the k-means clustering algorithm, the pairwise causality graphs were clustered towards testing if the algorithm can detect phases of different activities.
+
+% \subsubsection{Epilepsy Localization}
+% To localize the origin of epilepcy during a time segment, the regions with high outgoing causality degrees were considered. The evaluation method was a simple sum of out degrees.
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/rat_brain_schematic.png}
+  \caption{A composite drawing showing the brain in the scull. The 3D reconstruction of the brain has been made using the maps of the Paxinos atlas, and the localization of cortical areas are indicated by different colors. White points indicate the position of the recording sites of the membrane electrode. Names for the cortical areas are also shown (based on Hjornevik \textit{et al.} and Paxinos \textit{et al.} \cite{hjornevik2007} \cite{paxinos2009}).}
+  \label{fig:rat_brain_schematic}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/rat_scull_and_instrument.png}
+  \caption{Photograph of a membrane electrode shows the construction on the top, the numbering (bottom right) and the surgical implantation (bottom left) is also shown. Electrode 1 mulfunctioned during recording.}
+  \label{fig:rat_scull_and_instrument}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/brain_region_lump.png}
+  \caption{The distribution and lumping of the brain regions in the brain. A total of 12 region channels were constructed from the initial 31 local channels. The schematic is based on rat brain atlas mapping.}
+  \label{fig:brain_region_lumping}
+\end{figure}
+
+
+% \begin{figure}[!h]
+%   \centering
+%   \includegraphics[width=0.95\linewidth]{figures/sample_moving_average.pdf}
+%   \caption{A moving average line fitted through the first second ($10^3$ data points) of channel 2. A rolling window of 10 is used.}
+%   \label{fig:spline_sample}
+% \end{figure}
+
+\subsection{Significant Causality Measures}
+\label{subsec:significant_causality}
+Since every CCM computation returns a real number in the range $[0,1]$ that represents a relative causality measure, $132$ causality measures for each time segement will be returned. Therefore, an important question to consider is how exactly should a causality measure be defined to be significant. Although Sugihara \textit{\textit{et al.}} \cite{Sugihara2012} and Nes \textit{et al.} \cite{Nes2015} carry out a significance test based on altering the signals by random shuffling and Fourier transformation on Phase shift \cite{Ebisuzaki1997}, this method has not been implemented on EEG data when applying the CCM model. Therefore, we do not rely on it completely, and take into account several heuristic conditions.
+
+
+\subsubsection{Most Causal Relationship Method}
+In this method, a simplistic approach is taken whereby for each region only the highest incoming $\rho$ is considered. While this approach is reductionist by definition, and most likely does not reflect the true causal relationship in the brain, it achieves simplicity in the network, and affords us the possibility of examining which regions could be the most causal in the network. Such regions would have a large out degree which would imply it being a center of causality in the network.
+
+Another important property of this measure is that it could alleviate the problem of downstream causality sensitivity. As shown by Ye \textit{\textit{et al.}} \cite{Ye2015}, the CCM algorithm can detect downstream causality, which means that if $\alpha$ causes $\beta$ and $\beta$ causes $\kappa$, then if $\rho_{\alpha \rightarrow \beta}$ is a significant causality measure from $\alpha$ to $\beta$, there can also be a causality measure $\rho_{\alpha \rightarrow \kappa}$ detected to be significant such that the indirect causality is less than the direct causality $\rho_{\alpha \rightarrow \kappa} < \rho_{\alpha \rightarrow \beta}$. This can be an undesired consequence of the model, since we are interested only in the direct relationships, and not necessarily the indirect ones. Indirect relationships could be extrapolated from direct ones. If we assume that all downstream causality measures are evaluated to be less than their direct counterparts, then we expect that taking the most causal relationship would rid of all the indirect relationships that could otherwise be detected, with the expense of also ridding of other direct relationships.
+
+\subsubsection{Threshold Method}
+In this method, only causality measure over a certain threshold $\rho_{th}$ will be counted as significant. As this is a heuristic measure, the data must first be examined to clarify what is meant by a significant $\rho_{th}$. With this heuristic comes unavoidable human bias towards refusing generated data. Since the true causality relationships are not yet uncovered, almost any threshold is certain to be wrong. For example, if the brain was highly connected and regions are highly causal to one another, a neuroscientist who disregards such a possibility would be inclined to choose a high $\rho_{th}$ as to filter many of the causal relationships that could in fact be present. Alternatively, if the brain regions were minimally causal to one another and a neuroscientist disregards that possibility, they would be inclined to choose a low $\rho_{th}$ as to allow for more causal relationships for the model. However biased this method is, if implemented correctly it could provide a list of the most causal relationships to each region, while excluding most indirect relationships.
+
+\subsubsection{Fourier Transform and Random shuffling Method}
+For a more mathematically grounded significance measure, we also use a bootstrap test where a signal for both channels in a pair is created from the original signal, and the causality measure is significant if it is above a specified $\alpha$ threshold. Another statistical method used to calculate significance is randomizing the data based on bootstraping the frequency distribution of the signal calculated from the signal's Fourier transform as used by Nes \textit{et al.} \cite{Nes2015}\cite{Takens1981}.
+
+
+\section{Results}
+By running the CCM algorithm through every pair of channels, we collected $132$ causality measures (Fig. \ref{fig:sample_pair_causality_plot}). To increase the efficiency of our calculations, we also observed the variance of the causality strengths as we decreased the sample size for each calculation (Fig. \ref{fig:sample_size_diff_box}). Most of the causality measures appear to be of high values, suggesting high connectivity between brain regions (Fig. \ref{fig:sample_pair_causality_plot}). Furthermore, we also notice that many of the pair causality measures appear to be similar within the pair (Fig. \ref{fig:diff_within_pair_hist}). For example, when looking at regions 1 and 2 within the first 200 ms, they appear to be equally causal to one another (Fig. \ref{fig:sample_pair_causality_plot}).
+
+
+\begin{figure}[!h]  \centering
+  \includegraphics[width=0.95\linewidth]{figures/sample_pairwise_causality_measure.pdf}
+  \caption{A sample graph plotting the convergent cross mapping skill ($\rho$) between region 1 and 2 during the first 200 ms of the experiment. The skill mapping channel 1 to channel 2 is very similar to the one mapping channel 2 to channel 1. This might infer either bidirectional causality or unidirectional forcing. A similar pattern (close $\rho$ value between pairs) was found for most of the pairs. Cross mapping was done with random library samples.}
+  \label{fig:sample_pair_causality_plot}
+\end{figure}
+
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/diff_in_sample_size.pdf}
+  \caption{Difference of rho scores between shown sample size and 100 samples. Decreasing sample size from the default 100 when calculating Sugihara Causality does not have a drastic affect on the acquired result. This shows that the data and method used are robust. Using this analysis, we conduct all further tests on a sample size of 20. Data shown is from the first 5 seconds of the experiment, using a library size of 80. Sliding windows of 200 ms were used, with a sliding step of 50 ms.}
+  \label{fig:sample_size_diff_box}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/rho_hist_all_experiment.pdf}
+	\caption{The distribution of CCM skill ($\rho$) during the entire experiment. Many relationships appear to be causal in the brain, with equally as many being non-causal throughout the experiment. Causality was calculated from signals of lumped regions after calculating the CSD. Cross mapping was done on every pair of regions with library size of 80, and each pair has two causality directions. Sliding windows of 200 ms were used, with a sliding step of 50 ms.}
+	\label{fig:rho_hist_all_experiment}
+\end{figure}
+
+
+\begin{figure}[!h]
+  \begin{subfigure}{.48\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/diff_within_pair_hist.pdf}
+    \caption{Absolute difference of $\rho$ between all pairs}
+  \end{subfigure}  
+
+  \begin{subfigure}{.48\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{figures/diff_within_pair_over_2_hist.pdf}
+    \caption{Absolute difference of $\rho$ between pair both of which is at least 0.2}
+  \end{subfigure}
+
+  \caption{Difference of causality values within a pair is small, even when accounting for non-existing relationships where both causalities are below 0.2. This similarity between directions of causality in a pair could imply a bidirectional relationship between most regions, or could alternatively imply a unidirectional forcing (synchrony) phenomenon. Sliding windows of 200 ms were used, with a sliding step of 50 ms. A library size of 80 was used.}
+  \label{fig:diff_within_pair_hist}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/sample_graph.pdf}
+  \caption{Sample graph constructed from calculating the sugihara causality between brain regions through CCM. Lumped brain regions correspond to the gray circular mapping in Fig. \ref{fig:brain_region_lumping}. Edge colors represent the strength of the causal relationship. From weakest to strongest: Yellow, Green, Blue, Red.}
+  \label{fig:sample_graph}
+\end{figure}
+
+
+\section{Discussion}
+
+Initial analysis shows that the causality network is very dense with highly weighted edges. The high density of the graph could have been a side effect of Sugihara's model ability to detect downstream causality. If that is the case, then many of the causal connections detected are in fact residuals of upstream interactions in the network.
+
+Downstream causality measures can be detected by observing both the magnitude of the cross map skill as well as the time lag that produces the greatest cross map skill (Fig. 3 in \cite{Ye2015}). Following the assumption that downstream causality decreases in magnitude as it travels downstream in the network, we can use this to traverse the graph and rid of any paths that decreases in causality as it goes downstream.
+
+Concerning the high possibility of the presence of unidirectional forcing, Ye \textit{et al.} showed unidirectional forcing can be untangled by inspecting the greatest time lag of the two that produces the highest causality measure (Fig. 2 in \cite{Ye2015}). In order to allay the problem of unidirectional forcing, the best lag of each pair is considered. This is a tricky problem because there is no clear range for which to test the lag. This is because the time delay for neuronal activity is yet studied, and how that translates to EEG data could be tricky. We reserve the use of this method due to its computational complexity which would add to the already high time complexity of the analysis.
+
+The theoretical implications of this model could present a novel representation of information flow in the brain and determining causality within the brain. If the graph output of this method id reliable, it could help outline information flow within the brain, much like one would observe in a magnetic wave flowing through an fMRI recording. 
+
+
+
+\section{Future Work}
+
+Future work will focus on verifying this model through controlled experiments. Such experiments could be in the form of stimulating a part of the brain (e.g. shining strong light on an the eye to excite the visual cortex) and observing the model's behavior. One would expect a high value of out degrees from the specific region during such an experiment, as it attempts to convey a considerable portion of information to the rest of the brain. Moreover, a clear proof should be presented as to what the most reliable time window and step size ought to be when producing the causality graphs. Such a task can be done by measuring graph similarity of the same time segment as the time window gets shortened incrementally.
+
+Continuing our efforts, we would like to integrate the neuroclustering algorithm developed by Lewis and Mello into this work \cite{Lewis2012}. This would allow us to discretize the EEG data into frames of epileptic seizure stages. Once these stages are identified and compartmentalized, the kCSD method will be applied to account for experimental design errors. A pairwise causality network will then be constructed using the Sugihara causality model, and the origin of the epilepsy will be localized during the initiation of the seizure.
+
+Furthermore, the feature set of the neuroclustering algorithm could be augmented with the information of edge weights of the pairwise causation graph. The effect of such an integration could be tested to see if it improves classification metrics. Similarly, the neuroclustering algorithm could be used to label seizures in neural data which then our pairwise causality algorithm could be tested against to see if the clustering of edge weights clusters epilepsy segments separately.
+
+
+\section{Conclusion}
+The paper shows promising initial results using the Sugihara CCM model to construct causality graphs between brain regions. We find that the brain network for this experiment is highly causal with a range of time windows. This, however, could be due in part to experimental design limitations, where the electrodes were 1 mm apart which might have caused electrical interference. To to limit this phenomenon we used kCSD to preprocess the data. Initial results show a time varying graph in which information flow can be tracked. At the moment, more analysis is required to make a conclusions on the capabilities of the pairwise causality graph model. Some of most incurring difficulties to overcome are the running complexity of the kCSD preprocessing and CCM algorithm required for the analysis of the amount of pairs in a large network, and the mathematical representation of information flow within the time-dependent graph. We plan on using the Neuroclustering algorithm to discretize the EEG data into epileptic seizures, extract causal network features from the stages, and train a k-means learning algorithm on the created feature set. The implications of these findings could relate more generally to discoverability of causality in modeling scalable natural phenomena. Real world applications manifest in localization of epilepsy in the brain. Furthermore, if the technique of distinguishing causal networks in systems and clustering their properties is successful, it could be a clear indications that the Sugihara causality model is able to detect causation in extremely complex systems comparable to the human brain.
+
+\section*{Acknowledgment}
+
+Special thanks goes to Dr. Somogivari and Dorrottya R. from Winger RCP, Budapest for providing the neuronal data used in this paper. Furthermore, Dr. Peter Erdi is thanked for his patient guidance of this research topic which was instrumental for the production of this paper.
+
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,main.bib}
+\end{document}

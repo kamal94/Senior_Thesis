@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rotat",
+				"rotateAnticlockwise"
+			],
+			[
+				"isle",
+				"isLeftChild"
+			],
+			[
+				"isLe",
+				"isLeftChild"
+			],
+			[
+				"black",
+				"BLACK"
+			],
+			[
+				"new",
+				"new_right"
+			],
+			[
+				"sibl",
+				"sibiling"
+			],
+			[
+				"add",
+				"addSortedElements"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"__in",
+				"__in_insert"
+			],
+			[
+				"regio",
+				"regional_neural_data"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.tex",
+			"settings":
+			{
+				"buffer_size": 24228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"markdown",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"material",
+				"Material Theme: Activate theme"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 431.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Kamal/Downloads/Lab_1 copy.py",
+		"/Users/Kamal/Downloads/lab1 (4).py",
+		"/Users/Kamal/Downloads/Lab1 (1).py",
+		"/Users/Kamal/Downloads/Ke Lab1.py",
+		"/Users/Kamal/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/79BAF67B-3099-419B-9E71-2F4D10C38EA6/Lab1.py",
+		"/Users/Kamal/Desktop/SIP/Final Paper/paper/main.tex",
+		"/Users/Kamal/Desktop/FOSS/Week1Friday/reading_lists.md",
+		"/Users/Kamal/Desktop/MLND/boston_housing/visuals.py",
+		"/Users/Kamal/Desktop/MLND/boston_housing/README.md",
+		"/Users/Kamal/Desktop/Vision/SDC/research/server.py",
+		"/Users/Kamal/Desktop/Vision/SDC/research/train_generative_model.py",
+		"/Users/Kamal/Desktop/MLND/ud120-projects/datasets_questions/explore_enron_data.py",
+		"/Users/Kamal/Desktop/MLND/ud120-projects/tools/feature_format.py",
+		"/Users/Kamal/Desktop/neuraltalk2/cv/README.md",
+		"/Users/Kamal/Desktop/MLND/titanic_survival_exploration/README.md",
+		"/Users/Kamal/Desktop/MLND/machine-learning/projects/titanic_survival_exploration/titanic_visualizations.py",
+		"/Users/Kamal/cache.py",
+		"/Users/Kamal/rbt.py",
+		"/Users/Kamal/Desktop/SIP/Code/README.md",
+		"/Users/Kamal/Desktop/SIP/Code/RE",
+		"/Users/Kamal/Desktop/SIP/Code/App/README.txt",
+		"/Users/Kamal/test.py",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/KCSDHD.py",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/KCSD2D.py",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/CSD.py",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/kCSD_R.py",
+		"/Users/Kamal/st.py",
+		"/Users/Kamal/Desktop/SIP/Code/rEDM/for regions/lump_channels_by_region.R",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/kCSD_dori.py",
+		"/Users/Kamal/Desktop/SIP/Code/rEDM/for regions/calculate_signifigance_parallel_full_experiment.R",
+		"/Users/Kamal/Desktop/SIP/Code/rEDM/for regions/calculate_signifigance_parallel.R",
+		"/Users/Kamal/Dropbox/kamal_dori_KCSD_Grid/make_mini_data_set.py",
+		"/Users/Kamal/Desktop/SIP/Final Paper/main.tex"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"print",
+			"Node",
+			"print",
+			"self.right = Node()\n\t\t\t",
+			"Node",
+			"RED",
+			"BLACK",
+			"RED",
+			"isRoo",
+			"sibiling",
+			"*",
+			"-",
+			"prim.soma.hindlimb",
+			"prim.soma.trunk",
+			"prim.soma.forlimb"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"RED\"",
+			"\"BLACK\"",
+			"\"RED\"",
+			"* ",
+			"*",
+			"ss.hindlimb",
+			"ss.trunk",
+			"ss.forelimb"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 146.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "",
+	"project": "fall-sip.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
