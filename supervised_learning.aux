@@ -3,25 +3,37 @@
 \newlabel{sec:supervised_learning}{{\unhbox \voidb@x \hbox {III-B}}{6}}
 \newlabel{sec:label_classification}{{\unhbox \voidb@x \hbox {III-B}1}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Label classification}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Two sets of data, one of which is linearly separable (Left) and the other is non linearly separable (Right). Linear separability means that a line can be found that can perfectly segregate the two classes into two sections. A diagonal, horizontal, or vertical line between the blue and red points can be drawn on the left that achieves that goal. However, on the right there is no one line that can be used to separate the data. This problem of finding a line of separation between two linearly seprable data sets can be solved by using a binary classifier, the earlierst example of which is the perceptron.\relax }}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Two sets of data, one of which is linearly separable (Left) and the other is non linearly separable (Right). Linear separability means that a line can be found that can perfectly segregate the two classes into two sections. A diagonal, horizontal, or vertical line between the blue and red points can be drawn on the left that achieves that goal. However, on the right there is no one line that can be used to separate the red from blue points. This problem of finding a line of separation between two linearly separable data sets can be solved by using a binary classifier, the earliest example of which is the perceptron.\relax }}{6}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:two_classes_example}{{1}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The perceptron model can be used to solve binary classification in linearly separable datasets as in the left image. After training, all points below the shown line of separation would be classified as -1, and all points above the line would be classfied as +1. Seemingly, this behavior would correctly extrapolate to unseen datapoints from a similar distribution. In the case of non linearly separable datasets, the perceptron keeps adjusting its weights but never reaches a solution which correctly classifies all data inputs, meaning the model quits after a set limit of iterations through the dataset. This results in a having a line that clearely does not separate the two classes (Right).\relax }}{8}}
+\citation{minsky1969perceptrons}
+\citation{Yadav2015}
+\newlabel{eq:piecewise_threshold_function}{{2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The perceptron model can be used to solve binary classification in linearly separable datasets as in the left image. After training, all points below the shown line of separation would be classified as -1, and all points above the line would be classified as +1. Seemingly, this behavior would correctly extrapolate to unseen data points from a similar distribution. In the case of non linearly separable datasets, the perceptron keeps adjusting its weights but never reaches a solution which correctly classifies all data inputs, meaning the model quits after a set limit of iterations through the dataset. This results in a having a line that clearly does not separate the two classes (Right).\relax }}{8}}
 \newlabel{fig:perceptron_solution}{{2}{8}}
-\newlabel{table:categorial_examples_weather}{{\unhbox \voidb@x \hbox {III-B}1}{8}}
-\newlabel{sec:regression_supervised_learning}{{\unhbox \voidb@x \hbox {III-B}2}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Regression Prediction}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Although a regression tree and a label classification tree have a different decision path with the same training data, they exhibit similar erronous behaviour when tested on input that ranges outside the training sample. The trees were trained on a dataset of simple square functions, where the inputs were numbers from 0 to 10 and output is the square of each number. Both decision trees show a jagged approximation of the square function between 0 and 10, which indicates some level of learning. However, the trees show very poor generalization outside the learning range. When tested on input that is below 0, the trees match to the closest label in the decision boundary, which is "0". A similar decision is made for input that is greater than 10, where the trees matches all numbers greater than 10 to the label of 10 ("100").\relax }}{10}}
-\newlabel{fig:decision_tree_regression_and_classification}{{3}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Different lines of fit and their errors (dashed and dotted lines) with respect to the noisy input data. Because $g(x)$ and $h(x)$ have larger error lines than $f(x)$, $f(x)$ is the best fit for the data out of the three drawn lines. Note that for $f(x)$, the negative and positive errors cancel out, leading to a sum of error of $-21$. This is allayed by suming the square of the erro instead, which results in a minimizable equation that evaluates to $176$.\relax }}{11}}
-\newlabel{fig:error_lines}{{4}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Different activation functions can be applied to the perceptron model. The simplest and earliest activation function is the step function (Left) which outputs either a $+1$ or $-1$. A disadvantage of the step function is that small changes in the weighted sum ($S$) could cause a large change in the output ($\kappa $). This is solved by the sigmoid activation function (right) which gives a output (between $0$ and $+1$) that is proportional to $\S  $ within a given range. When a perceptron implements a sigmoid activation unit, it is referred to as a sigmoid learning unit.\relax }}{9}}
+\newlabel{fig:activation_functions}{{3}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Perceptrons linked in networks with different topologies. Blue represents input notes, gray represents hidden nodes, and red represents output nodes. The left network contains only one layer, the input layer, with its associated weights that feed into the output layer. This network essentially simulates a computation that is equivalent to the perceptron model. The center network contains a hidden layer composed of simply 1 node. This network can solve the XOR problem, and is able to solve the linearly inseparable dataset in Fig 1\hbox {}. The more nodes added to the hidden layer and the more hidden layers there are, the more communication happens between the nodes in the previous layer, and therefore the higher the abstraction. The network on the right is a more dense network with two hidden layers and many more hidden nodes.\relax }}{9}}
+\newlabel{fig:perceptron_layers_example}{{4}{9}}
+\newlabel{eq:gradient_descent_on_sigma}{{5}{10}}
+\newlabel{eq:sigma_derivative}{{6}{10}}
+\newlabel{eq:update_rule_for_sigma}{{7}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Back propagation works by minimizing the error function using gradient descent. In this case, the error function is the MSE, and its partial derivative with respect to each weight from the $i$th node in the previous layer is $2w_ix_i(\lambda - \kappa _t$ where $\lambda $ is the desired outcome and $\kappa _t$ is the predicted outcome at iteration $t$. In each iteration, applying gradient descent results in a move towards the opposite of the gradient, meaning partial derivative of the error with respect to that weight is negated from the weight (right). This method is guaranteed to converge, however slowly, over well defined continuous activation functions, an example of which is the sigmoid function (Fig. 3\hbox {}).\relax }}{11}}
+\newlabel{fig:back_propagation}{{5}{11}}
+\newlabel{table:categorial_examples_weather}{{\unhbox \voidb@x \hbox {III-B}1}{12}}
+\newlabel{sec:regression_supervised_learning}{{\unhbox \voidb@x \hbox {III-B}2}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Regression Prediction}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Although a regression tree and a label classification tree have a different decision path with the same training data, they exhibit similar erronous behaviour when tested on input that ranges outside the training sample. The trees were trained on a dataset of simple square functions, where the inputs were numbers from 0 to 10 and output is the square of each number. Both decision trees show a jagged approximation of the square function between 0 and 10, which indicates some level of learning. However, the trees show very poor generalization outside the learning range. When tested on input that is below 0, the trees match to the closest label in the decision boundary, which is "0". A similar decision is made for input that is greater than 10, where the trees matches all numbers greater than 10 to the label of 10 ("100").\relax }}{14}}
+\newlabel{fig:decision_tree_regression_and_classification}{{6}{14}}
+\newlabel{eq:least_square}{{8}{14}}
 \citation{Finney1996}
-\newlabel{eq:least_square}{{4}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Finding line of least squared error for data with an exponential trend. First, the datapoints (Left) are transformed to their logs (Center). Then a line of best fit is found through linear regression (Center). The line is then transformed back to the original space by applying the exponential function (Right).\relax }}{12}}
-\newlabel{fig:log_regression}{{5}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Different lines of fit and their errors (dashed and dotted lines) with respect to the noisy input data. Because $g(x)$ and $h(x)$ have larger error lines than $f(x)$, $f(x)$ is the best fit for the data out of the three drawn lines. Note that for $f(x)$, the negative and positive errors cancel out, leading to a sum of error of $-21$. This is allayed by suming the square of the erro instead, which results in a minimizable equation that evaluates to $176$.\relax }}{15}}
+\newlabel{fig:error_lines}{{7}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Finding line of least squared error for data with an exponential trend. First, the datapoints (Left) are transformed to their logs (Center). Then a line of best fit is found through linear regression (Center). The line is then transformed back to the original space by applying the exponential function (Right).\relax }}{16}}
+\newlabel{fig:log_regression}{{8}{16}}
 \@setckpt{supervised_learning}{
-\setcounter{page}{13}
-\setcounter{equation}{5}
+\setcounter{page}{17}
+\setcounter{equation}{9}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -33,7 +45,7 @@
 \setcounter{subsubsection}{2}
 \setcounter{paragraph}{0}
 \setcounter{IEEEsubequation}{0}
-\setcounter{figure}{5}
+\setcounter{figure}{8}
 \setcounter{table}{0}
 \setcounter{IEEEbiography}{0}
 \setcounter{ContinuedFloat}{0}

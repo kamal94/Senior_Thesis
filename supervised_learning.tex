@@ -6,7 +6,7 @@ Supervised learning can be generally thought of as function approximation where,
 
 \subsubsection{Label classification}
 \label{sec:label_classification}
-The simplest form of label classification is often referred to as binary classification, in which the classifier (machine learning algorithm) has to discriminate between two classes. For example, a simple binary classification problem would be to discriminate between sets of points on a cartesian plane (Fig. \ref{fig:two_classes_example}).
+The simplest form of label classification is often referred to as binary classification, in which the classifier (machine learning algorithm) has to discriminate between two classes. For example, a simple binary classification problem would be to discriminate between sets of points on a Cartesian plane (Fig. \ref{fig:two_classes_example}).
 
 \begin{figure}[!h]
   \centering
@@ -18,33 +18,35 @@ The simplest form of label classification is often referred to as binary classif
     \centering
     \includegraphics[width=\linewidth]{figures/twoClasses_non_separable.pdf}
   \end{subfigure}
-  \caption{Two sets of data, one of which is linearly separable (Left) and the other is non linearly separable (Right). Linear separability means that a line can be found that can perfectly segregate the two classes into two sections. A diagonal, horizontal, or vertical line between the blue and red points can be drawn on the left that achieves that goal. However, on the right there is no one line that can be used to separate the data. This problem of finding a line of separation between two linearly seprable data sets can be solved by using a binary classifier, the earlierst example of which is the perceptron.}
+  \caption{Two sets of data, one of which is linearly separable (Left) and the other is non linearly separable (Right). Linear separability means that a line can be found that can perfectly segregate the two classes into two sections. A diagonal, horizontal, or vertical line between the blue and red points can be drawn on the left that achieves that goal. However, on the right there is no one line that can be used to separate the red from blue points. This problem of finding a line of separation between two linearly separable data sets can be solved by using a binary classifier, the earliest example of which is the perceptron.}
   \label{fig:two_classes_example}
 \end{figure}
 
- The perceptron was the first machine learning algorithm designed to solve binary classification in linearly separable conditions. Perceptrons were designed to mimick the McCollough-Pitts neuron model which relied on three main components: inputs, weights, and an activation function. In addition to these components, the perceptron had a learning rule that allowed it to learn when to and not to fire. Listing all the components of a perceptron:
+\
+ The perceptron was the first machine learning algorithm designed to solve binary classification in linearly separable conditions. Perceptrons were designed to mimic the McCollough-Pitts neuron model which relied on three main components: inputs, weights, and an activation function. In addition to these components, the perceptron had a learning rule that allowed it to learn when to and not to fire. Listing all the components of a perceptron:
 \begin{itemize}
   \item \textbf{Inputs}: A dataset of $n$ dimensional points. Each input point $x$ consists of $n$ features such that each input point can be describes as $(x_1, x_2, \dots, x_n)$.
-  \item \textbf{Weights}: $n$ weights described as $w_1, w_2, \dots, w_n$.
-  \item \textbf{Activation}: a threshold $\theta$ on which the neuron decides to fire.
+  \item \textbf{Weights}: $n$ weights described as $w_1, w_2, \dots, w_n$. These weights are randomly initialized.
+  \item \textbf{Activation function}: a function on which the neuron decides to fire or not fire. The first one was the threshold (or step) function where the neuron fires if the weighted sum of inputs and weights is larger than threshold $\theta$, and doesn't fire otherwise.
   \item \textbf{Learning Rule}: A rule by which the weights change, described below.
 \end{itemize}
 
 % After being trained, the perceptron would fire to indicat that it has seen one class of data points (+1) and would not fire to indicate that it has seen the other class of data points (-1). 
 
-A perceptron can be trained by passing each data point from the the dataset to it. In our example (Fig. \ref{fig:two_classes_example}), each data point would have a two -dimensional input consisting of the $x_1$ and $x_2$ values. Since we are working with two dimensions, the perceptron would have two weights $w_1$ and $w_2$. Every 1time the perceptron encounters a data point it tries to make a prediction by calculating the weighted sum of the inputs $S$  as $\sum_{i=1}^n w_ix_i$. If $S \geq \theta$ then the neuron fires, meaning it predicts the category to be $+1$. If $S < \theta$, the neuron doesn't fire, predicting the category to be $-1$. Given this determination, the perceptron evaluates its predicted output with the actual output of the data point, then manipulating its weights, completing the learning process of the perceptron on that data point. 
+A perceptron can be trained by passing to it each data point from the the dataset. In our example (Fig. \ref{fig:two_classes_example}), each data point would have a two-dimensional input consisting of the $x_1$ and $x_2$ values. Since we are working with two dimensions, the perceptron would have two weights $w_1$ and $w_2$. Every time the perceptron encounters a data point it tries to make a prediction by calculating the weighted sum of the inputs $S$  as $\sum_{i=1}^n w_ix_i$. If $S \geq \theta$ then the neuron fires, meaning it predicts the category to be $+1$. If $S < \theta$, the neuron doesn't fire, predicting the category to be $-1$. Given this determination, the perceptron evaluates its predicted output with the actual output of the data point, then manipulating its weights, completing the learning process of the perceptron on that data point. 
 
-The learning proccess for input $x$, given a true label $\gamma$ and a threshold $\theta$ is summarized by the following updates:
+The learning process for input $x$, given a true label $\gamma$ and a threshold $\theta$ is summarized by the following updates:
 \begin{align}
-  S &= \sum_{i=1}^n w_i*x_i > 0  \\
+  S &= \sum_{i=1}^n w_ix_i > 0  \\
   \kappa &= \begin{cases} 
+  \label{eq:piecewise_threshold_function}
     +1 \textrm{ if $S$} > \theta \\
     -1 \textrm{ otherwise} 
   \end{cases} \\
   w_{new} &= w_{old} + (\kappa - \gamma)x.
 \end{align}
 
-As can be seen from above, the perceptron learns by changing its weights, as this causes the same input to give a different $S$ which in turn could give a different predicted value $\kappa$. Following this learning rule, it can be proven that the perceptron model converges in finite time to a set of weights result in a perfect classification for all data points in the dataset. A simple implementation of the perceptron was used to solve the sample datasets presented earlier (Fig \ref{fig:perceptron_solution}).
+As can be seen from above, the perceptron learns by changing its weights, as this causes the same input to give a different $S$ which in turn could give a different predicted value $\kappa$. Following this learning rule, it can be proven that the perceptron model converges in finite time to a set of weights that result in a perfect classification for all data points in the dataset. A simple implementation of the perceptron was used to solve the sample datasets presented earlier (Fig \ref{fig:perceptron_solution}).
 
 \begin{figure}[!h]
   \centering
@@ -56,18 +58,188 @@ As can be seen from above, the perceptron learns by changing its weights, as thi
     \centering
     \includegraphics[width=\linewidth]{figures/perceptron_non_solvable.pdf}
   \end{subfigure}
-  \caption{The perceptron model can be used to solve binary classification in linearly separable datasets as in the left image. After training, all points below the shown line of separation would be classified as -1, and all points above the line would be classified as +1. Seemingly, this behavior would correctly extrapolate to unseen datapoints from a similar distribution. In the case of non linearly separable datasets, the perceptron keeps adjusting its weights but never reaches a solution which correctly classifies all data inputs, meaning the model quits after a set limit of iterations through the dataset. This results in a having a line that clearely does not separate the two classes (Right).}
+  \caption{The perceptron model can be used to solve binary classification in linearly separable datasets as in the left image. After training, all points below the shown line of separation would be classified as -1, and all points above the line would be classified as +1. Seemingly, this behavior would correctly extrapolate to unseen data points from a similar distribution. In the case of non linearly separable datasets, the perceptron keeps adjusting its weights but never reaches a solution which correctly classifies all data inputs, meaning the model quits after a set limit of iterations through the dataset. This results in a having a line that clearly does not separate the two classes (Right).}
   \label{fig:perceptron_solution}
+\end{figure}
+
+The perceptron model did exceptionally well in solving such binary problems when it was introduced, but its lack of versatility when facing non linearly separable datasets resulted in an echoing cry of concern as to how realistic of a learner it could be. In fact, the scathing criticism that the perceptron model received lead to a 10-year hiatus in research on perceptrons \cite{minsky1969perceptrons}. Researchers who worked on the perceptron and neural network fields published under the umbrellas of  "adaptive signal processing", "pattern recognition", and "biological modeling" \cite{Yadav2015}. Slowly but surely, some loyalists to the neural machine learning perspective worked on enhancements to the perceptron model, leading to breakthroughs that skewed public opinion back in favor of what researchers now call neural networks: a group of perceptrons that are linked together to perform learning on datasets that one perceptron alone couldn't learn. 
+
+The first breakthrough came when scientists put several neurons together in different topologies (Fig \ref{fig:perceptron_layers_example}), calling them a neural network. In a neural network, layers can be defined as a collection of nodes that are fed data from a previous layer, perform a calculation on this data, and pass it to another layer or as a final result.  Although the neural network could approximate more functions, there was no clear way to tune the learning rule from one layer to another. This is when two important ideas came about: first, a realization that choosing a different, continuous activation function (as opposed to the discrete step function) could mean that a derivative could be taken (Fig. \ref{fig:activation_functions}); second, a method by which the chain rule (from calculus) can be employed on the these derivatives that allows error calculations to be passed down from layer to layer reliably, a method called Back Propagation (Fig. \ref{fig:back_propagation}). Together, these breakthroughs caused a resurgence in the field of neural networks which used perceptrons as their building block. When the activation function changed from a step function, the field moved away from the perceptron naming convention, and used the term \textit{learning units} instead (Fig. \ref{fig:activation_functions}, \ref{fig:perceptron_layers_example}). The name change is also because the learning rule changes with the change of the activation function, which moves the learning unit further away from the initial conceptualization of the perceptron model.
+
+
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}{.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/stepfunction.pdf}
+    \end{subfigure} %
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/logisticfunction.pdf}
+    \end{subfigure}
+  \caption{Different activation functions can be applied to the perceptron model. The simplest and earliest activation function is the step function (Left) which outputs either a $+1$ or $-1$. A disadvantage of the step function is that small changes in the weighted sum ($S$) could cause a large change in the output ($\kappa$). This is solved by the sigmoid activation function (right) which gives a output (between $0$ and $+1$) that is proportional to $\S$ within a given range. When a perceptron implements a sigmoid activation unit, it is referred to as a sigmoid learning unit.}
+  \label{fig:activation_functions}
 \end{figure}
 
 
 
-  %TODO: Could talk about how to find if a datset is linearly separable. Could we use Perceptrons to do it?
+% Credit to http://tex.stackexchange.com/questions/140782/drawing-a-neural-network-architecture
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}{0.20\linewidth}
+    \begin{tikzpicture}
+    [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+    ]
+        \node[cnode=red,label=0:$\kappa$] (s) at (2,-3) {};
+        \node at (0,-4) {$\vdots$};
+        % \node at (3,-4) {$\vdots$};
+        \foreach \x in {1,...,4}
+        {   \pgfmathparse{\x<4 ? \x : "n"}
+            \node[cnode=blue,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
+            \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
+        }
+    \end{tikzpicture}
+  \end{subfigure}  
+  \begin{subfigure}{0.30\linewidth}
+  % middle figure
+  \centering
+  \begin{tikzpicture}
+    [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+    ]
+        % drwaw the nodes
+        \node[cnode=blue, label=180:$x_1$] (s) at (0,-2) {};
+        \node[cnode=blue, label=180:$x_2$] (s) at (0,-6) {};
+        \node[cnode=gray, label=90:$h$] (s) at (2,-4) {};
+        \node[cnode=red,label=90:$\kappa$] (s) at (4,-4) {};
+
+        % draw the lines
+        \draw[->] (0,-2) -- (2,-4);
+        \draw[->] (0,-6) -- (2,-4);
+        \draw[->] (0,-2) -- (4,-4);
+        \draw[->] (0,-6) -- (4,-4);
+        \draw[->] (2,-4) -- (4,-4);
+    \end{tikzpicture}
+  \end{subfigure}  
+  \begin{subfigure}{0.40\linewidth}
+    \centering
+    \begin{tikzpicture}
+    [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+    ]
+        \node[cnode=red,label=0:$\kappa$] (s) at (5.5,-3) {};
+        \node at (0,-4) {$\vdots$};
+        \node at (3,-4) {$\vdots$};
+        \foreach \x in {1,...,4}
+        {   \pgfmathparse{\x<4 ? \x : "n"}
+            \node[cnode=blue,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
+            \node[cnode=gray,label=90:$\varphi_{\pgfmathresult}$] (l-\x) at (1.5,{-\x-div(\x,4)}) {};
+            \node[cnode=gray,label=90:$\phi_{\pgfmathresult}$] (p-\x) at (3,{-\x-div(\x,4)}) {};
+            \draw[->] (p-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
+        }
+        \foreach \x in {1,...,4}
+        {   \foreach \y in {1,...,4}
+            {   
+              \draw[->] (x-\x) -- (l-\y);
+              \draw[->] (l-\x) -- (p-\y);
+            }
+        }
+    \end{tikzpicture}
+  \end{subfigure}
+  \caption{Perceptrons linked in networks with different topologies. Blue represents input notes, gray represents hidden nodes, and red represents output nodes. The left network contains only one layer, the input layer, with its associated weights that feed into the output layer. This network essentially simulates a computation that is equivalent to the perceptron model. The center network contains a hidden layer composed of simply 1 node. This network can solve the XOR problem, and is able to solve the linearly inseparable dataset in Fig \ref{fig:two_classes_example}. The more nodes added to the hidden layer and the more hidden layers there are, the more communication happens between the nodes in the previous layer, and therefore the higher the abstraction. The network on the right is a more dense network with two hidden layers and many more hidden nodes.}
+  \label{fig:perceptron_layers_example}
+\end{figure}
+
+A common continuous activation function for learning units is the sigmoid learning unit. Instead of the stepwise function in equation \ref{eq:piecewise_threshold_function}, the output function becomes
+\begin{align}
+  \kappa &= \sigma(S) = \frac{1}{1+e^{-S}}
+\end{align}
+which is bounded by 0 and 1. This function is popular because its derivative is rather simple to compute and leads directly into the theory of back propagation. When the sigmoid function is used, the learning rule becomes a minimization of an error term using gradient descent. For a data point with target classification $\lambda$ and predicted classification $\kappa$, the error term is described as
+$$ \epsilon = (\lambda- \kappa)^2 $$
+and is called MSE and is derived in \ref{sec:regression_supervised_learning}. Gradient descent is an iterative approach to finding the maximum or minimum of a continuous function by using its derivative (Fig. \ref{fig:gradient_descent}).
+
+
+For example, if a learning unit in a predicts an output of $\kappa$ with an error $\epsilon$ and it has two learning units feeding it
+
+
+\begin{align*}
+  \begin{tikzpicture}
+    [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+    ]
+        \node[cnode=red,label=0:{$\kappa$, error $\epsilon$}] (s) at (2,-1.5) {$y$};
+        \foreach \x in {1,...,2}
+        {   \pgfmathparse{\x}
+            \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,\x-3) {};
+            \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
+        }
+  \end{tikzpicture}
+\end{align*}
+and keeping in mind that $\kappa$ is $\sigma(S) = \frac{1}{1+e^{-S}} = \frac{1}{1+e^{-\sum_{i=1}^n w_ix_i}}$ then the error can be expressed as 
+$$ \epsilon = (\lambda - \kappa)^2  =  (\lambda - \sigma(S))^2$$ 
+or in our example  
+$$ \epsilon = \Big(\lambda - \frac{1}{1+e^{-w_1x_1-w_2x_2}}\Big)^2$$
+Using gradient descent, minimizing $\epsilon$ with respect to node $x_1$ requires us to change $w_1$ by the negative of its gradient. This gradient is 
+
+\begin{align}
+  \frac{\partial MSE}{\partial w_1} = \frac{\partial(\lambda - \sigma(S))^2}{\partial w_1}  = \frac{\partial\sigma(S)}{\partial w_i}2(\lambda - \sigma(S))
+  \label{eq:gradient_descent_on_sigma}
+\end{align}
+
+because $\sigma(S)$ is the only function of $w_i$. This is where having an activation function that can be easily differentiated is advantageous. For the sigma function, the derivative evaluates to
+\begin{align}
+\frac{\partial\sigma(S)}{\partial w_i} =  \frac{\partial \frac{1}{1+e^{-\sum_{j=1}^n w_jx_j}}}{\partial w_i} = \frac{x_ie^{-\sum_{j=1}^n w_jx_j}}{\Big({1+e^{-\sum_{j=1}^n w_jx_j}}\Big)^2} = \sigma(S)^\prime.
+\label{eq:sigma_derivative}
+\end{align}
+The last step is carried for notational simplicity. Combining equations \ref{eq:gradient_descent_on_sigma} and \ref{eq:sigma_derivative}, we find that the weight of the $i$th node $w_i$ must be changed by the negative of the gradient
+
+\begin{align*}
+  2\sigma(S)^\prime(\lambda - \sigma(S))
+\end{align*}
+which leads to a weight update rule of 
+\begin{align}
+  w_{i_{t+1}} = w_{i_t} - 2\sigma(S)^\prime(\lambda - \sigma(S))
+  \label{eq:update_rule_for_sigma}
+\end{align}
+
+In this way, the error that is produced at the top layer, where the final classification decision is contrasted with the desired decision, trickles down to all lower layers, with each node changing its weights according to the error of the upper node. Back propagation is worked on out example above in Figure \ref{fig:back_propagation}.
+
+
+\begin{figure}[!h]
+  \begin{subfigure}{0.45\linewidth}
+    \begin{tikzpicture}
+      [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+      ]
+          \node[cnode=red,label=0:{$\kappa_t$, error $\epsilon_t$}] (s) at (2,-1.5) {$y$};
+          \foreach \x in {1,...,2}
+          {   \pgfmathparse{\x}
+              \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,\x-3) {};
+              \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
+          }
+    \end{tikzpicture}
+    \caption{at time $t$}
+  \end{subfigure}
+  \begin{subfigure}{0.45\linewidth}
+    \begin{tikzpicture}
+      [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
+      ]
+          \node[cnode=red,label=0:{$\kappa_{t+1}$, error $\epsilon_{t+1}$}] (s) at (5,3) {$y$};
+          \foreach \x in {1,...,2}
+          {   \pgfmathparse{\x}
+              % z=\x-1
+              \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at ($(0,0)+ (0, {\x*2}) $) {};
+              \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult} - 2\omega_{\pgfmathresult}x_{\pgfmathresult}(\lambda - \kappa_t)$} (s);
+          }
+    \end{tikzpicture}
+    \caption{at time $t+1$}
+  \end{subfigure}
+  \caption{Back propagation works by minimizing the error function using gradient descent. In this case, the error function is the MSE, and its partial derivative with respect to each weight from the $i$th node in the previous layer is $2w_ix_i(\lambda - \kappa_t$ where $\lambda$ is the desired outcome and $\kappa_t$ is the predicted outcome at iteration $t$. In each iteration, applying gradient descent results in a move towards the opposite of the gradient, meaning partial derivative of the error with respect to that weight is negated from the weight (right). This method is guaranteed to converge, however slowly, over well defined continuous activation functions, an example of which is the sigmoid function (Fig. \ref{fig:activation_functions}).}
+  \label{fig:back_propagation}
+\end{figure}
 
 
 
 
-In this subset of supervised learning, the input and output are both categorial data, as apposed to numbers in a range. The cononical example of categorial data for supervised learning is swimming pool opening based on weather conditions. In this example, there are several weather-related features such as \textit{Outlook, Temperature, Humidity,} and \textit{Windy}. The \textit{Outlook} feature could contain categories such as sunny, overcast, or rainy; the \textit{Temperature} feature could include categories such as hot or cold; the windy category could include false or true. All these features contain values from finite set of possiblities. 
+
+%TODO: Could talk about how to find if a datset is linearly separable. Could we use Perceptrons to do it?
+In this subset of supervised learning, the input and output are both categorical data, as apposed to numbers in a range. The cononical example of categorial data for supervised learning is swimming pool opening based on weather conditions. In this example, there are several weather-related features such as \textit{Outlook, Temperature, Humidity,} and \textit{Windy}. The \textit{Outlook} feature could contain categories such as sunny, overcast, or rainy; the \textit{Temperature} feature could include categories such as hot or cold; the windy category could include false or true. All these features contain values from finite set of possibilities. 
 
 
 

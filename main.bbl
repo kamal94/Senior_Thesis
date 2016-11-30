@@ -34,6 +34,14 @@ W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   \url{http://ecee.colorado.edu/~ecen4831/lectures/NNet2.html}, accessed:
   2016-10-16.
 
+\bibitem{minsky1969perceptrons}
+M.~Minsky and S.~Papert, ``Perceptrons.'' 1969.
+
+\bibitem{Yadav2015}
+N.~Yadav, A.~Yadav, and M.~Kumar, \emph{History of Neural Networks}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Dordrecht: Springer Netherlands, 2015, pp.
+  13--15.
+
 \bibitem{Finney1996}
 D.~J. Finney, ``A note on the history of regression,'' \emph{Journal of Applied
   Statistics}, vol.~23, no.~5, pp. 555--558, 1996.

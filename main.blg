@@ -18,60 +18,61 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: main.bib.bib
 Warning--string name "october" is undefined
---line 11 of file main.bib.bib
-Repeated entry---line 36 of file main.bib.bib
+--line 28 of file main.bib.bib
+Repeated entry---line 53 of file main.bib.bib
  : @online{Epilepsy.com.surgery
  :                             ,
 I'm skipping whatever remains of this entry
 Warning--string name "october" is undefined
---line 62 of file main.bib.bib
+--line 79 of file main.bib.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in britanica1i2016
+Warning--empty journal in minsky1969perceptrons
 Warning--missing publisher in Locke1841
 Warning--empty journal in paxinos2009
 
 Done.
-You've used 33 entries,
+You've used 35 entries,
             4087 wiz_defined-function locations,
-            1582 strings with 25071 characters,
-and the built_in function-call counts, 26210 in all, are:
-= -- 2118
-> -- 775
-< -- 213
-+ -- 417
-- -- 151
-* -- 1277
-:= -- 3915
-add.period$ -- 65
-call.type$ -- 33
-change.case$ -- 31
-chr.to.int$ -- 438
-cite$ -- 36
-duplicate$ -- 1873
-empty$ -- 1918
-format.name$ -- 175
-if$ -- 6087
+            1594 strings with 25340 characters,
+and the built_in function-call counts, 27314 in all, are:
+= -- 2200
+> -- 803
+< -- 220
++ -- 431
+- -- 156
+* -- 1324
+:= -- 4079
+add.period$ -- 69
+call.type$ -- 35
+change.case$ -- 32
+chr.to.int$ -- 456
+cite$ -- 39
+duplicate$ -- 1955
+empty$ -- 2020
+format.name$ -- 182
+if$ -- 6346
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 357
-newline$ -- 132
-num.names$ -- 32
-pop$ -- 804
+int.to.str$ -- 35
+missing$ -- 371
+newline$ -- 138
+num.names$ -- 34
+pop$ -- 847
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2033
+skip$ -- 2117
 stack$ -- 0
-substring$ -- 1088
-swap$ -- 1600
-text.length$ -- 67
+substring$ -- 1131
+swap$ -- 1658
+text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 33
-warning$ -- 3
-while$ -- 103
-width$ -- 35
-write$ -- 360
+type$ -- 35
+warning$ -- 4
+while$ -- 109
+width$ -- 37
+write$ -- 375
 (There was 1 error message)

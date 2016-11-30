@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  28 NOV 2016 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  30 NOV 2016 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,59 +238,12 @@ LaTeX Info: Redefining \] on input line 2666.
 Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen142
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count110
-)
-\csq@reset=\count111
-\csq@gtype=\count112
-\csq@glevel=\count113
-\csq@qlevel=\count114
-\csq@maxlvl=\count115
-\csq@tshold=\count116
-\csq@ltx@everypar=\toks21
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
-)
-Package csquotes Info: Enabling multilingual quotes.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
-Package: neuralnetwork 2013/07/18 v1.0 Neural network diagrams, Mark Kuckian Co
-wan, mark@battlesnake.co.uk
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks22
-\XKV@tempa@toks=\toks23
-)
-\XKV@depth=\count117
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks24
+\pgfutil@everybye=\toks21
 \pgfutil@tempdima=\dimen143
 \pgfutil@tempdimb=\dimen144
 
@@ -315,12 +268,12 @@ Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks25
-\pgfkeys@temptoks=\toks26
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks27
+\pgfkeys@tmptoks=\toks24
 ))
 \pgf@x=\dimen147
 \pgf@y=\dimen148
@@ -332,13 +285,13 @@ ode.tex
 \pgf@yc=\dimen154
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count118
-\c@pgf@countb=\count119
-\c@pgf@countc=\count120
-\c@pgf@countd=\count121
-\t@pgf@toka=\toks28
-\t@pgf@tokb=\toks29
-\t@pgf@tokc=\toks30
+\c@pgf@counta=\count110
+\c@pgf@countb=\count111
+\c@pgf@countc=\count112
+\c@pgf@countd=\count113
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -356,8 +309,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count122
-\pgfsyssoftpath@bigbuffer@items=\count123
+\pgfsyssoftpath@smallbuffer@items=\count114
+\pgfsyssoftpath@bigbuffer@items=\count115
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -386,11 +339,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen155
-\pgfmath@count=\count124
+\pgfmath@count=\count116
 \pgfmath@box=\box31
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -411,7 +364,7 @@ code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count125
+\c@pgfmathroundto@lastzeros=\count117
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -449,7 +402,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count126
+\pgf@picture@serial@count=\count118
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -484,7 +437,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen179
-\pgf@sys@shading@range@num=\count127
+\pgf@sys@shading@range@num=\count119
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -537,8 +490,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen182
 \pgffor@skip=\dimen183
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -547,7 +500,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count128
+\pgf@plot@mark@count=\count120
 \pgfplotmarksize=\dimen184
 )
 \tikz@lastx=\dimen185
@@ -560,24 +513,75 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box38
 \tikz@tempbox=\box39
 \tikz@tempbox@bg=\box40
-\tikztreelevel=\count129
-\tikznumberofchildren=\count130
-\tikznumberofcurrentchild=\count131
-\tikz@fig@count=\count132
+\tikztreelevel=\count121
+\tikznumberofchildren=\count122
+\tikznumberofcurrentchild=\count123
+\tikz@fig@count=\count124
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count133
-\pgfmatrixcurrentcolumn=\count134
-\pgf@matrix@numberofcolumns=\count135
+\pgfmatrixcurrentrow=\count125
+\pgfmatrixcurrentcolumn=\count126
+\pgf@matrix@numberofcolumns=\count127
 )
-\tikz@expandcount=\count136
+\tikz@expandcount=\count128
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count129
+)
+\csq@reset=\count130
+\csq@gtype=\count131
+\csq@glevel=\count132
+\csq@qlevel=\count133
+\csq@maxlvl=\count134
+\csq@tshold=\count135
+\csq@ltx@everypar=\toks33
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+Package: neuralnetwork 2013/07/18 v1.0 Neural network diagrams, Mark Kuckian Co
+wan, mark@battlesnake.co.uk
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count136
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
@@ -705,7 +709,7 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 66.
+(csquotes)                Cannot enable multilingual quotes on input line 68.
 
 (./main.aux (./outline.aux) (./introdution.aux)
 (./history_of_machine_learning.aux) (./supervised_learning.aux)
@@ -713,18 +717,18 @@ Package csquotes Warning: No multilingual support.
 (./Sugihara.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 -- Lines per column: 32 (exact).
 Package caption Info: Begin \AtBeginDocument code.
@@ -791,7 +795,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 68.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 70.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -846,7 +850,7 @@ lusion: multiple pdfs with page group included in a single page
 File: figures/perceptron_solvable.pdf Graphic file (type pdf)
 
 <use figures/perceptron_solvable.pdf>
-Package pdftex.def Info: figures/perceptron_solvable.pdf used on input line 53.
+Package pdftex.def Info: figures/perceptron_solvable.pdf used on input line 55.
 
 (pdftex.def)             Requested size: 230.18253pt x 153.45427pt.
 
@@ -855,82 +859,133 @@ File: figures/perceptron_non_solvable.pdf Graphic file (type pdf)
 
 <use figures/perceptron_non_solvable.pdf>
 Package pdftex.def Info: figures/perceptron_non_solvable.pdf used on input line
- 57.
+ 59.
 (pdftex.def)             Requested size: 230.18253pt x 153.45427pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 <./figures/perceptron_solvable.pdf> <./figures/perceptron_non_solvable.p
-df
+[7] <figures/stepfunction.pdf, id=110, 722.7pt x 505.89pt>
+File: figures/stepfunction.pdf Graphic file (type pdf)
+
+<use figures/stepfunction.pdf>
+Package pdftex.def Info: figures/stepfunction.pdf used on input line 74.
+(pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
+
+<figures/logisticfunction.pdf, id=111, 722.7pt x 505.89pt>
+File: figures/logisticfunction.pdf Graphic file (type pdf)
+
+<use figures/logisticfunction.pdf>
+Package pdftex.def Info: figures/logisticfunction.pdf used on input line 78.
+(pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
+ [8 <./figures/perceptron_solvable.pdf> <./figures/perceptron_non_solvable.pdf
 
 pdfTeX warning: pdflatex (file ./figures/perceptron_non_solvable.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
->] <figures/clas_tree.pdf, id=148, 1601.985pt x 1134.2375pt>
+>]
+Overfull \hbox (10.166pt too wide) in paragraph at lines 101--102
+[][] 
+ []
+
+
+Overfull \hbox (5.7475pt too wide) in paragraph at lines 121--122
+ [][] 
+ []
+
+
+Overfull \hbox (15.80103pt too wide) in paragraph at lines 145--146
+ [][] 
+ []
+
+[9 <./figures/stepfunction.pdf> <./figures/logisticfunction.pdf
+
+pdfTeX warning: pdflatex (file ./figures/logisticfunction.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `fig:gradient_descent' on page 10 undefined on input l
+ine 157.
+
+[10]
+Overfull \hbox (50.28458pt too wide) in paragraph at lines 230--231
+[][] 
+ []
+
+[11] [12] <figures/clas_tree.pdf, id=208, 1601.985pt x 1134.2375pt>
 File: figures/clas_tree.pdf Graphic file (type pdf)
 
 <use figures/clas_tree.pdf>
-Package pdftex.def Info: figures/clas_tree.pdf used on input line 117.
+Package pdftex.def Info: figures/clas_tree.pdf used on input line 289.
 (pdftex.def)             Requested size: 230.18253pt x 162.96317pt.
 
-<figures/reg_tree.pdf, id=149, 1057.9525pt x 632.3625pt>
+<figures/reg_tree.pdf, id=209, 1057.9525pt x 632.3625pt>
 File: figures/reg_tree.pdf Graphic file (type pdf)
 
 <use figures/reg_tree.pdf>
-Package pdftex.def Info: figures/reg_tree.pdf used on input line 122.
+Package pdftex.def Info: figures/reg_tree.pdf used on input line 294.
 (pdftex.def)             Requested size: 230.18253pt x 137.58597pt.
 
-<figures/clf_tree_plot.pdf, id=150, 722.7pt x 505.89pt>
+<figures/clf_tree_plot.pdf, id=210, 722.7pt x 505.89pt>
 File: figures/clf_tree_plot.pdf Graphic file (type pdf)
 
 <use figures/clf_tree_plot.pdf>
-Package pdftex.def Info: figures/clf_tree_plot.pdf used on input line 127.
+Package pdftex.def Info: figures/clf_tree_plot.pdf used on input line 299.
 (pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
 
-<figures/reg_tree_plot.pdf, id=151, 722.7pt x 505.89pt>
+<figures/reg_tree_plot.pdf, id=211, 722.7pt x 505.89pt>
 File: figures/reg_tree_plot.pdf Graphic file (type pdf)
 
 <use figures/reg_tree_plot.pdf>
-Package pdftex.def Info: figures/reg_tree_plot.pdf used on input line 132.
+Package pdftex.def Info: figures/reg_tree_plot.pdf used on input line 304.
 (pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
- [9]
-<figures/error_lines.pdf, id=155, 722.7pt x 505.89pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/error_lines.pdf, id=212, 722.7pt x 505.89pt>
 File: figures/error_lines.pdf Graphic file (type pdf)
 
 <use figures/error_lines.pdf>
-Package pdftex.def Info: figures/error_lines.pdf used on input line 145.
+Package pdftex.def Info: figures/error_lines.pdf used on input line 317.
 (pdftex.def)             Requested size: 469.75502pt x 328.8323pt.
- [10 <./figures/clas_tree.pdf> <./figures/reg_tree.pdf> <./figures/clf_tree_plo
-t.pdf> <./figures/reg_tree_plot.pdf
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 <./figures/clas_tree.pdf> <./figures/reg_tree.pdf> <./figures/clf_tree
+_plot.pdf> <./figures/reg_tree_plot.pdf
 
 pdfTeX warning: pdflatex (file ./figures/reg_tree_plot.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] [11 <./figures/error_lines.pdf>]
-<figures/regression_log_example_1.pdf, id=301, 722.7pt x 505.89pt>
+>] <figures/regression_log_example_1.pdf, id=306, 722.7pt x 505.89pt>
 File: figures/regression_log_example_1.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_1.pdf>
 Package pdftex.def Info: figures/regression_log_example_1.pdf used on input lin
-e 176.
+e 348.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
 
-<figures/regression_log_example_2.pdf, id=302, 722.7pt x 505.89pt>
+<figures/regression_log_example_2.pdf, id=307, 722.7pt x 505.89pt>
 File: figures/regression_log_example_2.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_2.pdf>
 Package pdftex.def Info: figures/regression_log_example_2.pdf used on input lin
-e 180.
+e 352.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
 
-<figures/regression_log_example_3.pdf, id=303, 722.7pt x 505.89pt>
+<figures/regression_log_example_3.pdf, id=308, 722.7pt x 505.89pt>
 File: figures/regression_log_example_3.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_3.pdf>
 Package pdftex.def Info: figures/regression_log_example_3.pdf used on input lin
-e 184.
+e 356.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
-) [12 <./figures/regression_log_example_1.pdf> <./figures/regression_log_exampl
-e_2.pdf
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [15 <./figures/error_lines.pdf>] [16 <./figures/regression_log_example_1.pdf>
+ <./figures/regression_log_example_2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/regression_log_example_2.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -941,133 +996,133 @@ lusion: multiple pdfs with page group included in a single page
 >]
 \openout2 = `unsupervised_learning.aux'.
 
- (./unsupervised_learning.tex) [13
+ (./unsupervised_learning.tex) [17
 
 
 ]
 \openout2 = `reinforcement_learning.aux'.
 
- (./reinforcement_learning.tex) [14
+ (./reinforcement_learning.tex) [18
 
 
 ]
 \openout2 = `Epilepsy.aux'.
 
 
-(./Epilepsy.tex [15
+(./Epilepsy.tex [19
 
 
-] [16] [17])
-Overfull \hbox (87.0781pt too wide) in paragraph at lines 55--92
+] [20] [21])
+Overfull \hbox (87.0781pt too wide) in paragraph at lines 55--94
 []\OT1/ptm/m/n/12 COUD POS-SI-BLE ADD MORE ABOUT AL-TER-NA-TIVE MEDICINE (http:
 //www.epilepsy.com/learn/treating-
  []
 
-[18]
+[22]
 \openout2 = `Sugihara.aux'.
 
- (./Sugihara.tex) [19
+ (./Sugihara.tex) [23
 
 
-] [20
+] [24
 
 ]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no º in font ptmr7t!
- [21]
-<figures/rat_brain_schematic.png, id=439, 1040.88875pt x 604.2575pt>
+ [25]
+<figures/rat_brain_schematic.png, id=497, 1040.88875pt x 604.2575pt>
 File: figures/rat_brain_schematic.png Graphic file (type png)
 
 <use figures/rat_brain_schematic.png>
-Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 140
+Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 142
 .
 (pdftex.def)             Requested size: 446.26582pt x 259.06038pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rat_scull_and_instrument.png, id=441, 615.29875pt x 675.52374pt>
+<figures/rat_scull_and_instrument.png, id=499, 615.29875pt x 675.52374pt>
 File: figures/rat_scull_and_instrument.png Graphic file (type png)
 
 <use figures/rat_scull_and_instrument.png>
 Package pdftex.def Info: figures/rat_scull_and_instrument.png used on input lin
-e 148.
+e 150.
 (pdftex.def)             Requested size: 446.26582pt x 489.95348pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/brain_region_lump.png, id=442, 230.36063pt x 122.95938pt>
+<figures/brain_region_lump.png, id=500, 230.36063pt x 122.95938pt>
 File: figures/brain_region_lump.png Graphic file (type png)
 
 <use figures/brain_region_lump.png>
-Package pdftex.def Info: figures/brain_region_lump.png used on input line 156.
+Package pdftex.def Info: figures/brain_region_lump.png used on input line 158.
 (pdftex.def)             Requested size: 446.26582pt x 238.21817pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22] [23 <./figures/rat_brain_schematic.png>] [24 <./figures/rat_scull_and_inst
-rument.png>] [25 <./figures/brain_region_lump.png>]
-<figures/sample_pairwise_causality_measure.pdf, id=459, 578.16pt x 433.62pt>
+[26] [27 <./figures/rat_brain_schematic.png>] [28 <./figures/rat_scull_and_inst
+rument.png>] [29 <./figures/brain_region_lump.png>]
+<figures/sample_pairwise_causality_measure.pdf, id=516, 578.16pt x 433.62pt>
 File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
 
 <use figures/sample_pairwise_causality_measure.pdf>
 Package pdftex.def Info: figures/sample_pairwise_causality_measure.pdf used on 
-input line 191.
+input line 193.
 (pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
 
-<figures/diff_in_sample_size.pdf, id=460, 794.97pt x 614.295pt>
+<figures/diff_in_sample_size.pdf, id=517, 794.97pt x 614.295pt>
 File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
 
 <use figures/diff_in_sample_size.pdf>
-Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 200
+Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 202
 .
 (pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rho_hist_all_experiment.pdf, id=461, 578.16pt x 433.62pt>
+<figures/rho_hist_all_experiment.pdf, id=518, 578.16pt x 433.62pt>
 File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
 
 <use figures/rho_hist_all_experiment.pdf>
 Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
- 207.
+ 209.
 (pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/diff_within_pair_hist.pdf, id=462, 578.16pt x 433.62pt>
+<figures/diff_within_pair_hist.pdf, id=519, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 2
-16.
+18.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/diff_within_pair_over_2_hist.pdf, id=463, 578.16pt x 433.62pt>
+<figures/diff_within_pair_over_2_hist.pdf, id=520, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_over_2_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
- line 222.
+ line 224.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/sample_graph.pdf, id=464, 794.97pt x 614.295pt>
+<figures/sample_graph.pdf, id=521, 794.97pt x 614.295pt>
 File: figures/sample_graph.pdf Graphic file (type pdf)
 
 <use figures/sample_graph.pdf>
-Package pdftex.def Info: figures/sample_graph.pdf used on input line 232.
+Package pdftex.def Info: figures/sample_graph.pdf used on input line 234.
 (pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
- [26 <./figures/sample_pairwise_causality_measure.pdf>] [27 <./figures/diff_in_
-sample_size.pdf>] [28 <./figures/rho_hist_all_experiment.pdf>] [29 <./figures/d
-iff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [30 <./
-figures/sample_graph.pdf>] (./main.bbl [31]
+ [30 <./figures/sample_pairwise_causality_measure.pdf>] [31 <./figures/diff_in_
+sample_size.pdf>] [32 <./figures/rho_hist_all_experiment.pdf>] [33 <./figures/d
+iff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [34 <./
+figures/sample_graph.pdf>] (./main.bbl [35]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
@@ -1076,38 +1131,45 @@ Missing character: There is no î in font ptmr7t!
 Missing character: There is no » in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 
-[32]) [33] (./main.aux (./outline.aux) (./introdution.aux)
+[36]) [37] (./main.aux (./outline.aux) (./introdution.aux)
 (./history_of_machine_learning.aux) (./supervised_learning.aux)
 (./unsupervised_learning.aux) (./reinforcement_learning.aux) (./Epilepsy.aux)
-(./Sugihara.aux)) ) 
+(./Sugihara.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18062 strings out of 493054
- 368919 string characters out of 6134759
- 452628 words of memory out of 5000000
- 21163 multiletter control sequences out of 15000+600000
+ 18405 strings out of 493054
+ 375969 string characters out of 6134759
+ 485152 words of memory out of 5000000
+ 21501 multiletter control sequences out of 15000+600000
  44169 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,77p,1920b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex
-8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 7063184 bytes).
+ 55i,19n,77p,1920b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on main.pdf (37 pages, 7107818 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
+ 653 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
