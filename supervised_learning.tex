@@ -2,10 +2,18 @@
 \subsection{Supervised Learning}
 \label{sec:supervised_learning}
 
-Supervised learning can be generally thought of as function approximation where, given a set of inputs and expected outputs, a function from the input to the output is approximated by using a set of learning rules. The input and output of the approximate function depends on the input and output specified by the question posed by the data. Supervised learning can be broken down into two main branches: label classification and regression prediction. 
+Supervised learning can be generally thought of as function approximation where, given a set of inputs and expected outputs, a function from the input to the output is approximated by using a set of learning rules. This approximated function is then used to predict the output of some unseen input.
 
-\subsubsection{Label classification}
-\label{sec:label_classification}
+
+\begin{gather*}
+  f(x) = y \xrightarrow[learning]{supervised} f^*(x)=y \\
+  \text{$f^*$ is an approximates function of $f$ that is learned by only having access to $x$ and $y$.}
+\end{gather*}
+The input and output spaces of $x$ and $y$ can be either categorical or continuous. Categorical data can be of the label form, such as True/False, or simply a finite set of keywords. In the categorical space, there are no inequality relationship between categories, meaning that no one category can be said to be "greater than" or "less than" the other, something that \textit{can} be said of the space of continuous numbers (e.g. one can say $2>1$, but one can not say "green" > "white"). This distinction proves to be important later on when considering how to create mathematical models that can correctly 'learn'. For the cases when the input and output space is categorical, the learning process is commonly referred to as \textit{label classification}, an for cases when these input spaces are continuous, learning is called \textit{regression}. We will first address label classification, going over three main models (Perceptron, Neural Networks, and Decision Trees), and it will be clear why a different approach is required for continuous spaces.
+%todo: mention the importance of (lack of) inequality in categorical dataspace.
+
+\subsubsection{Perceptron}
+\label{sec:perceptron}
 The simplest form of label classification is often referred to as binary classification, in which the classifier (machine learning algorithm) has to discriminate between two classes. For example, a simple binary classification problem would be to discriminate between sets of points on a Cartesian plane (Fig. \ref{fig:two_classes_example}).
 
 \begin{figure}[!h]
@@ -22,7 +30,6 @@ The simplest form of label classification is often referred to as binary classif
   \label{fig:two_classes_example}
 \end{figure}
 
-\
  The perceptron was the first machine learning algorithm designed to solve binary classification in linearly separable conditions. Perceptrons were designed to mimic the McCollough-Pitts neuron model which relied on three main components: inputs, weights, and an activation function. In addition to these components, the perceptron had a learning rule that allowed it to learn when to and not to fire. Listing all the components of a perceptron:
 \begin{itemize}
   \item \textbf{Inputs}: A dataset of $n$ dimensional points. Each input point $x$ consists of $n$ features such that each input point can be describes as $(x_1, x_2, \dots, x_n)$.
@@ -64,7 +71,9 @@ As can be seen from above, the perceptron learns by changing its weights, as thi
 
 The perceptron model did exceptionally well in solving such binary problems when it was introduced, but its lack of versatility when facing non linearly separable datasets resulted in an echoing cry of concern as to how realistic of a learner it could be. In fact, the scathing criticism that the perceptron model received lead to a 10-year hiatus in research on perceptrons \cite{minsky1969perceptrons}. Researchers who worked on the perceptron and neural network fields published under the umbrellas of  "adaptive signal processing", "pattern recognition", and "biological modeling" \cite{Yadav2015}. Slowly but surely, some loyalists to the neural machine learning perspective worked on enhancements to the perceptron model, leading to breakthroughs that skewed public opinion back in favor of what researchers now call neural networks: a group of perceptrons that are linked together to perform learning on datasets that one perceptron alone couldn't learn. 
 
-The first breakthrough came when scientists put several neurons together in different topologies (Fig \ref{fig:perceptron_layers_example}), calling them a neural network. In a neural network, layers can be defined as a collection of nodes that are fed data from a previous layer, perform a calculation on this data, and pass it to another layer or as a final result.  Although the neural network could approximate more functions, there was no clear way to tune the learning rule from one layer to another. This is when two important ideas came about: first, a realization that choosing a different, continuous activation function (as opposed to the discrete step function) could mean that a derivative could be taken (Fig. \ref{fig:activation_functions}); second, a method by which the chain rule (from calculus) can be employed on the these derivatives that allows error calculations to be passed down from layer to layer reliably, a method called Back Propagation (Fig. \ref{fig:back_propagation}). Together, these breakthroughs caused a resurgence in the field of neural networks which used perceptrons as their building block. When the activation function changed from a step function, the field moved away from the perceptron naming convention, and used the term \textit{learning units} instead (Fig. \ref{fig:activation_functions}, \ref{fig:perceptron_layers_example}). The name change is also because the learning rule changes with the change of the activation function, which moves the learning unit further away from the initial conceptualization of the perceptron model.
+\subsubsection{Neural Networks}
+\label{sec:neural_networks}
+Neural networks were first implemented by linking perceptrons together to attempt to solve problems that a single perceptron seemed unable to solve. While initial attempts did not indicate that this approach yielded a distinctly superior model, three major breakthroughs were integral to the uphill battle that neural network researchers had to fight in order to regain recognition in the machine learning field. The first breakthrough came when scientists put several neurons together in different topologies (Fig \ref{fig:perceptron_layers_example}), calling them a neural network. In a neural network, layers can be defined as a collection of nodes that are fed data from a previous layer, perform a calculation on this data, and pass it to another layer or as a final result.  Although the neural network could approximate more functions, there was no clear way to tune the learning rule from one layer to another. This is when the second and third important ideas came about. The second breakthrough was a realization that choosing a different, continuous activation function (as opposed to the discrete step function) could mean that a derivative could be taken (Fig. \ref{fig:activation_functions}). The third was a method by which the chain rule (from calculus) can be employed on the these derivatives that allows error calculations to be passed down from layer to layer reliably, a method called Back Propagation (Fig. \ref{fig:back_propagation}). Together, these breakthroughs caused a resurgence in the field of neural networks which used perceptrons as their building block. When the activation function changed from a step function, the field moved away from the perceptron naming convention, and used the term \textit{learning units} instead (Fig. \ref{fig:activation_functions}, \ref{fig:perceptron_layers_example}). The name change is also because the learning rule changes with the change of the activation function, which moves the learning unit further away from the initial conceptualization of the perceptron model.
 
 
 \begin{figure}[!h]
@@ -90,12 +99,12 @@ The first breakthrough came when scientists put several neurons together in diff
     \begin{tikzpicture}
     [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
     ]
-        \node[cnode=red,label=0:$\kappa$] (s) at (2,-3) {};
+        \node[cnode=green,label=0:$\kappa$] (s) at (2,-3) {};
         \node at (0,-4) {$\vdots$};
         % \node at (3,-4) {$\vdots$};
         \foreach \x in {1,...,4}
         {   \pgfmathparse{\x<4 ? \x : "n"}
-            \node[cnode=blue,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
+            \node[cnode=yellow,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
             \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
         }
     \end{tikzpicture}
@@ -107,10 +116,10 @@ The first breakthrough came when scientists put several neurons together in diff
     [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
     ]
         % drwaw the nodes
-        \node[cnode=blue, label=180:$x_1$] (s) at (0,-2) {};
-        \node[cnode=blue, label=180:$x_2$] (s) at (0,-6) {};
+        \node[cnode=yellow, label=180:$x_1$] (s) at (0,-2) {};
+        \node[cnode=yellow, label=180:$x_2$] (s) at (0,-6) {};
         \node[cnode=gray, label=90:$h$] (s) at (2,-4) {};
-        \node[cnode=red,label=90:$\kappa$] (s) at (4,-4) {};
+        \node[cnode=green,label=90:$\kappa$] (s) at (4,-4) {};
 
         % draw the lines
         \draw[->] (0,-2) -- (2,-4);
@@ -125,12 +134,12 @@ The first breakthrough came when scientists put several neurons together in diff
     \begin{tikzpicture}
     [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
     ]
-        \node[cnode=red,label=0:$\kappa$] (s) at (5.5,-3) {};
+        \node[cnode=green,label=0:$\kappa$] (s) at (5.5,-3) {};
         \node at (0,-4) {$\vdots$};
         \node at (3,-4) {$\vdots$};
         \foreach \x in {1,...,4}
         {   \pgfmathparse{\x<4 ? \x : "n"}
-            \node[cnode=blue,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
+            \node[cnode=yellow,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,{-\x-div(\x,4)}) {};
             \node[cnode=gray,label=90:$\varphi_{\pgfmathresult}$] (l-\x) at (1.5,{-\x-div(\x,4)}) {};
             \node[cnode=gray,label=90:$\phi_{\pgfmathresult}$] (p-\x) at (3,{-\x-div(\x,4)}) {};
             \draw[->] (p-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult}$} (s);
@@ -144,7 +153,7 @@ The first breakthrough came when scientists put several neurons together in diff
         }
     \end{tikzpicture}
   \end{subfigure}
-  \caption{Perceptrons linked in networks with different topologies. Blue represents input notes, gray represents hidden nodes, and red represents output nodes. The left network contains only one layer, the input layer, with its associated weights that feed into the output layer. This network essentially simulates a computation that is equivalent to the perceptron model. The center network contains a hidden layer composed of simply 1 node. This network can solve the XOR problem, and is able to solve the linearly inseparable dataset in Fig \ref{fig:two_classes_example}. The more nodes added to the hidden layer and the more hidden layers there are, the more communication happens between the nodes in the previous layer, and therefore the higher the abstraction. The network on the right is a more dense network with two hidden layers and many more hidden nodes.}
+  \caption{Perceptrons linked in networks with different topologies. Yellow represents input notes, gray represents hidden nodes, and green represents output nodes. The left network contains only one layer, the input layer, with its associated weights that feed into the output layer. This network essentially simulates a computation that is equivalent to the perceptron model. The center network contains a hidden layer composed of simply 1 node. This network can solve the XOR problem, and is able to solve the linearly inseparable dataset in Fig \ref{fig:two_classes_example}. The more nodes added to the hidden layer and the more hidden layers there are, the more communication happens between the nodes in the previous layer, and therefore the higher the abstraction. The network on the right is a more dense network with two hidden layers and many more hidden nodes.}
   \label{fig:perceptron_layers_example}
 \end{figure}
 
@@ -157,14 +166,14 @@ $$ \epsilon = (\lambda- \kappa)^2 $$
 and is called MSE and is derived in \ref{sec:regression_supervised_learning}. Gradient descent is an iterative approach to finding the maximum or minimum of a continuous function by using its derivative (Fig. \ref{fig:gradient_descent}).
 
 
-For example, if a learning unit in a predicts an output of $\kappa$ with an error $\epsilon$ and it has two learning units feeding it
+For example, if a learning unit predicts an output of $\kappa$ with an error $\epsilon$ and it has two learning units feeding it
 
 
 \begin{align*}
   \begin{tikzpicture}
     [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
     ]
-        \node[cnode=red,label=0:{$\kappa$, error $\epsilon$}] (s) at (2,-1.5) {$y$};
+        \node[cnode=green,label=0:{$\kappa$, error $\epsilon$}] (s) at (2,-1.5) {$y$};
         \foreach \x in {1,...,2}
         {   \pgfmathparse{\x}
             \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,\x-3) {};
@@ -176,10 +185,10 @@ and keeping in mind that $\kappa$ is $\sigma(S) = \frac{1}{1+e^{-S}} = \frac{1}{
 $$ \epsilon = (\lambda - \kappa)^2  =  (\lambda - \sigma(S))^2$$ 
 or in our example  
 $$ \epsilon = \Big(\lambda - \frac{1}{1+e^{-w_1x_1-w_2x_2}}\Big)^2$$
-Using gradient descent, minimizing $\epsilon$ with respect to node $x_1$ requires us to change $w_1$ by the negative of its gradient. This gradient is 
+Using gradient descent, minimizing $\epsilon$ with respect to node $x_i$ requires us to change $w_i$ by the negative of its gradient. This gradient is 
 
 \begin{align}
-  \frac{\partial MSE}{\partial w_1} = \frac{\partial(\lambda - \sigma(S))^2}{\partial w_1}  = \frac{\partial\sigma(S)}{\partial w_i}2(\lambda - \sigma(S))
+  \frac{\partial MSE}{\partial w_i} = \frac{\partial(\lambda - \sigma(S))^2}{\partial w_i}  = \frac{\partial\sigma(S)}{\partial w_i}2(\lambda - \sigma(S))
   \label{eq:gradient_descent_on_sigma}
 \end{align}
 
@@ -207,7 +216,7 @@ In this way, the error that is produced at the top layer, where the final classi
     \begin{tikzpicture}
       [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
       ]
-          \node[cnode=red,label=0:{$\kappa_t$, error $\epsilon_t$}] (s) at (2,-1.5) {$y$};
+          \node[cnode=green,label=0:{$\kappa_t$, error $\epsilon_t$}] (s) at (2,-1.5) {$y$};
           \foreach \x in {1,...,2}
           {   \pgfmathparse{\x}
               \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at (0,\x-3) {};
@@ -220,7 +229,7 @@ In this way, the error that is produced at the top layer, where the final classi
     \begin{tikzpicture}
       [   cnode/.style={draw=black,fill=#1,minimum width=3mm,circle},
       ]
-          \node[cnode=red,label=0:{$\kappa_{t+1}$, error $\epsilon_{t+1}$}] (s) at (5,3) {$y$};
+          \node[cnode=green,label=0:{$\kappa_{t+1}$, error $\epsilon_{t+1}$}] (s) at (5,3) {$y$};
           \foreach \x in {1,...,2}
           {   \pgfmathparse{\x}
               % z=\x-1
@@ -233,9 +242,6 @@ In this way, the error that is produced at the top layer, where the final classi
   \caption{Back propagation works by minimizing the error function using gradient descent. In this case, the error function is the MSE, and its partial derivative with respect to each weight from the $i$th node in the previous layer is $2w_ix_i(\lambda - \kappa_t$ where $\lambda$ is the desired outcome and $\kappa_t$ is the predicted outcome at iteration $t$. In each iteration, applying gradient descent results in a move towards the opposite of the gradient, meaning partial derivative of the error with respect to that weight is negated from the weight (right). This method is guaranteed to converge, however slowly, over well defined continuous activation functions, an example of which is the sigmoid function (Fig. \ref{fig:activation_functions}).}
   \label{fig:back_propagation}
 \end{figure}
-
-
-
 
 
 %TODO: Could talk about how to find if a datset is linearly separable. Could we use Perceptrons to do it?
