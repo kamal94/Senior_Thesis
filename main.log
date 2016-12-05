@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  4 DEC 2016 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  5 DEC 2016 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,25 +709,23 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 68.
+(csquotes)                Cannot enable multilingual quotes on input line 67.
 
-(./main.aux (./outline.aux) (./introdution.aux) (./Epilepsy.aux)
-(./history_of_machine_learning.aux) (./supervised_learning.aux)
-(./unsupervised_learning.aux) (./Sugihara.aux))
+(./main.aux (./introdution.aux) (./Sugihara.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 -- Lines per column: 32 (exact).
 Package caption Info: Begin \AtBeginDocument code.
@@ -794,7 +792,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 70.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 69.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -811,44 +809,27 @@ ain.toc [2
  [3] [4
 
 ]
-\openout2 = `outline.aux'.
-
- (./outline.tex)
-[5
-
-]
 \openout2 = `introdution.aux'.
 
- (./introdution.tex) [6
+ (./introdution.tex)
+[5
 
+] (./Epilepsy.tex [6
+
+
+] [7] [8]) [9] (./history_of_machine_learning.tex
+[10
 
 ]
-\openout2 = `Epilepsy.aux'.
-
- (./Epilepsy.tex [7
-
-
-] [8] [9])
-Overfull \hbox (87.0781pt too wide) in paragraph at lines 55--96
-[]\OT1/ptm/m/n/12 COUD POS-SI-BLE ADD MORE ABOUT AL-TER-NA-TIVE MEDICINE (http:
-//www.epilepsy.com/learn/treating-
- []
-
-[10]
-\openout2 = `history_of_machine_learning.aux'.
-
- (./history_of_machine_learning.tex
 
 LaTeX Warning: Reference `sec:label_classification' on page 11 undefined on inp
-ut line 18.
-
-[11
+ut line 21.
 
 
-]) [12]
-\openout2 = `supervised_learning.aux'.
+LaTeX Warning: Reference `ig:perceptron_solution' on page 11 undefined on input
+ line 21.
 
- (./supervised_learning.tex
+[11]) (./supervised_learning.tex [12]
 <figures/twoClasses_separable.pdf, id=54, 722.7pt x 505.89pt>
 File: figures/twoClasses_separable.pdf Graphic file (type pdf)
 
@@ -864,19 +845,12 @@ File: figures/twoClasses_non_separable.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/twoClasses_non_separable.pdf used on input lin
 e 27.
 (pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13
-
-
-] [14 <./figures/twoClasses_separable.pdf> <./figures/twoClasses_non_separable.
-pdf
+ [13 <./figures/twoClasses_separable.pdf> <./figures/twoClasses_non_separable.p
+df
 
 pdfTeX warning: pdflatex (file ./figures/twoClasses_non_separable.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <figures/perceptron_solvable.pdf, id=130, 433.62pt x 289.08pt>
+>] <figures/perceptron_solvable.pdf, id=127, 433.62pt x 289.08pt>
 File: figures/perceptron_solvable.pdf Graphic file (type pdf)
 
 <use figures/perceptron_solvable.pdf>
@@ -884,15 +858,19 @@ Package pdftex.def Info: figures/perceptron_solvable.pdf used on input line 62.
 
 (pdftex.def)             Requested size: 230.18253pt x 153.45427pt.
 
-<figures/perceptron_non_solvable.pdf, id=131, 433.62pt x 289.08pt>
+<figures/perceptron_non_solvable.pdf, id=128, 433.62pt x 289.08pt>
 File: figures/perceptron_non_solvable.pdf Graphic file (type pdf)
 
 <use figures/perceptron_non_solvable.pdf>
 Package pdftex.def Info: figures/perceptron_non_solvable.pdf used on input line
  66.
 (pdftex.def)             Requested size: 230.18253pt x 153.45427pt.
- [15 <./figures/perceptron_solvable.pdf> <./figures/perceptron_non_solvable.pdf
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] [15 <./figures/perceptron_solvable.pdf> <./figures/perceptron_non_solvable
+.pdf
 
 pdfTeX warning: pdflatex (file ./figures/perceptron_non_solvable.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
@@ -909,10 +887,6 @@ File: figures/logisticfunction.pdf Graphic file (type pdf)
 <use figures/logisticfunction.pdf>
 Package pdftex.def Info: figures/logisticfunction.pdf used on input line 87.
 (pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Overfull \hbox (10.166pt too wide) in paragraph at lines 110--111
 [][] 
@@ -931,16 +905,16 @@ Overfull \hbox (15.80103pt too wide) in paragraph at lines 154--155
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16]
-
-LaTeX Warning: Reference `fig:gradient_descent' on page 17 undefined on input l
-ine 166.
-
-[17 <./figures/stepfunction.pdf> <./figures/logisticfunction.pdf
+[16 <./figures/stepfunction.pdf> <./figures/logisticfunction.pdf
 
 pdfTeX warning: pdflatex (file ./figures/logisticfunction.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
+
+LaTeX Warning: Reference `fig:gradient_descent' on page 17 undefined on input l
+ine 166.
+
+[17]
 Overfull \hbox (50.28458pt too wide) in paragraph at lines 239--240
 [][] 
  []
@@ -948,69 +922,84 @@ Overfull \hbox (50.28458pt too wide) in paragraph at lines 239--240
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18] [19] [20] [21] <figures/entropy_fig.pdf, id=237, 722.7pt x 505.89pt>
+[18] [19] [20] [21] <figures/entropy_fig.pdf, id=238, 722.7pt x 505.89pt>
 File: figures/entropy_fig.pdf Graphic file (type pdf)
 
 <use figures/entropy_fig.pdf>
-Package pdftex.def Info: figures/entropy_fig.pdf used on input line 371.
-(pdftex.def)             Requested size: 469.75502pt x 328.8323pt.
+Package pdftex.def Info: figures/entropy_fig.pdf used on input line 372.
+(pdftex.def)             Requested size: 328.82707pt x 230.1803pt.
 
-<figures/tennis_decision_tree_mitchel.png, id=238, 862.22125pt x 528.97626pt>
+<figures/tennis_decision_tree_mitchel.png, id=239, 862.22125pt x 528.97626pt>
 File: figures/tennis_decision_tree_mitchel.png Graphic file (type png)
 
 <use figures/tennis_decision_tree_mitchel.png>
 Package pdftex.def Info: figures/tennis_decision_tree_mitchel.png used on input
- line 378.
+ line 379.
 (pdftex.def)             Requested size: 328.82707pt x 201.73143pt.
- [22] [23 <./figures/entropy_fig.pdf> <./figures/tennis_decision_tree_mitchel.p
+ [22 <./figures/entropy_fig.pdf>] [23 <./figures/tennis_decision_tree_mitchel.p
 ng>]
-<figures/reg_tree.pdf, id=291, 1057.9525pt x 632.3625pt>
+<figures/reg_tree.pdf, id=293, 1057.9525pt x 632.3625pt>
 File: figures/reg_tree.pdf Graphic file (type pdf)
 
 <use figures/reg_tree.pdf>
-Package pdftex.def Info: figures/reg_tree.pdf used on input line 395.
+Package pdftex.def Info: figures/reg_tree.pdf used on input line 396.
 (pdftex.def)             Requested size: 230.18253pt x 137.58597pt.
 
-<figures/reg_tree_plot.pdf, id=292, 722.7pt x 505.89pt>
+<figures/reg_tree_plot.pdf, id=294, 722.7pt x 505.89pt>
 File: figures/reg_tree_plot.pdf Graphic file (type pdf)
 
 <use figures/reg_tree_plot.pdf>
-Package pdftex.def Info: figures/reg_tree_plot.pdf used on input line 400.
+Package pdftex.def Info: figures/reg_tree_plot.pdf used on input line 401.
 (pdftex.def)             Requested size: 230.18253pt x 161.12389pt.
 
-<figures/error_lines.pdf, id=293, 722.7pt x 505.89pt>
+<figures/error_lines.pdf, id=295, 722.7pt x 505.89pt>
 File: figures/error_lines.pdf Graphic file (type pdf)
 
 <use figures/error_lines.pdf>
-Package pdftex.def Info: figures/error_lines.pdf used on input line 411.
-(pdftex.def)             Requested size: 469.75502pt x 328.8323pt.
- [24 <./figures/reg_tree.pdf> <./figures/reg_tree_plot.pdf>] [25 <./figures/err
-or_lines.pdf>]
-<figures/regression_log_example_1.pdf, id=397, 722.7pt x 505.89pt>
+Package pdftex.def Info: figures/error_lines.pdf used on input line 412.
+(pdftex.def)             Requested size: 328.82707pt x 230.1803pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./figures/reg_tree.pdf> <./figures/reg_tree_plot.pdf>] [25 <./figures/erro
+r_lines.pdf>]
+<figures/regression_log_example_1.pdf, id=399, 722.7pt x 505.89pt>
 File: figures/regression_log_example_1.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_1.pdf>
 Package pdftex.def Info: figures/regression_log_example_1.pdf used on input lin
-e 442.
+e 443.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
 
-<figures/regression_log_example_2.pdf, id=398, 722.7pt x 505.89pt>
+<figures/regression_log_example_2.pdf, id=400, 722.7pt x 505.89pt>
 File: figures/regression_log_example_2.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_2.pdf>
 Package pdftex.def Info: figures/regression_log_example_2.pdf used on input lin
-e 446.
+e 447.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
 
-<figures/regression_log_example_3.pdf, id=399, 722.7pt x 505.89pt>
+<figures/regression_log_example_3.pdf, id=401, 722.7pt x 505.89pt>
 File: figures/regression_log_example_3.pdf Graphic file (type pdf)
 
 <use figures/regression_log_example_3.pdf>
 Package pdftex.def Info: figures/regression_log_example_3.pdf used on input lin
-e 450.
+e 451.
 (pdftex.def)             Requested size: 150.32504pt x 105.2288pt.
-) [26 <./figures/regression_log_example_1.pdf> <./figures/regression_log_exampl
-e_2.pdf
+
+<figures/reg_ridge_plot.pdf, id=402, 722.7pt x 505.89pt>
+File: figures/reg_ridge_plot.pdf Graphic file (type pdf)
+
+<use figures/reg_ridge_plot.pdf>
+Package pdftex.def Info: figures/reg_ridge_plot.pdf used on input line 461.
+(pdftex.def)             Requested size: 328.82707pt x 230.1803pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./unsupervised_learning.tex) [26 <./figures/regression_log_example_1.pdf> <.
+/figures/regression_log_example_2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/regression_log_example_2.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -1018,141 +1007,132 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figures/regression_log_example_3.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->]
-\openout2 = `unsupervised_learning.aux'.
-
- (./unsupervised_learning.tex) [27
-
-
-]
+>] [27 <./figures/reg_ridge_plot.pdf>]
 \openout2 = `Sugihara.aux'.
 
- (./Sugihara.tex) [28
-
-
-] [29
+ (./Sugihara.tex [28
 
 ]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no º in font ptmr7t!
- [30]
-<figures/rat_brain_schematic.png, id=515, 1040.88875pt x 604.2575pt>
+) [29] [30
+
+]
+<figures/rat_brain_schematic.png, id=551, 1040.88875pt x 604.2575pt>
 File: figures/rat_brain_schematic.png Graphic file (type png)
 
 <use figures/rat_brain_schematic.png>
-Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 148
+Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 136
 .
 (pdftex.def)             Requested size: 446.26582pt x 259.06038pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/rat_scull_and_instrument.png, id=516, 615.29875pt x 675.52374pt>
+<figures/rat_scull_and_instrument.png, id=552, 615.29875pt x 675.52374pt>
 File: figures/rat_scull_and_instrument.png Graphic file (type png)
 
 <use figures/rat_scull_and_instrument.png>
 Package pdftex.def Info: figures/rat_scull_and_instrument.png used on input lin
-e 156.
+e 144.
 (pdftex.def)             Requested size: 446.26582pt x 489.95348pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/brain_region_lump.png, id=517, 230.36063pt x 122.95938pt>
+<figures/brain_region_lump.png, id=553, 230.36063pt x 122.95938pt>
 File: figures/brain_region_lump.png Graphic file (type png)
 
 <use figures/brain_region_lump.png>
-Package pdftex.def Info: figures/brain_region_lump.png used on input line 164.
+Package pdftex.def Info: figures/brain_region_lump.png used on input line 152.
 (pdftex.def)             Requested size: 446.26582pt x 238.21817pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] [32 <./figures/rat_brain_schematic.png>] [33 <./figures/rat_scull_and_inst
-rument.png>] [34 <./figures/brain_region_lump.png>]
-<figures/sample_pairwise_causality_measure.pdf, id=534, 578.16pt x 433.62pt>
+[31 <./figures/rat_brain_schematic.png>] [32 <./figures/rat_scull_and_instrumen
+t.png>] [33 <./figures/brain_region_lump.png>]
+<figures/sample_pairwise_causality_measure.pdf, id=567, 578.16pt x 433.62pt>
 File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
 
 <use figures/sample_pairwise_causality_measure.pdf>
 Package pdftex.def Info: figures/sample_pairwise_causality_measure.pdf used on 
-input line 199.
+input line 187.
 (pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
 
-<figures/diff_in_sample_size.pdf, id=535, 794.97pt x 614.295pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/diff_in_sample_size.pdf, id=568, 794.97pt x 614.295pt>
 File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
 
 <use figures/diff_in_sample_size.pdf>
-Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 208
+Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 196
 .
 (pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rho_hist_all_experiment.pdf, id=536, 578.16pt x 433.62pt>
+<figures/rho_hist_all_experiment.pdf, id=569, 578.16pt x 433.62pt>
 File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
 
 <use figures/rho_hist_all_experiment.pdf>
 Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
- 215.
+ 203.
 (pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/diff_within_pair_hist.pdf, id=537, 578.16pt x 433.62pt>
+<figures/diff_within_pair_hist.pdf, id=570, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 2
-24.
+12.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/diff_within_pair_over_2_hist.pdf, id=538, 578.16pt x 433.62pt>
+<figures/diff_within_pair_over_2_hist.pdf, id=571, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_over_2_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
- line 230.
+ line 218.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/sample_graph.pdf, id=539, 794.97pt x 614.295pt>
+<figures/sample_graph.pdf, id=572, 794.97pt x 614.295pt>
 File: figures/sample_graph.pdf Graphic file (type pdf)
 
 <use figures/sample_graph.pdf>
-Package pdftex.def Info: figures/sample_graph.pdf used on input line 240.
+Package pdftex.def Info: figures/sample_graph.pdf used on input line 228.
 (pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
- [35 <./figures/sample_pairwise_causality_measure.pdf>] [36 <./figures/diff_in_
-sample_size.pdf>] [37 <./figures/rho_hist_all_experiment.pdf>] [38 <./figures/d
-iff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [39 <./
-figures/sample_graph.pdf>] (./main.bbl
+ [34] [35 <./figures/sample_pairwise_causality_measure.pdf>] [36 <./figures/dif
+f_in_sample_size.pdf>] [37 <./figures/rho_hist_all_experiment.pdf>] [38 <./figu
+res/diff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [3
+9 <./figures/sample_graph.pdf>] (./main.bbl
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
- [40]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no î in font ptmr7t!
+
+[40]
 Missing character: There is no » in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
-
-[41]) [42] (./main.aux (./outline.aux) (./introdution.aux) (./Epilepsy.aux)
-(./history_of_machine_learning.aux) (./supervised_learning.aux)
-(./unsupervised_learning.aux) (./Sugihara.aux))
+ [41]) [42] (./main.aux (./introdution.aux) (./Sugihara.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18409 strings out of 493054
- 376044 string characters out of 6134759
- 488929 words of memory out of 5000000
+ 18386 strings out of 493054
+ 375665 string characters out of 6134759
+ 486319 words of memory out of 5000000
  21509 multiletter control sequences out of 15000+600000
- 44169 words of font info for 87 fonts, out of 8000000 for 9000
+ 43062 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,77p,2179b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,75p,2177b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
@@ -1160,22 +1140,24 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on main.pdf (42 pages, 7172829 bytes).
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on main.pdf (42 pages, 7203597 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
+ 713 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

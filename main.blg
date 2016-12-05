@@ -1,12 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: outline.aux
 A level-1 auxiliary file: introdution.aux
-A level-1 auxiliary file: Epilepsy.aux
-A level-1 auxiliary file: history_of_machine_learning.aux
-A level-1 auxiliary file: supervised_learning.aux
-A level-1 auxiliary file: unsupervised_learning.aux
 A level-1 auxiliary file: Sugihara.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -33,45 +28,45 @@ Warning--missing publisher in Locke1841
 Warning--empty journal in paxinos2009
 
 Done.
-You've used 36 entries,
+You've used 35 entries,
             4087 wiz_defined-function locations,
-            1597 strings with 25393 characters,
-and the built_in function-call counts, 27661 in all, are:
-= -- 2229
-> -- 807
+            1587 strings with 25135 characters,
+and the built_in function-call counts, 27349 in all, are:
+= -- 2206
+> -- 806
 < -- 220
-+ -- 433
++ -- 432
 - -- 157
-* -- 1336
-:= -- 4148
-add.period$ -- 71
-call.type$ -- 36
-change.case$ -- 33
+* -- 1327
+:= -- 4099
+add.period$ -- 69
+call.type$ -- 35
+change.case$ -- 31
 chr.to.int$ -- 456
-cite$ -- 40
-duplicate$ -- 1988
-empty$ -- 2055
+cite$ -- 39
+duplicate$ -- 1957
+empty$ -- 2020
 format.name$ -- 183
-if$ -- 6423
+if$ -- 6351
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 376
-newline$ -- 141
+int.to.str$ -- 35
+missing$ -- 369
+newline$ -- 138
 num.names$ -- 35
-pop$ -- 860
+pop$ -- 838
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2145
+skip$ -- 2120
 stack$ -- 0
-substring$ -- 1132
-swap$ -- 1674
+substring$ -- 1129
+swap$ -- 1659
 text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 36
+type$ -- 35
 warning$ -- 4
 while$ -- 110
-width$ -- 38
-write$ -- 383
+width$ -- 37
+write$ -- 376
 (There was 1 error message)

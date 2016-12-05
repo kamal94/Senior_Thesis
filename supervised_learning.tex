@@ -262,7 +262,7 @@ Some of these networks, if constructed properly, can solve linearly inseparable 
 
 \subsubsection{Decision Trees}
 \label{sec:decision_trees}
-A completely different approach to label classification is that of using decision trees to find the features that are most likely to hint at a correct approach towards finding a solution. For example, consider a problem where both the input and the output of the data is categorical. One such dataset is the swimming pool and weather dataset, in which each data point is a weather description of a day and whether or not the tennis court was open on that day (Table \ref{table:categorial_examples_weather}). In this dataset there are several weather-related features such as \textit{Outlook, Temperature, Humidity,} and \textit{Wind}. The \textit{Outlook} feature could contain categories such as sunny, overcast, or rainy; the \textit{Temperature} feature could include categories such as hot or cold; the windy category could include false or true. All these features contain values from finite set of possibilities. 
+A completely different approach to label classification is that of using decision trees to find the features that are most likely to hint at a correct approach towards finding a solution. For example, consider a problem where both the input and the output of the data is categorical. One such dataset is the swimming pool and weather dataset, in which each data point is a weather description of a day and whether or not the tennis court was open on that day (Table \ref{table:categorial_examples_weather}). In this dataset there are several weather-related features such as \textit{Outlook, Temperature, Humidity,} and \textit{Wind}. The \textit{Outlook} feature could contain categories such as sunny, overcast, or rainy; the \textit{Temperature} feature could include categories such as hot or cold; the wind category could include Strong or Weak. All these features contain values from finite set of possibilities. 
 
 \begin{table}
 \begin{center}
@@ -306,8 +306,9 @@ A completely different approach to label classification is that of using decisio
 
 Through a simple observation at the table, we can perhaps device our own conditions for when the tennis court is open.
 \begin{align*}
-  	\textrm{If outlook}&=\textrm{sunny } \wedge \textrm{ humidity = high} \\
-	\textrm{If outlook}&= \textrm{rainy} \wedge \textrm{windy = true}
+    \textrm{If outlook}&=\textrm{sunny } \wedge \textrm{ humidity = high, then Yes} \\
+    \textrm{If outlook}&= \textrm{rainy } \wedge \textrm{ wind = Strong , then Yes} \\
+    \textrm{Otherwise, No}
 \end{align*}
 
 Although this might be a good rule to follow, it might not generalize well to the rest of the dataset, and inspecting the entire dataset by eye becomes unfeasible beyond $~20$ data points. This is where the decision tree algorithm comes in, offering an automated method of finding such rules by which we can separate data points into \textit{Yes} and \textit{No} piles. In the simplest decision tree algorithm algorithm, the data points are iteratively separated by the feature that splits the data most evenly (or produces the most homogeneity within a feature split). For example, if we were to take the \textit{Wind} feature and split the Strong and Weak wind conditions into two piles, and observe how mixed or 'pure' the piles are, we would get a sense of how well the \textit{Wind} feature can split up our decision (Fig \ref{fig:split_on_wind}).
@@ -336,7 +337,7 @@ Although this might be a good rule to follow, it might not generalize well to th
           \node[cnode=green] (s) at (5,-1) {};
           \node[cnode=green] (s) at (5,-2) {};
     \end{tikzpicture}
-    \caption{The decisions to play or not play tennis when the decision is split on wind conditions. Red balls represent No and green balls represent Yes. As we can tell from this graph, splitting on the Windy feature does not provide a homogeneous set (both sides of the split are not purely green or purely red). This means that we can't conclude that whenever the wind is strong tennis can not be played, vise versa. However, It seems that the split caused us to see a relationship between wind conditions and playing tennis, since when the wind was weak most decisions were to play tennis, while when it was windy most decisions were not to play tennis.}
+    \caption{The decisions to play or not play tennis when the decision is split on wind conditions. Red balls represent No and green balls represent Yes. As we can tell from this graph, splitting on the Wind feature does not provide a homogeneous set (both sides of the split are not purely green or purely red). This means that we can't conclude that whenever the wind is strong tennis can not be played, vise versa. However, It seems that the split caused us to see a relationship between wind conditions and playing tennis, since when the wind was weak most decisions were to play tennis, while when it was wind most decisions were not to play tennis.}
     \label{fig:split_on_wind}
 \end{figure}
 
@@ -345,7 +346,7 @@ This idea of purity or homogeneity is represented in the mathematical formula fo
 \begin{align}
 Entropy = \sum_{i=1}^n p_i log_n(p_i)
 \end{align}
-where $n$ is the number of decisions possible and $p_i$ is the fraction of the decisions that were in the $i$th decision. This definition can be used to calculate the entropy in each of our splits. In our \textit{Windy} feature split example, we can measure the entropy in our Strong and Weak split. In each split our decision possibilities were two (Yes or No); our Strong split had 0.57 fraction No and 0.43 Yes; our Weak split had 0.25 fraction No and 0.75 fraction Yes. So the entropy calculation for the Strong split becomes
+where $n$ is the number of decisions possible and $p_i$ is the fraction of the decisions that were in the $i$th decision. This definition can be used to calculate the entropy in each of our splits. In our \textit{Wind} feature split example, we can measure the entropy in our Strong and Weak split. In each split our decision possibilities were two (Yes or No); our Strong split had 0.57 fraction No and 0.43 Yes; our Weak split had 0.25 fraction No and 0.75 fraction Yes. So the entropy calculation for the Strong split becomes
 
 $$ - \Big(  0.57*log_2(0.57) + 0.43*log_2(0.43)  \Big) = 0.985$$
 and for the Weak split the entropy is
@@ -356,10 +357,10 @@ Figure \ref{fig:entropy_two_decisions} provides some intuition as to what entrop
 \begin{align}
 \textit{Information Gain} = Entropy(S) - \sum_{v\in Values(F)} \frac{|T_v|}{|T|}Entropy(T_v)
 \end{align}
-where F is the feature we are splitting on, $|T_v|$ is the number of decisions with split value $v$, $|T|$ the number of total decisions, and $Entropy(T_v)$ is the measure of entropy on the decisions with split value $v$. In our wind example, the entropy of the original system (without any splitting on any feature) is $-\big(\frac{5}{14}*log_2(5/14) + \frac{9}{14}*log_2(9/14) \big) =  0.94$. Since we had two splits on \textit{Windy}, let $v_1$ be the Strong split and $v_2$ be the Weak split then
+where F is the feature we are splitting on, $|T_v|$ is the number of decisions with split value $v$, $|T|$ the number of total decisions, and $Entropy(T_v)$ is the measure of entropy on the decisions with split value $v$. In our wind example, the entropy of the original system (without any splitting on any feature) is $-\big(\frac{5}{14}*log_2(5/14) + \frac{9}{14}*log_2(9/14) \big) =  0.94$. Since we had two splits on \textit{Wind}, let $v_1$ be the Strong split and $v_2$ be the Weak split then
 
 \begin{align*}
-  \textit{Information Gain(Windy)} &= Entropy(Original) - \frac{|T_{v_1}|}{|T|}Entropy(T_{v_1}) - \frac{|T_{v_2}|}{|T|}Entropy(T_{v_2}) \\
+  \textit{Information Gain(Wind)} &= Entropy(Original) - \frac{|T_{v_1}|}{|T|}Entropy(T_{v_1}) - \frac{|T_{v_2}|}{|T|}Entropy(T_{v_2}) \\
    &= 0.94 - \frac{6}{14}0.985 - \frac{8}{14}0.811 \\
    &= 0.054
 \end{align*}
@@ -368,7 +369,7 @@ In this manner, we can measure the information gain on splitting on each availab
 
 \begin{figure}
   \centering
-  \includegraphics[width=\linewidth]{figures/entropy_fig.pdf}
+  \includegraphics[width=0.7\linewidth]{figures/entropy_fig.pdf}
   \caption{The entropy of a system with two decisions each of which have a fraction $p_1$ and $p_2$ (fraction $p_2$ is not shown here because it is simply $1-p_1$). When the system has both fractions in equal proportions, it is perfectly heterogeneous, so it has the highest entropy measure of $1$. On the other end, when one fraction dominates the system, the entropy goes to $0$. In this way, entropy measures how "polluted" or pure a system is, giving a higher score to disorganized, polluted systems, and a lower score to homogeneous, pure systems.}
   \label{fig:entropy_two_decisions}
 \end{figure}
@@ -408,7 +409,7 @@ From this small experiment, the need for a different approach to supervised lear
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=\linewidth]{figures/error_lines.pdf}
+  \includegraphics[width=0.7\linewidth]{figures/error_lines.pdf}
   \caption{Different lines of fit and their errors (dashed and dotted lines) with respect to the noisy input data. Because $g(x)$ and $h(x)$ have larger error lines than $f(x)$, $f(x)$ is the best fit for the data out of the three drawn lines. Note that for $f(x)$, the negative and positive errors cancel out, leading to a sum of error of $-21$. This is allayed by summing the square of the error instead, which results in an equation that can be minimized to $176$.}
   \label{fig:error_lines}
 \end{figure}
@@ -453,4 +454,12 @@ where $\bar y$ and $\bar x$ are the respective means of all $y$ and $x$ values \
   \label{fig:log_regression}
 \end{figure}
 
+Using this regression model for out previous example in Figure \ref{fig:decision_tree_regression_and_classification}, we are able to attain more realistic learning through a model that extrapolates more correctly to unseen numeric data (Fig. \ref{fig:regression_on_square_function})
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.7\linewidth]{figures/reg_ridge_plot.pdf}
+  \caption{Using a non-linear regression model for the same data set used on in Figure \ref{fig:decision_tree_regression_and_classification}, we are able to build a model that correctly extrapolates to unseen numeric data. Since this is one of the requirements for problems with outputs being continuous numbers, thsi model is highly valuable for prediction in such output spaces.}
+  \label{fig:regression_on_square_function}
+\end{figure}
 %We might be able to include support vector machines.

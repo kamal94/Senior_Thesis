@@ -84,11 +84,6 @@ W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' \emph{The bulletin of mathematical biophysics}, vol.~5,
   no.~4, pp. 115--133, 1943.
 
-\bibitem{someSpecificANN}
-``Some specific models of artificial neural nets,''
-  \url{http://ecee.colorado.edu/~ecen4831/lectures/NNet2.html}, accessed:
-  2016-10-16.
-
 \bibitem{minsky1969perceptrons}
 M.~Minsky and S.~Papert, ``Perceptrons.'' 1969.
 
@@ -103,11 +98,6 @@ T.~M. Mitchell, ``Machine learning,'' \emph{Mc G raw ill.(forthcoming)}, 1997.
 \bibitem{Finney1996}
 D.~J. Finney, ``A note on the history of regression,'' \emph{Journal of Applied
   Statistics}, vol.~23, no.~5, pp. 555--558, 1996.
-
-\bibitem{Potworowski2012}
-J.~Potworowski, W.~Jakuczun, S.~{\L}ȩski, and D.~W{\'o}jcik, ``Kernel current
-  source density method,'' \emph{Neural computation}, vol.~24, no.~2, pp.
-  541--575, 2012.
 
 \bibitem{Locke1841}
 J.~Locke, \emph{An essay concerning human understanding}, 1841.
@@ -185,6 +175,11 @@ A.~Wism{\"u}ller, X.~Wang, A.~M. DSouza, and M.~B. Nagarajan, ``A framework for
   brain: Mutual connectivity analysis (mca) of resting-state functional mri
   with convergent cross-mapping and non-metric clustering,'' \emph{arXiv
   preprint arXiv:1407.3809}, 2014.
+
+\bibitem{Potworowski2012}
+J.~Potworowski, W.~Jakuczun, S.~{\L}ȩski, and D.~W{\'o}jcik, ``Kernel current
+  source density method,'' \emph{Neural computation}, vol.~24, no.~2, pp.
+  541--575, 2012.
 
 \bibitem{hjornevik2007}
 T.~Hjornevik, T.~B. Leergaard, D.~Darine, O.~Moldestad, A.~M. Dale, F.~Willoch,
