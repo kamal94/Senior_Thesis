@@ -12,61 +12,62 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: main.bib.bib
 Warning--string name "october" is undefined
---line 34 of file main.bib.bib
-Repeated entry---line 59 of file main.bib.bib
- : @online{Epilepsy.com.surgery
- :                             ,
-I'm skipping whatever remains of this entry
+--line 77 of file main.bib.bib
+Warning--string name "august" is undefined
+--line 105 of file main.bib.bib
 Warning--string name "october" is undefined
---line 85 of file main.bib.bib
+--line 128 of file main.bib.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty note in RobSchapire
+Too many commas in name 1 of "Lucas Theis, Wenzhe Shi, Andrew Cunningham, Ferenc Huszár" for entry Lucas20016
+while executing---line 2403 of file IEEEtran.bst
 Warning--empty journal in britanica1i2016
 Warning--empty journal in minsky1969perceptrons
 Warning--missing publisher in Locke1841
 Warning--empty journal in paxinos2009
 
 Done.
-You've used 35 entries,
+You've used 41 entries,
             4087 wiz_defined-function locations,
-            1587 strings with 25135 characters,
-and the built_in function-call counts, 27349 in all, are:
-= -- 2206
-> -- 806
+            1616 strings with 25988 characters,
+and the built_in function-call counts, 29627 in all, are:
+= -- 2386
+> -- 861
 < -- 220
-+ -- 432
-- -- 157
-* -- 1327
-:= -- 4099
-add.period$ -- 69
-call.type$ -- 35
-change.case$ -- 31
++ -- 458
+- -- 170
+* -- 1417
+:= -- 4522
+add.period$ -- 81
+call.type$ -- 41
+change.case$ -- 37
 chr.to.int$ -- 456
-cite$ -- 39
-duplicate$ -- 1957
-empty$ -- 2020
-format.name$ -- 183
-if$ -- 6351
+cite$ -- 46
+duplicate$ -- 2153
+empty$ -- 2230
+format.name$ -- 199
+if$ -- 6856
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 369
-newline$ -- 138
-num.names$ -- 35
-pop$ -- 838
+int.to.str$ -- 41
+missing$ -- 407
+newline$ -- 158
+num.names$ -- 41
+pop$ -- 942
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2120
+skip$ -- 2295
 stack$ -- 0
-substring$ -- 1129
-swap$ -- 1659
+substring$ -- 1134
+swap$ -- 1770
 text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 35
-warning$ -- 4
-while$ -- 110
-width$ -- 37
-write$ -- 376
+type$ -- 41
+warning$ -- 5
+while$ -- 116
+width$ -- 43
+write$ -- 425
 (There was 1 error message)

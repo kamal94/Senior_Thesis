@@ -1,32 +1,32 @@
 \contentsline {section}{\numberline {I}Introduction}{5}
-\contentsline {section}{\numberline {II}Epilepsy}{6}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Definition}{6}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Syndrome}{7}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Epilepsy in Numbers and Life}{7}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Treatment}{8}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}1}Medication}{8}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}2}Surgery}{8}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}3}Diet}{9}
-\contentsline {section}{\numberline {III}Machine Learning}{10}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}History of Machine Learning}{11}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Supervised Learning}{12}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Perceptron}{13}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Neural Networks}{15}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}3}Decision Trees}{18}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}4}Regression Prediction}{22}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Unsupervised Learning}{26}
-\contentsline {section}{\numberline {IV}Sugihara Causality}{28}
-\contentsline {section}{\numberline {V}Problem definition}{30}
-\contentsline {section}{\numberline {VI}Methods}{30}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Data Collection}{30}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{30}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{30}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Significant Causality Measures}{31}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}1}Most Causal Relationship Method}{32}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}2}Threshold Method}{33}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}3}Fourier Transform and Random shuffling Method}{34}
-\contentsline {section}{\numberline {VII}Results}{34}
-\contentsline {section}{\numberline {VIII}Discussion}{34}
-\contentsline {section}{\numberline {IX}Future Work}{36}
-\contentsline {section}{\numberline {X}Conclusion}{39}
-\contentsline {section}{References}{40}
+\contentsline {section}{\numberline {II}Epilepsy}{7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Definition}{7}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Syndrome}{8}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Epilepsy in Numbers and Life}{8}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Treatment}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}1}Medication}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}2}Surgery}{9}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-D}3}Diet}{10}
+\contentsline {section}{\numberline {III}Machine Learning}{11}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}History of Machine Learning}{12}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Supervised Learning}{13}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}1}Perceptron}{14}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}2}Neural Networks}{16}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}3}Decision Trees}{19}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-B}4}Regression Prediction}{23}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Unsupervised Learning}{27}
+\contentsline {section}{\numberline {IV}Sugihara Causality}{29}
+\contentsline {section}{\numberline {V}Problem definition}{32}
+\contentsline {section}{\numberline {VI}Methods}{32}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Data Collection}{32}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{32}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{32}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Significant Causality Measures}{33}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}1}Most Causal Relationship Method}{34}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}2}Threshold Method}{35}
+\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}3}Fourier Transform and Random shuffling Method}{36}
+\contentsline {section}{\numberline {VII}Results}{36}
+\contentsline {section}{\numberline {VIII}Discussion}{36}
+\contentsline {section}{\numberline {IX}Future Work}{38}
+\contentsline {section}{\numberline {X}Conclusion}{41}
+\contentsline {section}{References}{42}

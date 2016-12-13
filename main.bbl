@@ -21,6 +21,26 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{RobSchapire}
+R.~Schapire, ``Theoretical machine learning,'' 2008.
+
+\bibitem{assael2016lipnet}
+Y.~M. Assael, B.~Shillingford, S.~Whiteson, and N.~de~Freitas, ``Lipnet:
+  Sentence-level lipreading,'' \emph{arXiv preprint arXiv:1611.01599}, 2016.
+
+\bibitem{Lucas20016}
+A.~C. F.~H. Lucas~Theis, Wenzhe~Shi, ``Lossy image compression with compressive
+  autoencoders,'' \emph{OpenReview.net}, 2016.
+
+\bibitem{tompson2016accelerating}
+J.~Tompson, K.~Schlachter, P.~Sprechmann, and K.~Perlin, ``Accelerating
+  eulerian fluid simulation with convolutional networks,'' \emph{arXiv preprint
+  arXiv:1607.03597}, 2016.
+
+\bibitem{Iwana2016}
+S.~U. Brian Kenji~Iwana, ``Judging a book by its cover,'' \emph{arXiv preprint
+  arXiv:1610.09204}, 2016.
+
 \bibitem{practicalDefEpi2014}
 \BIBentryALTinterwordspacing
 R.~S. Fisher, C.~Acevedo, A.~Arzimanoglou, A.~Bogacz, J.~H. Cross, C.~E. Elger,
@@ -29,6 +49,13 @@ R.~S. Fisher, C.~Acevedo, A.~Arzimanoglou, A.~Bogacz, J.~H. Cross, C.~E. Elger,
   M.~Watanabe, and S.~Wiebe, ``Ilae official report: A practical clinical
   definition of epilepsy,'' \emph{Epilepsia}, vol.~55, no.~4, pp. 475--482,
   2014. [Online]. Available: \url{http://dx.doi.org/10.1111/epi.12550}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Epilepsy.com.NewTerms}
+\BIBentryALTinterwordspacing
+P.~Shafer and J.~Sirven. (2013) New terms and concepts for seizures and
+  epilepsy. [Online]. Available:
+  \url{http://www.epilepsy.com/learn/types-seizures/new-terms-and-concepts-seizures-and-epilepsy}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Epilepsy.com.stats}
@@ -61,9 +88,8 @@ K.~S. Walia, E.~A. Khan, D.~H. Ko, S.~S. Raza, and Y.~N. Khan, ``Side effects
 
 \bibitem{Epilepsy.com.surgery}
 \BIBentryALTinterwordspacing
-P.~Shafer and J.~Sirven. (2013) Enew terms and concepts for seizures and
-  epilepsy. [Online]. Available:
-  \url{http://www.epilepsy.com/learn/types-seizures/new-terms-and-concepts-seizures-and-epilepsy}
+H.~Weiner and J.~Sirven. (2013) Surgery. [Online]. Available:
+  \url{http://www.epilepsy.com/learn/treating-seizures-and-epilepsy/surgery}
 \BIBentrySTDinterwordspacing
 
 \bibitem{bailey2005use}

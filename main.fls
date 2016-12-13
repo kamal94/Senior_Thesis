@@ -303,10 +303,10 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT introdution.aux
 INPUT introdution.tex
 INPUT introdution.tex
-INPUT Epilepsy.tex
-INPUT Epilepsy.tex
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT Epilepsy.tex
+INPUT Epilepsy.tex
 INPUT history_of_machine_learning.tex
 INPUT history_of_machine_learning.tex
 INPUT supervised_learning.tex
