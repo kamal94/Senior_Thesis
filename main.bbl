@@ -143,6 +143,10 @@ G.~Sugihara, R.~May, H.~Ye, C.-h. Hsieh, E.~Deyle, M.~Fogarty, and S.~Munch,
   ``Detecting causality in complex ecosystems,'' \emph{science}, vol. 338, no.
   6106, pp. 496--500, 2012.
 
+\bibitem{lorenz1963deterministic}
+E.~N. Lorenz, ``Deterministic nonperiodic flow,'' \emph{Journal of the
+  atmospheric sciences}, vol.~20, no.~2, pp. 130--141, 1963.
+
 \bibitem{Dixon1999}
 G.~S. Paul A.~Dixon, Maria J.~Milicich, ``Episodic fluctuations in larval
   supply,'' \emph{Science}, vol. 283, no. 5407, pp. 1528--1530, 1999.
@@ -154,6 +158,13 @@ E.~R. Deyle and G.~Sugihara, ``Generalized theorems for nonlinear state space
 \bibitem{Takens1981}
 F.~Takens, \emph{Detecting strange attractors in turbulence}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer, 1981.
+
+\bibitem{TakensYoutube2012}
+\BIBentryALTinterwordspacing
+F.~Villatoro. (2012) Takens' theorem in action for the lorenz chaotic
+  attractor. [Online]. Available:
+  \url{https://www.youtube.com/watch?v=6i57udsPKms}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Deyle16042013}
 E.~R. Deyle, M.~Fogarty, C.-h. Hsieh, L.~Kaufman, A.~D. MacCall, S.~B. Munch,

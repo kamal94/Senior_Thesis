@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  13 DEC 2016 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  15 DEC 2016 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,16 +820,7 @@ ain.toc [2
 ] [8] [9]) [10] (./history_of_machine_learning.tex
 [11
 
-]
-
-LaTeX Warning: Reference `sec:label_classification' on page 12 undefined on inp
-ut line 21.
-
-
-LaTeX Warning: Reference `ig:perceptron_solution' on page 12 undefined on input
- line 21.
-
-[12]) (./supervised_learning.tex [13]
+] [12]) (./supervised_learning.tex [13]
 <figures/twoClasses_separable.pdf, id=58, 722.7pt x 505.89pt>
 File: figures/twoClasses_separable.pdf Graphic file (type pdf)
 
@@ -1013,12 +1004,75 @@ lusion: multiple pdfs with page group included in a single page
  (./Sugihara.tex [29
 
 ]
+<figures/lorenz_series.pdf, id=548, 433.62pt x 289.08pt>
+File: figures/lorenz_series.pdf Graphic file (type pdf)
+
+<use figures/lorenz_series.pdf>
+Package pdftex.def Info: figures/lorenz_series.pdf used on input line 24.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+
+<figures/lorenz.pdf, id=549, 433.62pt x 289.08pt>
+File: figures/lorenz.pdf Graphic file (type pdf)
+ <use figures/lorenz.pdf>
+Package pdftex.def Info: figures/lorenz.pdf used on input line 29.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+
+[30] [31 <./figures/lorenz_series.pdf> <./figures/lorenz.pdf
+
+pdfTeX warning: pdflatex (file ./figures/lorenz.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>] <figures/sin_delayed_signal.pdf, id=605, 433.62pt x 289.08pt>
+File: figures/sin_delayed_signal.pdf Graphic file (type pdf)
+
+<use figures/sin_delayed_signal.pdf>
+Package pdftex.def Info: figures/sin_delayed_signal.pdf used on input line 58.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+
+<figures/sin_shadow_manifold.pdf, id=606, 722.7pt x 505.89pt>
+File: figures/sin_shadow_manifold.pdf Graphic file (type pdf)
+
+<use figures/sin_shadow_manifold.pdf>
+Package pdftex.def Info: figures/sin_shadow_manifold.pdf used on input line 61.
+
+(pdftex.def)             Requested size: 211.38832pt x 147.97029pt.
+ [32 <./figures/sin_delayed_signal.pdf> <./figures/sin_shadow_manifold.pdf
+
+pdfTeX warning: pdflatex (file ./figures/sin_shadow_manifold.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <figures/shadow_manifold_x.pdf, id=674, 722.7pt x 505.89pt>
+File: figures/shadow_manifold_x.pdf Graphic file (type pdf)
+
+<use figures/shadow_manifold_x.pdf>
+Package pdftex.def Info: figures/shadow_manifold_x.pdf used on input line 74.
+(pdftex.def)             Requested size: 140.92793pt x 98.64429pt.
+
+<figures/shadow_manifold_y.pdf, id=675, 722.7pt x 505.89pt>
+File: figures/shadow_manifold_y.pdf Graphic file (type pdf)
+
+<use figures/shadow_manifold_y.pdf>
+Package pdftex.def Info: figures/shadow_manifold_y.pdf used on input line 78.
+(pdftex.def)             Requested size: 140.92793pt x 98.64429pt.
+
+<figures/shadow_manifold_z.pdf, id=676, 722.7pt x 505.89pt>
+File: figures/shadow_manifold_z.pdf Graphic file (type pdf)
+
+<use figures/shadow_manifold_z.pdf>
+Package pdftex.def Info: figures/shadow_manifold_z.pdf used on input line 82.
+(pdftex.def)             Requested size: 140.92793pt x 98.64429pt.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
- [30]) [31] [32
+ [33 <./figures/shadow_manifold_x.pdf> <./figures/shadow_manifold_y.pdf
+
+pdfTeX warning: pdflatex (file ./figures/shadow_manifold_y.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./figures/shadow_manifold_z.pdf
+
+pdfTeX warning: pdflatex (file ./figures/shadow_manifold_z.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]) [34] [35
 
 ]
-<figures/rat_brain_schematic.png, id=558, 1040.88875pt x 604.2575pt>
+<figures/rat_brain_schematic.png, id=755, 1040.88875pt x 604.2575pt>
 File: figures/rat_brain_schematic.png Graphic file (type png)
 
 <use figures/rat_brain_schematic.png>
@@ -1026,7 +1080,7 @@ Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 136
 .
 (pdftex.def)             Requested size: 446.26582pt x 259.06038pt.
 
-<figures/rat_scull_and_instrument.png, id=559, 615.29875pt x 675.52374pt>
+<figures/rat_scull_and_instrument.png, id=756, 615.29875pt x 675.52374pt>
 File: figures/rat_scull_and_instrument.png Graphic file (type png)
 
 <use figures/rat_scull_and_instrument.png>
@@ -1037,7 +1091,7 @@ e 144.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/brain_region_lump.png, id=560, 230.36063pt x 122.95938pt>
+<figures/brain_region_lump.png, id=757, 230.36063pt x 122.95938pt>
 File: figures/brain_region_lump.png Graphic file (type png)
 
 <use figures/brain_region_lump.png>
@@ -1047,9 +1101,9 @@ Package pdftex.def Info: figures/brain_region_lump.png used on input line 152.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33 <./figures/rat_brain_schematic.png>] [34 <./figures/rat_scull_and_instrumen
-t.png>] [35 <./figures/brain_region_lump.png>]
-<figures/sample_pairwise_causality_measure.pdf, id=573, 578.16pt x 433.62pt>
+[36 <./figures/rat_brain_schematic.png>] [37 <./figures/rat_scull_and_instrumen
+t.png>] [38 <./figures/brain_region_lump.png>]
+<figures/sample_pairwise_causality_measure.pdf, id=771, 578.16pt x 433.62pt>
 File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
 
 <use figures/sample_pairwise_causality_measure.pdf>
@@ -1060,7 +1114,7 @@ input line 187.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/diff_in_sample_size.pdf, id=574, 794.97pt x 614.295pt>
+<figures/diff_in_sample_size.pdf, id=772, 794.97pt x 614.295pt>
 File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
 
 <use figures/diff_in_sample_size.pdf>
@@ -1071,7 +1125,7 @@ Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 196
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rho_hist_all_experiment.pdf, id=575, 578.16pt x 433.62pt>
+<figures/rho_hist_all_experiment.pdf, id=773, 578.16pt x 433.62pt>
 File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
 
 <use figures/rho_hist_all_experiment.pdf>
@@ -1082,7 +1136,7 @@ Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/diff_within_pair_hist.pdf, id=576, 578.16pt x 433.62pt>
+<figures/diff_within_pair_hist.pdf, id=774, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_hist.pdf>
@@ -1090,49 +1144,49 @@ Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 2
 12.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/diff_within_pair_over_2_hist.pdf, id=577, 578.16pt x 433.62pt>
+<figures/diff_within_pair_over_2_hist.pdf, id=775, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_over_2_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
- line 218.
+ line 217.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/sample_graph.pdf, id=578, 794.97pt x 614.295pt>
+<figures/sample_graph.pdf, id=776, 794.97pt x 614.295pt>
 File: figures/sample_graph.pdf Graphic file (type pdf)
 
 <use figures/sample_graph.pdf>
-Package pdftex.def Info: figures/sample_graph.pdf used on input line 228.
+Package pdftex.def Info: figures/sample_graph.pdf used on input line 227.
 (pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
- [36] [37 <./figures/sample_pairwise_causality_measure.pdf>] [38 <./figures/dif
-f_in_sample_size.pdf>] [39 <./figures/rho_hist_all_experiment.pdf>] [40 <./figu
+ [39] [40 <./figures/sample_pairwise_causality_measure.pdf>] [41 <./figures/dif
+f_in_sample_size.pdf>] [42 <./figures/rho_hist_all_experiment.pdf>] [43 <./figu
 res/diff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [4
-1 <./figures/sample_graph.pdf>] (./main.bbl
+4 <./figures/sample_graph.pdf>] (./main.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-[42] [43]
+[45]
 Missing character: There is no È in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
-) [44] (./main.aux (./introdution.aux) (./Sugihara.aux))
+ [46]) [47] (./main.aux (./introdution.aux) (./Sugihara.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18392 strings out of 493054
- 375767 string characters out of 6134759
- 486345 words of memory out of 5000000
- 21515 multiletter control sequences out of 15000+600000
+ 18434 strings out of 493054
+ 376951 string characters out of 6134759
+ 486387 words of memory out of 5000000
+ 21550 multiletter control sequences out of 15000+600000
  43062 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,75p,2470b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,77p,2470b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
@@ -1154,10 +1208,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (44 pages, 7209701 bytes).
+Output written on main.pdf (47 pages, 7473626 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
+ 917 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

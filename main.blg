@@ -11,12 +11,14 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: main.bib.bib
+Warning--string name "september" is undefined
+--line 10 of file main.bib.bib
 Warning--string name "october" is undefined
---line 77 of file main.bib.bib
+--line 92 of file main.bib.bib
 Warning--string name "august" is undefined
---line 105 of file main.bib.bib
+--line 120 of file main.bib.bib
 Warning--string name "october" is undefined
---line 128 of file main.bib.bib
+--line 143 of file main.bib.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -29,45 +31,45 @@ Warning--missing publisher in Locke1841
 Warning--empty journal in paxinos2009
 
 Done.
-You've used 41 entries,
+You've used 43 entries,
             4087 wiz_defined-function locations,
-            1616 strings with 25988 characters,
-and the built_in function-call counts, 29627 in all, are:
-= -- 2386
-> -- 861
-< -- 220
-+ -- 458
-- -- 170
-* -- 1417
-:= -- 4522
-add.period$ -- 81
-call.type$ -- 41
-change.case$ -- 37
-chr.to.int$ -- 456
-cite$ -- 46
-duplicate$ -- 2153
-empty$ -- 2230
-format.name$ -- 199
-if$ -- 6856
+            1628 strings with 26258 characters,
+and the built_in function-call counts, 30835 in all, are:
+= -- 2492
+> -- 877
+< -- 231
++ -- 468
+- -- 172
+* -- 1466
+:= -- 4721
+add.period$ -- 85
+call.type$ -- 43
+change.case$ -- 39
+chr.to.int$ -- 480
+cite$ -- 48
+duplicate$ -- 2240
+empty$ -- 2325
+format.name$ -- 201
+if$ -- 7133
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 407
-newline$ -- 158
-num.names$ -- 41
-pop$ -- 942
+int.to.str$ -- 43
+missing$ -- 422
+newline$ -- 166
+num.names$ -- 43
+pop$ -- 974
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2295
+skip$ -- 2392
 stack$ -- 0
-substring$ -- 1134
-swap$ -- 1770
-text.length$ -- 68
+substring$ -- 1191
+swap$ -- 1843
+text.length$ -- 71
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 41
+type$ -- 43
 warning$ -- 5
-while$ -- 116
-width$ -- 43
-write$ -- 425
+while$ -- 122
+width$ -- 45
+write$ -- 446
 (There was 1 error message)
