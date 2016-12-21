@@ -21,14 +21,10 @@
 \contentsline {section}{\numberline {V}Problem definition}{35}
 \contentsline {section}{\numberline {VI}Methods}{35}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Data Collection}{35}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{35}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{35}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Significant Causality Measures}{36}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}1}Most Causal Relationship Method}{37}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}2}Threshold Method}{38}
-\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}3}Fourier Transform and Random shuffling Method}{39}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{36}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{38}
 \contentsline {section}{\numberline {VII}Results}{39}
-\contentsline {section}{\numberline {VIII}Discussion}{39}
-\contentsline {section}{\numberline {IX}Future Work}{41}
-\contentsline {section}{\numberline {X}Conclusion}{43}
-\contentsline {section}{References}{45}
+\contentsline {section}{\numberline {VIII}Discussion}{44}
+\contentsline {section}{\numberline {IX}Future Work}{44}
+\contentsline {section}{\numberline {X}Conclusion}{45}
+\contentsline {section}{References}{46}

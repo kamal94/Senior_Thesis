@@ -213,11 +213,6 @@ A.~Wism{\"u}ller, X.~Wang, A.~M. DSouza, and M.~B. Nagarajan, ``A framework for
   with convergent cross-mapping and non-metric clustering,'' \emph{arXiv
   preprint arXiv:1407.3809}, 2014.
 
-\bibitem{Potworowski2012}
-J.~Potworowski, W.~Jakuczun, S.~{\L}ȩski, and D.~W{\'o}jcik, ``Kernel current
-  source density method,'' \emph{Neural computation}, vol.~24, no.~2, pp.
-  541--575, 2012.
-
 \bibitem{hjornevik2007}
 T.~Hjornevik, T.~B. Leergaard, D.~Darine, O.~Moldestad, A.~M. Dale, F.~Willoch,
   and J.~G. Bjaalie, ``Three-dimensional atlas system for mouse and rat brain
@@ -227,10 +222,10 @@ T.~Hjornevik, T.~B. Leergaard, D.~Darine, O.~Moldestad, A.~M. Dale, F.~Willoch,
 G.~Paxinos, C.~Watson, P.~Carrive, M.~Kirkcaldie, and K.~Ashwell,
   ``Chemoarchitectonic atlas of the rat brain,'' 2009.
 
-\bibitem{Ebisuzaki1997}
-W.~Ebisuzaki, ``A method to estimate the statistical significance of a
-  correlation when the data are serially correlated,'' \emph{Journal of
-  Climate}, vol.~10, no.~9, pp. 2147--2153, 1997.
+\bibitem{Potworowski2012}
+J.~Potworowski, W.~Jakuczun, S.~{\L}ȩski, and D.~W{\'o}jcik, ``Kernel current
+  source density method,'' \emph{Neural computation}, vol.~24, no.~2, pp.
+  541--575, 2012.
 
 \bibitem{Ye2015}
 H.~Ye, E.~R. Deyle, L.~J. Gilarranz, and G.~Sugihara, ``Distinguishing

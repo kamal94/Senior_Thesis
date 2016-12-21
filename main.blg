@@ -31,45 +31,45 @@ Warning--missing publisher in Locke1841
 Warning--empty journal in paxinos2009
 
 Done.
-You've used 43 entries,
+You've used 42 entries,
             4087 wiz_defined-function locations,
-            1628 strings with 26258 characters,
-and the built_in function-call counts, 30835 in all, are:
-= -- 2492
-> -- 877
-< -- 231
-+ -- 468
-- -- 172
-* -- 1466
-:= -- 4721
-add.period$ -- 85
-call.type$ -- 43
-change.case$ -- 39
-chr.to.int$ -- 480
-cite$ -- 48
-duplicate$ -- 2240
-empty$ -- 2325
-format.name$ -- 201
-if$ -- 7133
+            1622 strings with 26083 characters,
+and the built_in function-call counts, 29890 in all, are:
+= -- 2407
+> -- 863
+< -- 218
++ -- 458
+- -- 171
+* -- 1422
+:= -- 4582
+add.period$ -- 83
+call.type$ -- 42
+change.case$ -- 38
+chr.to.int$ -- 450
+cite$ -- 47
+duplicate$ -- 2177
+empty$ -- 2260
+format.name$ -- 200
+if$ -- 6911
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 422
-newline$ -- 166
-num.names$ -- 43
-pop$ -- 974
+int.to.str$ -- 42
+missing$ -- 414
+newline$ -- 163
+num.names$ -- 42
+pop$ -- 963
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2392
+skip$ -- 2316
 stack$ -- 0
-substring$ -- 1191
-swap$ -- 1843
-text.length$ -- 71
+substring$ -- 1120
+swap$ -- 1782
+text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 43
+type$ -- 42
 warning$ -- 5
-while$ -- 122
-width$ -- 45
-write$ -- 446
+while$ -- 117
+width$ -- 44
+write$ -- 435
 (There was 1 error message)

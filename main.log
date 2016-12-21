@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  15 DEC 2016 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  20 DEC 2016 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,6 +561,14 @@ File: csquotes.cfg
 )
 Package csquotes Info: Enabling multilingual quotes.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count136
+\float@exts=\toks34
+\float@box=\box41
+\@float@everytoks=\toks35
+\@floatcapt=\box42
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
 Package: neuralnetwork 2013/07/18 v1.0 Neural network diagrams, Mark Kuckian Co
 wan, mark@battlesnake.co.uk
@@ -576,10 +584,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
 )
-\XKV@depth=\count136
+\XKV@depth=\count137
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
@@ -589,30 +597,30 @@ Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count137
-\c@ALG@rem=\count138
-\c@ALG@nested=\count139
+\c@ALG@line=\count138
+\c@ALG@rem=\count139
+\c@ALG@nested=\count140
 \ALG@tlm=\skip47
 \ALG@thistlm=\skip48
-\c@ALG@Lnr=\count140
-\c@ALG@blocknr=\count141
-\c@ALG@storecount=\count142
-\c@ALG@tmpcounter=\count143
+\c@ALG@Lnr=\count141
+\c@ALG@blocknr=\count142
+\c@ALG@storecount=\count143
+\c@ALG@tmpcounter=\count144
 \ALG@tmplength=\skip49
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count144
-\calc@Bcount=\count145
+\calc@Acount=\count145
+\calc@Bcount=\count146
 \calc@Adimen=\dimen191
 \calc@Bdimen=\dimen192
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count146
+\calc@Ccount=\count147
 \calc@Cskip=\skip52
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -622,7 +630,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count147
+\g_MT_multlinerow_int=\count148
 \l_MT_multwidth_dim=\dimen193
 \origjot=\skip53
 \l_MT_shortvdotswithinadjustabove_dim=\dimen194
@@ -683,26 +691,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box41
-\pgfnodeparttwobox=\box42
-\pgfnodepartthreebox=\box43
-\pgfnodepartfourbox=\box44
-\pgfnodeparttwentybox=\box45
-\pgfnodepartnineteenbox=\box46
-\pgfnodeparteighteenbox=\box47
-\pgfnodepartseventeenbox=\box48
-\pgfnodepartsixteenbox=\box49
-\pgfnodepartfifteenbox=\box50
-\pgfnodepartfourteenbox=\box51
-\pgfnodepartthirteenbox=\box52
-\pgfnodeparttwelvebox=\box53
-\pgfnodepartelevenbox=\box54
-\pgfnodeparttenbox=\box55
-\pgfnodepartninebox=\box56
-\pgfnodeparteightbox=\box57
-\pgfnodepartsevenbox=\box58
-\pgfnodepartsixbox=\box59
-\pgfnodepartfivebox=\box60
+\pgfnodepartlowerbox=\box43
+\pgfnodeparttwobox=\box44
+\pgfnodepartthreebox=\box45
+\pgfnodepartfourbox=\box46
+\pgfnodeparttwentybox=\box47
+\pgfnodepartnineteenbox=\box48
+\pgfnodeparteighteenbox=\box49
+\pgfnodepartseventeenbox=\box50
+\pgfnodepartsixteenbox=\box51
+\pgfnodepartfifteenbox=\box52
+\pgfnodepartfourteenbox=\box53
+\pgfnodepartthirteenbox=\box54
+\pgfnodeparttwelvebox=\box55
+\pgfnodepartelevenbox=\box56
+\pgfnodeparttenbox=\box57
+\pgfnodepartninebox=\box58
+\pgfnodeparteightbox=\box59
+\pgfnodepartsevenbox=\box60
+\pgfnodepartsixbox=\box61
+\pgfnodepartfivebox=\box62
 ))))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
@@ -729,20 +737,21 @@ LaTeX Font Info:    ... okay on input line 67.
 
 -- Lines per column: 32 (exact).
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
+\scratchcounter=\count149
 \scratchdimen=\dimen256
-\scratchbox=\box61
-\nofMPsegments=\count149
-\nofMParguments=\count150
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count151
+\scratchbox=\box63
+\nofMPsegments=\count150
+\nofMParguments=\count151
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count152
 \MPscratchDim=\dimen257
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1069,124 +1078,128 @@ pdfTeX warning: pdflatex (file ./figures/shadow_manifold_y.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./figures/shadow_manifold_z.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->]) [34] [35
-
-]
-<figures/rat_brain_schematic.png, id=755, 1040.88875pt x 604.2575pt>
+>]) [34] <figures/rat_brain_schematic.png, id=752, 1040.88875pt x 604.2575pt>
 File: figures/rat_brain_schematic.png Graphic file (type png)
 
 <use figures/rat_brain_schematic.png>
-Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 136
+Package pdftex.def Info: figures/rat_brain_schematic.png used on input line 116
 .
-(pdftex.def)             Requested size: 446.26582pt x 259.06038pt.
+(pdftex.def)             Requested size: 200.81825pt x 116.5804pt.
 
-<figures/rat_scull_and_instrument.png, id=756, 615.29875pt x 675.52374pt>
+<figures/rat_scull_and_instrument.png, id=753, 615.29875pt x 675.52374pt>
 File: figures/rat_scull_and_instrument.png Graphic file (type png)
 
 <use figures/rat_scull_and_instrument.png>
 Package pdftex.def Info: figures/rat_scull_and_instrument.png used on input lin
-e 144.
-(pdftex.def)             Requested size: 446.26582pt x 489.95348pt.
+e 122.
+(pdftex.def)             Requested size: 200.81825pt x 220.4703pt.
+ [35
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+]
 <figures/brain_region_lump.png, id=757, 230.36063pt x 122.95938pt>
 File: figures/brain_region_lump.png Graphic file (type png)
 
 <use figures/brain_region_lump.png>
-Package pdftex.def Info: figures/brain_region_lump.png used on input line 152.
+Package pdftex.def Info: figures/brain_region_lump.png used on input line 137.
 (pdftex.def)             Requested size: 446.26582pt x 238.21817pt.
+ [36 <./figures/rat_brain_schematic.png> <./figures/rat_scull_and_instrument.pn
+g>]
+<figures/sample_eeg_signal_with_kcsd.pdf, id=763, 578.16pt x 433.62pt>
+File: figures/sample_eeg_signal_with_kcsd.pdf Graphic file (type pdf)
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[36 <./figures/rat_brain_schematic.png>] [37 <./figures/rat_scull_and_instrumen
-t.png>] [38 <./figures/brain_region_lump.png>]
-<figures/sample_pairwise_causality_measure.pdf, id=771, 578.16pt x 433.62pt>
+<use figures/sample_eeg_signal_with_kcsd.pdf>
+Package pdftex.def Info: figures/sample_eeg_signal_with_kcsd.pdf used on input 
+line 144.
+(pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
+ [37 <./figures/brain_region_lump.png>] [38 <./figures/sample_eeg_signal_with_k
+csd.pdf>]
+<figures/sample_pairwise_causality_measure.pdf, id=784, 578.16pt x 433.62pt>
 File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
 
 <use figures/sample_pairwise_causality_measure.pdf>
 Package pdftex.def Info: figures/sample_pairwise_causality_measure.pdf used on 
-input line 187.
-(pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
+input line 198.
+(pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/diff_in_sample_size.pdf, id=772, 794.97pt x 614.295pt>
+<figures/diff_in_sample_size.pdf, id=785, 794.97pt x 614.295pt>
 File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
 
 <use figures/diff_in_sample_size.pdf>
-Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 196
+Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 204
 .
-(pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/rho_hist_all_experiment.pdf, id=773, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 225.4804pt x 174.23228pt.
+ [39]
+<figures/rho_hist_all_experiment.pdf, id=789, 578.16pt x 433.62pt>
 File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
 
 <use figures/rho_hist_all_experiment.pdf>
 Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
- 203.
-(pdftex.def)             Requested size: 446.26582pt x 334.69565pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/diff_within_pair_hist.pdf, id=774, 578.16pt x 433.62pt>
+ 213.
+(pdftex.def)             Requested size: 281.85587pt x 211.39055pt.
+ [40 <./figures/sample_pairwise_causality_measure.pdf> <./figures/diff_in_sampl
+e_size.pdf>]
+<figures/diff_within_pair_hist.pdf, id=806, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 2
-12.
+22.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/diff_within_pair_over_2_hist.pdf, id=775, 578.16pt x 433.62pt>
+<figures/diff_within_pair_over_2_hist.pdf, id=807, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_over_2_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
- line 217.
+ line 227.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/sample_graph.pdf, id=776, 794.97pt x 614.295pt>
+<figures/sample_graph.pdf, id=808, 794.97pt x 614.295pt>
 File: figures/sample_graph.pdf Graphic file (type pdf)
 
 <use figures/sample_graph.pdf>
-Package pdftex.def Info: figures/sample_graph.pdf used on input line 227.
-(pdftex.def)             Requested size: 446.26582pt x 344.84645pt.
- [39] [40 <./figures/sample_pairwise_causality_measure.pdf>] [41 <./figures/dif
-f_in_sample_size.pdf>] [42 <./figures/rho_hist_all_experiment.pdf>] [43 <./figu
-res/diff_within_pair_hist.pdf> <./figures/diff_within_pair_over_2_hist.pdf>] [4
-4 <./figures/sample_graph.pdf>] (./main.bbl
+Package pdftex.def Info: figures/sample_graph.pdf used on input line 236.
+(pdftex.def)             Requested size: 258.36668pt x 199.65288pt.
+ [41 <./figures/rho_hist_all_experiment.pdf> <./figures/diff_within_pair_hist.p
+df> <./figures/diff_within_pair_over_2_hist.pdf>] <figures/variance_explained_w
+ith_pca.pdf, id=830, 722.7pt x 505.89pt>
+File: figures/variance_explained_with_pca.pdf Graphic file (type pdf)
+
+<use figures/variance_explained_with_pca.pdf>
+Package pdftex.def Info: figures/variance_explained_with_pca.pdf used on input 
+line 243.
+(pdftex.def)             Requested size: 258.36668pt x 180.8543pt.
+ [42 <./figures/sample_graph.pdf> <./figures/variance_explained_with_pca.pdf>]
+<figures/silhouette_scores.pdf, id=888, 1445.4pt x 1011.78pt>
+File: figures/silhouette_scores.pdf Graphic file (type pdf)
+
+<use figures/silhouette_scores.pdf>
+Package pdftex.def Info: figures/silhouette_scores.pdf used on input line 265.
+(pdftex.def)             Requested size: 469.75502pt x 328.8246pt.
+ [43 <./figures/silhouette_scores.pdf>]
+[44] [45] (./main.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
-
-[45]
+ [46] [47]
 Missing character: There is no È in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
- [46]) [47] (./main.aux (./introdution.aux) (./Sugihara.aux))
+) [48] (./main.aux (./introdution.aux)
+(./Sugihara.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18434 strings out of 493054
- 376951 string characters out of 6134759
- 486387 words of memory out of 5000000
- 21550 multiletter control sequences out of 15000+600000
+ 18506 strings out of 493054
+ 378403 string characters out of 6134759
+ 487990 words of memory out of 5000000
+ 21615 multiletter control sequences out of 15000+600000
  43062 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,77p,2470b,940s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,77p,2470b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
@@ -1208,10 +1221,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (47 pages, 7473626 bytes).
+Output written on main.pdf (48 pages, 7519214 bytes).
 PDF statistics:
- 917 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 432 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
