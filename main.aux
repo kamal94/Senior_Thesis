@@ -76,48 +76,58 @@
 \citation{paxinos2009}
 \citation{hjornevik2007}
 \citation{paxinos2009}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Problem definition}{35}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Problem Statement}{35}}
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Methods}{35}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Data Collection}{35}}
-\citation{Potworowski2012}
-\newlabel{fig:rat_brain_schematic}{{16a}{36}}
-\newlabel{sub@fig:rat_brain_schematic}{{a}{36}}
-\newlabel{fig:rat_scull_and_instrument}{{16b}{36}}
-\newlabel{sub@fig:rat_scull_and_instrument}{{b}{36}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces (a) A composite drawing showing the brain in the scull. The 3D reconstruction of the brain has been made using the maps of the Paxinos atlas, and the localization of cortical areas are indicated by different colors. White points indicate the position of the recording sites of the membrane electrode. Names for the cortical areas are also shown (based on Hjornevik \textit  {et al.} and Paxinos \textit  {et al.} \cite  {hjornevik2007} \cite  {paxinos2009}). (b) Photograph of a membrane electrode shows the construction on the top, the numbering (bottom right) and the surgical implantation (bottom left) is also shown. Electrode 1 malfunctioned during recording.\relax }}{36}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces The distribution and lumping of the brain regions in the brain. A total of 12 region channels were constructed from the initial 31 local channels. The schematic is based on rat brain atlas mapping.\relax }}{37}}
-\newlabel{fig:brain_region_lumping}{{17}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Sample data from electrode 1, in both its raw form and then in its form after kCSD transformation. Applying kernel Current Source Density extracts the true relationship of neural activity, and in theory eliminates disturbances that might be caused by signal interference.\relax }}{38}}
-\newlabel{fig:example_eeg_and_kcsd}{{18}{38}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{38}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Results}{39}}
-\newlabel{fig:sample_pair_causality_plot}{{19a}{40}}
+\newlabel{fig:rat_experiment}{{16}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Sample data from electrode 1, in both its raw form and then in its form after kCSD transformation. Applying kernel Current Source Density extracts the true relationship of neural activity, and in theory eliminates disturbances that might be caused by signal interference. Three sample blue lines are drawn to demonstrate the sliding windows that were used to calculate Sugihara Causality between brain regions. In each time window, the causality was calculated between each brain region, and the time window was moved by an amount \textit  {time step}. Different configurations were used for the time window and time step, as reported in table II\hbox {}. Here, the configuration shown has time window as $200$ and time step as $50$.\relax }}{37}}
+\newlabel{fig:example_eeg_and_kcsd}{{17}{37}}
+\citation{Potworowski2012}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Configurations used for the sliding window when calculating Sugihara causality that was used as a measure of brain communication. These configurations inform our model of the granularity of brain communication. Since we do not know exactly how quickly information is being passed down from region to region, arbitrary choices were made to test how well each performs and make a more informed decision in future research. Because we have different time steps, there are a different number of graphs (data points) in each dataset.\relax }}{38}}
+\newlabel{tab:sliding_window_configuration}{{II}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Sugihara Causality Measurement}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces The distribution and lumping of the brain regions in the brain. A total of 12 region channels were constructed from the initial 31 local channels. The schematic is based on rat brain atlas mapping.\relax }}{39}}
+\newlabel{fig:brain_region_lumping}{{18}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Sample graph constructed from calculating the Sugihara causality between brain regions. Lumped brain regions correspond to the gray circular mapping in Fig. 18\hbox {}. Edge colors represent the strength of the causal relationship. From weakest to strongest: Yellow, Green, Blue, Red. The edge weight ranges from 0 to 1.\relax }}{39}}
+\newlabel{fig:sample_graph}{{19}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Data Exploration and Visualization}{39}}
+\newlabel{fig:sample_pair_causality_plot}{{20a}{40}}
 \newlabel{sub@fig:sample_pair_causality_plot}{{a}{40}}
-\newlabel{fig:sample_size_diff_box}{{19b}{40}}
-\newlabel{sub@fig:sample_size_diff_box}{{b}{40}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces (a) A sample graph plotting the convergent cross mapping skill ($\rho $) between region 1 and 2 during the first 200 ms of the experiment. The skill mapping channel 1 to channel 2 is very similar to the one mapping channel 2 to channel 1. This might infer either bidirectional causality or unidirectional forcing. A similar pattern (close $\rho $ value between pairs) was found for most of the pairs. Cross mapping was done with random library samples. (b) Difference of rho scores between shown sample size and 100 samples. Decreasing sample size from the default 100 when calculating Sugihara Causality does not have a drastic affect on the acquired result. This shows that the data and method used are robust. Using this analysis, we conduct all further tests on a sample size of 20. Data shown is from the first 5 seconds of the experiment, using a library size of 80. Sliding windows of 200 ms were used, with a sliding step of 50 ms.\relax }}{40}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces The distribution of CCM skill ($\rho $) during the entire experiment. Many relationships appear to be causal in the brain, with equally as many being non-causal throughout the experiment. Causality was calculated from signals of lumped regions after calculating the CSD. Cross mapping was done on every pair of regions with library size of 80, and each pair has two causality directions. Sliding windows of 200 ms were used, with a sliding step of 50 ms.\relax }}{41}}
-\newlabel{fig:rho_hist_all_experiment}{{20}{41}}
+\newlabel{fig:rho_hist_all_experiment}{{20b}{40}}
+\newlabel{sub@fig:rho_hist_all_experiment}{{b}{40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces (a) A sample graph plotting the convergent cross mapping skill ($\rho $) between region (nodes) 1 and 2 during the first 200 ms of the experiment. The skill mapping channel 1 to channel 2 is very similar to the one mapping channel 2 to channel 1. This might infer either bidirectional causality or unidirectional forcing. A similar pattern (close $\rho $ value between pairs) was found for most of the pairs of edges. (b) The distribution of CCM skill ($\rho $) during the entire experiment. Many relationships appear to be causal in the brain, with equally as many being non-causal throughout the experiment. Causality was calculated from signals of lumped regions after calculating the CSD. Cross mapping was done on every pair of regions with library size of 80, and each pair has two causality directions. Sliding windows of 200 ms were used, with a sliding step of 50 ms.\relax }}{40}}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Difference of causality values within a pair is small, even when accounting for non-existing relationships where both causalities are below 0.2. This similarity between directions of causality in a pair could imply a bidirectional relationship between most regions, or could alternatively imply a unidirectional forcing (synchrony) phenomenon. Sliding windows of 200 ms were used, with a sliding step of 50 ms. A library size of 80 was used.\relax }}{41}}
 \newlabel{fig:diff_within_pair_hist}{{21}{41}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Sample graph constructed from calculating the Sugihara causality between brain regions through CCM. Lumped brain regions correspond to the gray circular mapping in Fig. 17\hbox {}. Edge colors represent the strength of the causal relationship. From weakest to strongest: Yellow, Green, Blue, Red.\relax }}{42}}
-\newlabel{fig:sample_graph}{{22}{42}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Principle Component Analysis conducted on the three datasets reveals that the overall variance of the data can be maintained by using only a subset of the edges of the graph rather than all of them. The dataset with a time step of 250 ms needs less components to explain the variance than the other two, while the datasets with 200 and 50 ms time steps showed an almost exact level of variance explained with the number of components. This suggests that the 250 ms dataset is not complex enough, which might indicate that 2000 ms is too big of a time frame to record the granular communication speed of the brain.\relax }}{42}}
-\newlabel{fig:pca_analysis_variance}{{23}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-E}}Algorithms and Techniques}{41}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-F}}Metrics and Benchmark}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-G}}Algorithms and Techniques}{43}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Results}{44}}
+\newlabel{fig:sample_pair_causality_plot}{{22a}{45}}
+\newlabel{sub@fig:sample_pair_causality_plot}{{a}{45}}
+\newlabel{fig:sample_size_diff_box}{{22b}{45}}
+\newlabel{sub@fig:sample_size_diff_box}{{b}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces (a) A sample graph plotting the convergent cross mapping skill ($\rho $) between region 1 and 2 during the first 200 ms of the experiment. The skill mapping channel 1 to channel 2 is very similar to the one mapping channel 2 to channel 1. This might infer either bidirectional causality or unidirectional forcing. A similar pattern (close $\rho $ value between pairs) was found for most of the pairs. Cross mapping was done with random library samples. (b) Difference of rho scores between shown sample size and 100 samples. Decreasing sample size from the default 100 when calculating Sugihara Causality does not have a drastic affect on the acquired result. This shows that the data and method used are robust. Using this analysis, we conduct all further tests on a sample size of 20. Data shown is from the first 5 seconds of the experiment, using a library size of 80. Sliding windows of 200 ms were used, with a sliding step of 50 ms.\relax }}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces The distribution of CCM skill ($\rho $) during the entire experiment. Many relationships appear to be causal in the brain, with equally as many being non-causal throughout the experiment. Causality was calculated from signals of lumped regions after calculating the CSD. Cross mapping was done on every pair of regions with library size of 80, and each pair has two causality directions. Sliding windows of 200 ms were used, with a sliding step of 50 ms.\relax }}{46}}
+\newlabel{fig:rho_hist_all_experiment}{{23}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Difference of causality values within a pair is small, even when accounting for non-existing relationships where both causalities are below 0.2. This similarity between directions of causality in a pair could imply a bidirectional relationship between most regions, or could alternatively imply a unidirectional forcing (synchrony) phenomenon. Sliding windows of 200 ms were used, with a sliding step of 50 ms. A library size of 80 was used.\relax }}{46}}
+\newlabel{fig:diff_within_pair_hist}{{24}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Principle Component Analysis conducted on the three datasets reveals that the overall variance of the data can be maintained by using only a subset of the edges of the graph rather than all of them. The dataset with a time step of 250 ms needs less components to explain the variance than the other two, while the datasets with 200 and 50 ms time steps showed an almost exact level of variance explained with the number of components. This suggests that the 250 ms dataset is not complex enough, which might indicate that 2000 ms is too big of a time frame to record the granular communication speed of the brain.\relax }}{47}}
+\newlabel{fig:pca_analysis_variance}{{25}{47}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Different component numbers are needed for each dataset to maintain a certain level of variance explained using PCA for dimensionality reduction. These values for components required for reaching a score standard were used to produce reduced forms of the datasets. These reduced forms of the datasets were then analyzed in figure 26\hbox {}.\relax }}{47}}
+\newlabel{tab:components_needed_for_variance}{{III}{47}}
 \citation{Ye2015}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Different component numbers are needed for each dataset to maintain a certain level of variance explained using PCA for dimensionality reduction. These values for components required for reaching a score standard were used to produce reduced forms of the datasets. These reduced forms of the datasets were then analyzed in figure 24\hbox {}.\relax }}{43}}
-\newlabel{tab:components_needed_for_variance}{{II}{43}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Silhouette scores for clustering with different cluster numbers. The score dips greatly when creating more than two clusters, but begins to rise after \nobreakspace  {}30 clusters. The silhouette scores show that having more components when reducing with PCA results in better clustering scores. The scores also show that scores for the reduced data that keep 99\% of the variance (right column) are all similar in score and trend.\relax }}{43}}
-\newlabel{fig:silhouette_scores}{{24}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Silhouette scores for clustering with different cluster numbers. The score dips greatly when creating more than two clusters, but begins to rise after \nobreakspace  {}30 clusters. The silhouette scores show that having more components when reducing with PCA results in better clustering scores. The scores also show that scores for the reduced data that keep 99\% of the variance (right column) are all similar in score and trend.\relax }}{48}}
+\newlabel{fig:silhouette_scores}{{26}{48}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion}{48}}
 \citation{Ye2015}
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion}{44}}
-\@writefile{toc}{\contentsline {section}{\numberline {IX}Future Work}{44}}
 \citation{Lewis2012}
-\@writefile{toc}{\contentsline {section}{\numberline {X}Conclusion}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Future Work}{49}}
 \bibstyle{IEEEtran}
 \bibdata{IEEEabrv,main.bib}
 \bibcite{RobSchapire}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {X}Conclusion}{50}}
 \bibcite{assael2016lipnet}{2}
 \bibcite{Lucas20016}{3}
 \bibcite{tompson2016accelerating}{4}
@@ -133,7 +143,6 @@
 \bibcite{baranano2008ketogenic}{14}
 \bibcite{britanica1i2016}{15}
 \bibcite{mcculloch1943logical}{16}
-\@writefile{toc}{\contentsline {section}{References}{46}}
 \bibcite{minsky1969perceptrons}{17}
 \bibcite{Yadav2015}{18}
 \bibcite{mitchell1997machine}{19}
@@ -143,6 +152,7 @@
 \bibcite{Granger1969}{23}
 \bibcite{Sugihara2012}{24}
 \bibcite{lorenz1963deterministic}{25}
+\@writefile{toc}{\contentsline {section}{References}{51}}
 \bibcite{Dixon1999}{26}
 \bibcite{Deyle2011}{27}
 \bibcite{Takens1981}{28}

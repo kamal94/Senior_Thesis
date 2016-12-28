@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  20 DEC 2016 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  27 DEC 2016 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,7 +719,20 @@ Package csquotes Info: ... none found.
 Package csquotes Warning: No multilingual support.
 (csquotes)                Cannot enable multilingual quotes on input line 67.
 
-(./main.aux (./introdution.aux) (./Sugihara.aux))
+(./main.aux (./introdution.aux) (./Sugihara.aux)
+
+LaTeX Warning: Label `fig:sample_pair_causality_plot' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sample_pair_causality_plot' multiply defined.
+
+
+LaTeX Warning: Label `fig:rho_hist_all_experiment' multiply defined.
+
+
+LaTeX Warning: Label `fig:diff_within_pair_hist' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1091,112 +1104,140 @@ File: figures/rat_scull_and_instrument.png Graphic file (type png)
 
 <use figures/rat_scull_and_instrument.png>
 Package pdftex.def Info: figures/rat_scull_and_instrument.png used on input lin
-e 122.
+e 121.
 (pdftex.def)             Requested size: 200.81825pt x 220.4703pt.
  [35
 
 ]
-<figures/brain_region_lump.png, id=757, 230.36063pt x 122.95938pt>
+<figures/sample_eeg_signal_with_kcsd_edited.pdf, id=757, 505.89pt x 361.35pt>
+File: figures/sample_eeg_signal_with_kcsd_edited.pdf Graphic file (type pdf)
+
+<use figures/sample_eeg_signal_with_kcsd_edited.pdf>
+Package pdftex.def Info: figures/sample_eeg_signal_with_kcsd_edited.pdf used on
+ input line 130.
+(pdftex.def)             Requested size: 469.75502pt x 335.54477pt.
+ [36 <./figures/rat_brain_schematic.png> <./figures/rat_scull_and_instrument.pn
+g>] [37 <./figures/sample_eeg_signal_with_kcsd_edited.pdf>] [38]
+<figures/brain_region_lump.png, id=884, 230.36063pt x 122.95938pt>
 File: figures/brain_region_lump.png Graphic file (type png)
 
 <use figures/brain_region_lump.png>
-Package pdftex.def Info: figures/brain_region_lump.png used on input line 137.
-(pdftex.def)             Requested size: 446.26582pt x 238.21817pt.
- [36 <./figures/rat_brain_schematic.png> <./figures/rat_scull_and_instrument.pn
-g>]
-<figures/sample_eeg_signal_with_kcsd.pdf, id=763, 578.16pt x 433.62pt>
-File: figures/sample_eeg_signal_with_kcsd.pdf Graphic file (type pdf)
+Package pdftex.def Info: figures/brain_region_lump.png used on input line 159.
+(pdftex.def)             Requested size: 305.33789pt x 162.98979pt.
 
-<use figures/sample_eeg_signal_with_kcsd.pdf>
-Package pdftex.def Info: figures/sample_eeg_signal_with_kcsd.pdf used on input 
-line 144.
-(pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
- [37 <./figures/brain_region_lump.png>] [38 <./figures/sample_eeg_signal_with_k
-csd.pdf>]
-<figures/sample_pairwise_causality_measure.pdf, id=784, 578.16pt x 433.62pt>
+<figures/sample_graph.pdf, id=885, 794.97pt x 614.295pt>
+File: figures/sample_graph.pdf Graphic file (type pdf)
+
+<use figures/sample_graph.pdf>
+Package pdftex.def Info: figures/sample_graph.pdf used on input line 167.
+(pdftex.def)             Requested size: 258.36668pt x 199.65288pt.
+ [39 <./figures/brain_region_lump.png> <./figures/sample_graph.pdf>]
+<figures/sample_pairwise_causality_measure.pdf, id=904, 578.16pt x 433.62pt>
 File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
 
 <use figures/sample_pairwise_causality_measure.pdf>
 Package pdftex.def Info: figures/sample_pairwise_causality_measure.pdf used on 
-input line 198.
-(pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
+input line 181.
+(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
 
-<figures/diff_in_sample_size.pdf, id=785, 794.97pt x 614.295pt>
-File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
-
-<use figures/diff_in_sample_size.pdf>
-Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 204
-.
-(pdftex.def)             Requested size: 225.4804pt x 174.23228pt.
- [39]
-<figures/rho_hist_all_experiment.pdf, id=789, 578.16pt x 433.62pt>
+<figures/rho_hist_all_experiment.pdf, id=905, 578.16pt x 433.62pt>
 File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
 
 <use figures/rho_hist_all_experiment.pdf>
 Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
- 213.
-(pdftex.def)             Requested size: 281.85587pt x 211.39055pt.
- [40 <./figures/sample_pairwise_causality_measure.pdf> <./figures/diff_in_sampl
-e_size.pdf>]
-<figures/diff_within_pair_hist.pdf, id=806, 578.16pt x 433.62pt>
+ 187.
+(pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
+
+<figures/diff_within_pair_hist.pdf, id=906, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_hist.pdf>
-Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 2
-22.
+Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 1
+97.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/diff_within_pair_over_2_hist.pdf, id=807, 578.16pt x 433.62pt>
+<figures/diff_within_pair_over_2_hist.pdf, id=907, 578.16pt x 433.62pt>
 File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
 
 <use figures/diff_within_pair_over_2_hist.pdf>
 Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
- line 227.
+ line 202.
+(pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
+ [40 <./figures/sample_pairwise_causality_measure.pdf> <./figures/rho_hist_all_
+experiment.pdf>] [41 <./figures/diff_within_pair_hist.pdf> <./figures/diff_with
+in_pair_over_2_hist.pdf>]
+[42] [43]
+File: figures/sample_pairwise_causality_measure.pdf Graphic file (type pdf)
+ <use figures/sample_pairwise_causality_measure.pdf>
+Package pdftex.def Info: figures/sample_pairwise_causality_measure.pdf used on 
+input line 288.
+(pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
+
+<figures/diff_in_sample_size.pdf, id=945, 794.97pt x 614.295pt>
+File: figures/diff_in_sample_size.pdf Graphic file (type pdf)
+
+<use figures/diff_in_sample_size.pdf>
+Package pdftex.def Info: figures/diff_in_sample_size.pdf used on input line 294
+.
+(pdftex.def)             Requested size: 225.4804pt x 174.23228pt.
+ [44]
+File: figures/rho_hist_all_experiment.pdf Graphic file (type pdf)
+
+<use figures/rho_hist_all_experiment.pdf>
+Package pdftex.def Info: figures/rho_hist_all_experiment.pdf used on input line
+ 303.
+(pdftex.def)             Requested size: 281.85587pt x 211.39055pt.
+ [45 <./figures/diff_in_sample_size.pdf>]
+File: figures/diff_within_pair_hist.pdf Graphic file (type pdf)
+ <use figures/diff_within_pair_hist.pdf>
+Package pdftex.def Info: figures/diff_within_pair_hist.pdf used on input line 3
+12.
+(pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
+File: figures/diff_within_pair_over_2_hist.pdf Graphic file (type pdf)
+
+<use figures/diff_within_pair_over_2_hist.pdf>
+Package pdftex.def Info: figures/diff_within_pair_over_2_hist.pdf used on input
+ line 317.
 (pdftex.def)             Requested size: 214.20567pt x 160.6486pt.
 
-<figures/sample_graph.pdf, id=808, 794.97pt x 614.295pt>
-File: figures/sample_graph.pdf Graphic file (type pdf)
-
-<use figures/sample_graph.pdf>
-Package pdftex.def Info: figures/sample_graph.pdf used on input line 236.
-(pdftex.def)             Requested size: 258.36668pt x 199.65288pt.
- [41 <./figures/rho_hist_all_experiment.pdf> <./figures/diff_within_pair_hist.p
-df> <./figures/diff_within_pair_over_2_hist.pdf>] <figures/variance_explained_w
-ith_pca.pdf, id=830, 722.7pt x 505.89pt>
+<figures/variance_explained_with_pca.pdf, id=958, 722.7pt x 505.89pt>
 File: figures/variance_explained_with_pca.pdf Graphic file (type pdf)
 
 <use figures/variance_explained_with_pca.pdf>
 Package pdftex.def Info: figures/variance_explained_with_pca.pdf used on input 
-line 243.
+line 326.
 (pdftex.def)             Requested size: 258.36668pt x 180.8543pt.
- [42 <./figures/sample_graph.pdf> <./figures/variance_explained_with_pca.pdf>]
-<figures/silhouette_scores.pdf, id=888, 1445.4pt x 1011.78pt>
+ [46]
+<figures/silhouette_scores.pdf, id=963, 1445.4pt x 1011.78pt>
 File: figures/silhouette_scores.pdf Graphic file (type pdf)
 
 <use figures/silhouette_scores.pdf>
-Package pdftex.def Info: figures/silhouette_scores.pdf used on input line 265.
+Package pdftex.def Info: figures/silhouette_scores.pdf used on input line 348.
 (pdftex.def)             Requested size: 469.75502pt x 328.8246pt.
- [43 <./figures/silhouette_scores.pdf>]
-[44] [45] (./main.bbl
+ [47 <./figures/variance_explained_with_pca.pdf>] [48 <./figures/silhouette_sco
+res.pdf>] [49] (./main.bbl [50]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
- [46] [47]
+ [51]
 Missing character: There is no È in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
-) [48] (./main.aux (./introdution.aux)
-(./Sugihara.aux))
+)
+[52] (./main.aux (./introdution.aux) (./Sugihara.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 18506 strings out of 493054
- 378403 string characters out of 6134759
- 487990 words of memory out of 5000000
- 21615 multiletter control sequences out of 15000+600000
+ 18505 strings out of 493054
+ 378407 string characters out of 6134759
+ 488019 words of memory out of 5000000
+ 21614 multiletter control sequences out of 15000+600000
  43062 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,77p,2470b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1221,10 +1262,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (48 pages, 7519214 bytes).
+Output written on main.pdf (52 pages, 7553942 bytes).
 PDF statistics:
- 1012 PDF objects out of 1200 (max. 8388607)
- 432 compressed objects within 5 object streams
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 503 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

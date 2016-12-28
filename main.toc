@@ -18,13 +18,17 @@
 \contentsline {section}{\numberline {IV}Sugihara Causality}{29}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Manifolds}{30}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Shadow Manifolds}{31}
-\contentsline {section}{\numberline {V}Problem definition}{35}
+\contentsline {section}{\numberline {V}Problem Statement}{35}
 \contentsline {section}{\numberline {VI}Methods}{35}
 \contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Data Collection}{35}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{36}
-\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Experiments}{38}
-\contentsline {section}{\numberline {VII}Results}{39}
-\contentsline {section}{\numberline {VIII}Discussion}{44}
-\contentsline {section}{\numberline {IX}Future Work}{44}
-\contentsline {section}{\numberline {X}Conclusion}{45}
-\contentsline {section}{References}{46}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Data Preprocessing}{38}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Sugihara Causality Measurement}{38}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Data Exploration and Visualization}{39}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-E}}Algorithms and Techniques}{41}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-F}}Metrics and Benchmark}{42}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-G}}Algorithms and Techniques}{43}
+\contentsline {section}{\numberline {VII}Results}{44}
+\contentsline {section}{\numberline {VIII}Discussion}{48}
+\contentsline {section}{\numberline {IX}Future Work}{49}
+\contentsline {section}{\numberline {X}Conclusion}{50}
+\contentsline {section}{References}{51}
