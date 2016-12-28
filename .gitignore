@@ -1,2 +1,9 @@
 pairwise_causality_regional_CSD.csv
 *.fdb_latexmk
+*.fls
+*.log
+*.aux
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
