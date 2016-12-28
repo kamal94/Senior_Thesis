@@ -28,8 +28,8 @@ Exploration code is provided in the notebook `clustering companion.ipynb` notebo
 
 In a terminal or command window, navigate to the top-level project directory `student_intervention/` (that contains this README) and run the following commands appropriately:
 
-```jupyter notebook Clustering\ notebook.ipynb.ipynb```
-```jupyter notebook companion.ipynb.ipynb```
+`jupyter notebook Clustering\ notebook.ipynb`  
+`jupyter notebook companion.ipynb.ipynb`  
 
 This will open the Jupyter Notebook software and project file in your browser.
 
