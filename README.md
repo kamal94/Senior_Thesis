@@ -1,6 +1,6 @@
 # Classifying Epileptic Brain States Using Structural Features of Neuronal Sugihara Causation Networks
 
-This project is the culmination of my work over the MLND program at Udacity and my summer Research Experience for Undergraduates at UCCS (Colorado). All the information required to understand this project is in the file **main.pdf**. Two companion python notebooks have been provided for the production of figures, exploration of the data, and reproducibility.
+This paper is the culmination of my work over the summer at the University of Colorado Colorado Springs and during the subsequent time through the MLND program at Udacity. All the information required to understand this project is in the file **main.pdf**. Two companion python notebooks have been provided for the production of figures, exploration of the data, and reproducibility.
 
 A short video that summarizes part of the procedure done in this work can be found [here](https://vimeo.com/183266314).
 
