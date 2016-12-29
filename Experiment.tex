@@ -102,9 +102,6 @@ In all graphs, most of the $\rho$ scores appear to be of high values, suggesting
   \label{fig:diff_within_pair_hist}
 \end{figure} 
 
-% TO BE ADDED ONCE THE SPLINE DATA HAS BEEN ANALYZED
-% To reduce the amount of data being processed by the algorithm, a moving average was calculated for each channel as in Fig. \ref{fig:spline_sample}. The moving average line was also added to reduce the random variability that might erroneously affect the Sugihara calculations. More importantly, the moving average calculation removes the spiking pattern dimension of the neuronal region, and keeps only the magnitude of neuronal excitation. We reckon that this assumption could be beneficial for the CCM algorithm since without it, the algorithm could infer that two noise up spikes in two channels might be causal simply because they happen in temporal proximity caused by measurement error.
-
 
 \subsubsection{Algorithms and Techniques}
 The machine learning algorithms we use in this experiment are all centered around unsupervised learning, specifically clustering using an altered version of K-means called the Gaussian Mixture model. K-mean algorithms require as input a number $n$ of clusters to find, and a set of data points on which the clusters are to be found. The algorithm then works by choosing $n$ random points in the data set and setting them as centers of the clusters. Each data point that is not a center then becomes in the cluster of the nearest center. The centers are then incrementally reassigned to be the mean of the points in the clusters. This method converges in finite time to a solution, and most of the time (depending on the random initialization) finds good clusters that are well separated and in which each cluster has data points that share common features. 
@@ -128,38 +125,6 @@ The unsupervised learning used here along with the high dimensionality of the da
 where positive is epilepsy and negative is non-epilepsy.
 
 Since this method has never been attempted before (using Sugihara Causality graphs to identify epilepsy), providing a succinct and complete benchmark is a difficult task. Furthermore, the clustering here is used to explore whether or not there are any extractable information from causal networks in the brain, and whether the brain communicates differently when it is suffering from epilepsy compared to when it is operating normally. Keeping this in mind, we rely on the simple F1 score to provide a simple reliability measure of how well the clustering is separating and predicting the epilepsy cluster. Since we know that epilepsy doesn't happen often in our dataset (only ~20 seconds  of epilepsy related events in our ~500 seconds dataset), we can assign the cluster with the least data points as the epilepsy one, and then measure how exclusive the epilepsy cluster is to the times when epilepsy was \textit{actually} happening by measuring an F1 score. Since our epilepsy happens for about 4\% of the dataset, then the baseline score we expect should be 96\% of accuracy and 0.99 F1 score. These scores are attained if all the data points were labeled as one (non-epilepsy) cluster.
-
-
-% From the graph, the following experiments were conducted
-
-% \subsubsection{Activity Clustering}
-% Using the k-means clustering algorithm, the pairwise causality graphs were clustered towards testing if the algorithm can detect phases of different activities.
-
-% \subsubsection{Epilepsy Localization}
-% To localize the origin of epilepcy during a time segment, the regions with high outgoing causality degrees were considered. The evaluation method was a simple sum of out degrees.
-
-% \begin{figure}[!h]ion{Significant Causality Measures}
-% \label{subsec:significant_causality}
-% Since every CCM computation returns a real number in the range $[0,1]$ that represents a relative causality measure, $132$ causality measures for each time segment was returned. Therefore, an important question to consider is how exactly should a causality measure be defined to be significant. Although Sugihara \textit{\textit{et al.}} \cite{Sugihara2012} and Nes \textit{et al.} \cite{Nes2015} carry out a significance test based on altering the signals by random shuffling and Fourier transformation on Phase shift \cite{Ebisuzaki1997}, this method has not been implemented on EEG data when applying the CCM model. Therefore, we do not rely on it completely, and take into account several heuristic conditions.
-
-
-% \subsubsection{Most Causal Relationship Method}
-% In this method, a simplistic approach is taken whereby for each region only the highest incoming $\rho$ is considered. While this approach is reductionist by definition, and most likely does not reflect the true causal relationship in the brain, it achieves simplicity in the network, and affords us the possibility of examining which regions could be the most causal in the network. Such regions would have a large out degree which would imply it being a center of causality in the network.
-
-% Another important property of this measure is that it could alleviate the problem of downstream causality sensitivity. As shown by Ye \textit{\textit{et al.}} \cite{Ye2015}, the CCM algorithm can detect downstream causality, which means that if $\alpha$ causes $\beta$ and $\beta$ causes $\kappa$, then if $\rho_{\alpha \rightarrow \beta}$ is a significant causality measure from $\alpha$ to $\beta$, there can also be a causality measure $\rho_{\alpha \rightarrow \kappa}$ detected to be significant such that the indirect causality is less than the direct causality $\rho_{\alpha \rightarrow \kappa} < \rho_{\alpha \rightarrow \beta}$. This can be an undesired consequence of the model, since we are interested only in the direct relationships, and not necessarily the indirect ones. Indirect relationships could be extrapolated from direct ones. If we assume that all downstream causality measures are evaluated to be less than their direct counterparts, then we expect that taking the most causal relationship would rid of all the indirect relationships that could otherwise be detected, with the expense of also ridding of other direct relationships.
-
-% \subsubsection{Threshold Method}
-% In this method, only causality measure over a certain threshold $\rho_{th}$ will be counted as significant. As this is a heuristic measure, the data must first be examined to clarify what is meant by a significant $\rho_{th}$. With this heuristic comes unavoidable human bias towards refusing generated data. Since the true causality relationships are not yet uncovered, almost any threshold is certain to be wrong. For example, if the brain was highly connected and regions are highly causal to one another, a neuroscientist who disregards such a possibility would be inclined to choose a high $\rho_{th}$ as to filter many of the causal relationships that could in fact be present. Alternatively, if the brain regions were minimally causal to one another and a neuroscientist disregards that possibility, they would be inclined to choose a low $\rho_{th}$ as to allow for more causal relationships for the model. However biased this method is, if implemented correctly it could provide a list of the most causal relationships to each region, while excluding most indirect relationships.
-
-% \subsubsection{Fourier Transform and Random shuffling Method}
-% For a more mathematically grounded significance measure, we also use a bootstrap test where a signal for both channels in a pair is created from the original signal, and the causality measure is significant if it is above a specified $\alpha$ threshold. Another statistical method used to calculate significance is randomizing the data based on bootstrapping the frequency distribu
-%   \centering
-%   \includegraphics[width=0.95\linewidth]{figures/sample_moving_average.pdf}
-%   \caption{A moving average line fitted through the first second ($10^3$ data points) of channel 2. A rolling window of 10 is used.}
-%   \label{fig:spline_sample}
-% \end{figure}
-
-% \subsecttion of the signal calculated from the signal's Fourier transform as used by Nes \textit{et al.} \cite{Nes2015}\cite{Takens1981}.
 
 \subsection{Implementation}
 \subsubsection{Data Preprocessing}
