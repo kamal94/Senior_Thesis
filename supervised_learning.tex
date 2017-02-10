@@ -194,10 +194,17 @@ Using gradient descent, minimizing $\epsilon$ with respect to node $x_i$ require
 
 because $\sigma(S)$ is the only function of $w_i$. This is where having an activation function that can be easily differentiated is advantageous. For the sigma function, the derivative evaluates to
 \begin{align}
-\frac{\partial\sigma(S)}{\partial w_i} =  \frac{\partial \frac{1}{1+e^{-\sum_{j=1}^n w_jx_j}}}{\partial w_i} = \frac{x_ie^{-\sum_{j=1}^n w_jx_j}}{\Big({1+e^{-\sum_{j=1}^n w_jx_j}}\Big)^2} = \sigma(S)^\prime.
+\label{eq:sigma_derivative}
+\sigma(S)\prime &=  \frac{\partial }{\partial S}{\frac{1}{1+e^{-S}}} \\
+&= \frac{e^{-S}}{\Big({1+e^{-S}}\Big)^2} \\
+&= \frac{1 + e^{-S} - 1}{\Big({1+e^{-S}}\Big)^2} \\
+&= \frac{1 + e^{-S}}{\Big({1+e^{-S}}\Big)^2} - \frac{1}{\Big({1+e^{-S}}\Big)^2} \\
+&= \frac{1}{{1+e^{-S}}} - \Big(\frac{1}{{1+e^{-S}}}\Big)^2 \\
+&= \sigma(S) - \sigma(S)^2 \\
+&= \sigma(S) * (1-\sigma(S)).
 \label{eq:sigma_derivative}
 \end{align}
-The last step is carried for notational simplicity. Combining equations \ref{eq:gradient_descent_on_sigma} and \ref{eq:sigma_derivative}, we find that the weight of the $i$th node $w_i$ must be changed by the negative of the gradient
+the last step is carried for notational simplicity. Combining equations \ref{eq:gradient_descent_on_sigma} and \ref{eq:sigma_derivative}, we find that the weight of the $i$th node $w_i$ must be changed by the negative of the gradient
 
 \begin{align*}
   2\sigma(S)^\prime(\lambda - \sigma(S))
