@@ -23,20 +23,39 @@ c_i = \arg \min_{x} \Big( D(\hat c_i, x_{i, 1}), D(\hat c_i, x_{i, 2}), \dots, D
 $$
 This will result in a change of points-to-cluster-center distances, and will therefore change the clusters that some points belong to, which will change the cluster centers, resulting in a cycle of improvement that has been proven to converge with the repetition of the center assignment steps (Fig. \ref{fig:k-means}). While the K-means algorithm is useful in its own right, extensions have made it more powerful. An example of such an extension is the Gaussian Mixture model, which is a more generalized form of the K-means that assumes there are $k$ uniform distributions with unknown parameters. This generalization allows the model to group clusters using several covariance shapes, meaning the distance relationships are much more diverse and flexible (Fig. \ref{fig:gaussian_mixture}) .
 
-% \begin{figure}[!h]
-%   \centering
-%   \begin{subfigure}{.3\textwidth}
-%     \centering
-%     \includegraphics[width=\linewidth]{figures/twoClasses_separable.pdf}
-%   \end{subfigure} %
-%   \begin{subfigure}{0.3\textwidth}
-%     \centering
-%     \includegraphics[width=\linewidth]{figures/twoClasses_non_separable.pdf}
-%   \end{subfigure}
-% 	\begin{subfigure}{0.3\textwidth}
-% 		\centering
-% 		\includegraphics[width=\linewidth]{figures/twoClasses_non_separable.pdf}
-% 	\end{subfigure}
-%   \caption{Two sets of data, one of which is linearly separable (Left) and the other is non linearly separable (Right). Linear separability means that a line can be found that can perfectly segregate the two classes into two sections. A diagonal, horizontal, or vertical line between the blue and red points can be drawn on the left that achieves that goal. However, on the right there is no one line that can be used to separate the red from blue points. This problem of finding a line of separation between two linearly separable data sets can be solved by using a binary classifier, the earliest example of which is the perceptron.}
-%   \label{fig:two_classes_example}
-% \end{figure}
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}{.3\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/k-means_first_1_iteration.pdf}
+    \caption{Iteration 1}
+  \end{subfigure} %
+  \begin{subfigure}{0.3\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/k-means_first_2_iteration.pdf}
+    \caption{Iteration 2}
+  \end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/k-means_first_5_iteration.pdf}
+		\caption{Iteration 5}
+	\end{subfigure}
+  \caption{A sample iteration of simple k-means clustering on the generally available Iris dataset. The clusters are shown in different colors, while the centers are the green circles. In the first iteration, the centers are randomized along the dataset. As the algorithm iterates, it finds more representatives cluster centers which split the dataset more evenly, until it converges in step 5.}
+  \label{fig:k-means}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}{.4\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/simple_k_means_iris.pdf}
+    \caption{Simple k-means}
+  \end{subfigure} %
+  \begin{subfigure}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gaussian_mixture_iris.pdf}
+    \caption{Gaussian Mixture}
+  \end{subfigure}
+  \caption{While the standard k-means algorithm splits the dataset in the most even way, that does not necessarily result in a meaningful or accurate separation of clusters. The Gaussian Mixture algorithm takes advantage of more assumptions such as assuming that the clusters are produced from $k$ different normal (or Gaussian) distributions, and attributes points to clusters that make these distributions the most likely. This usually results in a more meaningful approach and result, as many natural phenomena are indeed a product of the Gaussian distribution.}
+  \label{fig:gaussian_mixture}
+\end{figure}

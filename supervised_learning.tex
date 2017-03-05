@@ -50,7 +50,7 @@ The learning process for input $x$, given a true label $\gamma$ and a threshold 
     +1 \textrm{ if $S$} > \theta \\
     -1 \textrm{ otherwise} 
   \end{cases} \\
-  w_{new} &= w_{old} + (\kappa - \gamma)x.
+  w_{new} &= w_{old} + (\gamma - \kappa)x.
 \end{align}
 
 As can be seen from above, the perceptron learns by changing its weights, as this causes the same input to give a different $S$ which in turn could give a different predicted value $\kappa$. Following this learning rule, it can be proven that the perceptron model converges in finite time to a set of weights that result in a perfect classification for all data points in the dataset. A simple implementation of the perceptron was used to solve the sample datasets presented earlier (Fig \ref{fig:perceptron_solution}).
@@ -162,7 +162,7 @@ A common continuous activation function for learning units is the sigmoid learni
   \kappa &= \sigma(S) = \frac{1}{1+e^{-S}}
 \end{align}
 which is bounded by 0 and 1. This function is popular because its derivative is rather simple to compute and leads directly into the theory of back propagation. When the sigmoid function is used, the learning rule becomes a minimization of an error term using gradient descent. For a data point with target classification $\lambda$ and predicted classification $\kappa$, the error term is described as
-$$ \epsilon = (\lambda- \kappa)^2 $$
+$$ \epsilon = (\kappa- \lambda)^2 $$
 and is called MSE and is derived in \ref{sec:regression_supervised_learning}. Gradient descent is an iterative approach to finding the maximum or minimum of a continuous function by using its derivative (Fig. \ref{fig:gradient_descent}).
 
 
@@ -182,13 +182,13 @@ For example, if a learning unit predicts an output of $\kappa$ with an error $\e
   \end{tikzpicture}
 \end{align*}
 and keeping in mind that $\kappa$ is $\sigma(S) = \frac{1}{1+e^{-S}} = \frac{1}{1+e^{-\sum_{i=1}^n w_ix_i}}$ then the error can be expressed as 
-$$ \epsilon = (\lambda - \kappa)^2  =  (\lambda - \sigma(S))^2$$ 
+$$ \epsilon = (\kappa - \lambda)^2  =  (\sigma(S) - \lambda)^2$$ 
 or in our example  
-$$ \epsilon = \Big(\lambda - \frac{1}{1+e^{-w_1x_1-w_2x_2}}\Big)^2$$
+$$ \epsilon = \Big(\frac{1}{1+e^{-w_1x_1-w_2x_2}} - \lambda \Big)^2$$
 Using gradient descent, minimizing $\epsilon$ with respect to node $x_i$ requires us to change $w_i$ by the negative of its gradient. This gradient is 
 
 \begin{align}
-  \frac{\partial MSE}{\partial w_i} = \frac{\partial(\lambda - \sigma(S))^2}{\partial w_i}  = \frac{\partial\sigma(S)}{\partial w_i}2(\lambda - \sigma(S))
+  \frac{\partial MSE}{\partial w_i} = \frac{\partial(\sigma(S) -\lambda)^2}{\partial w_i}  = \frac{\partial\sigma(S)}{\partial w_i}2(\sigma(S) - \lambda)
   \label{eq:gradient_descent_on_sigma}
 \end{align}
 
@@ -207,11 +207,11 @@ because $\sigma(S)$ is the only function of $w_i$. This is where having an activ
 the last step is carried for notational simplicity. Combining equations \ref{eq:gradient_descent_on_sigma} and \ref{eq:sigma_derivative}, we find that the weight of the $i$th node $w_i$ must be changed by the negative of the gradient
 
 \begin{align*}
-  2\sigma(S)^\prime(\lambda - \sigma(S))
+  2\sigma(S)^\prime(\sigma(S) - \lambda)
 \end{align*}
 which leads to a weight update rule of 
 \begin{align}
-  w_{i_{t+1}} = w_{i_t} - 2\sigma(S)^\prime(\lambda - \sigma(S))
+  w_{i_{t+1}} = w_{i_t} - 2\sigma(S)^\prime(\sigma(S) - \lambda)
   \label{eq:update_rule_for_sigma}
 \end{align}
 
@@ -241,7 +241,7 @@ In this way, the error that is produced at the top layer, where the final classi
           {   \pgfmathparse{\x}
               % z=\x-1
               \node[cnode=gray,label=180:$x_{\pgfmathresult}$] (x-\x) at ($(0,0)+ (0, {\x*2}) $) {};
-              \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult} - 2\omega_{\pgfmathresult}x_{\pgfmathresult}(\lambda - \kappa_t)$} (s);
+              \draw[->] (x-\x) -- node[above,sloped,pos=0.3] {$\omega_{\pgfmathresult} - 2\omega_{\pgfmathresult}x_{\pgfmathresult}(\kappa_t - \lambda)$} (s);
           }
     \end{tikzpicture}
     \caption{at time $t+1$}
